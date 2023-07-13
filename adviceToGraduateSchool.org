@@ -1,0 +1,26 @@
+ 
+* Advice for undergraduate students who want to pursue a Ph.D. in pure mathematics
+#+OPTIONS: toc:nil        (no TOC at all)
+#+options: num:nil
+#+OPTIONS:   H:2 
+
+
+
+If you are thinking of going to grad school in theoretical math
+  - take the algebra and real analysis sequences as soon as possible. 
+  - If there are any electives that you haven't taken (e.g., number theory) try to take those too.
+  - The math subject GRE is very important; top 5 pure math grad schools (e.g., Berkeley) don't accept anyone under 80th percentile. 
+  - To get into a good program, you need
+    - a very good GPA
+    - a very good math subject GRE scores
+    - some other things to distinguish you
+      - Do an REU (or two); list [[http://www.nsf.gov/crssprgm/reu/list_result.cfm%3Funitid%3D5044][here]]. (Grad programs favor people with REU's over internships.)
+      - NSA summer program
+      - CCR summer program
+      - Take a few graduate level courses. (This is also a good indicator of whether you will enjoy doing a phd)
+      - There is also an option of doing a MS/BS; basically your senior year you will take a few grad courses and write a mini thesis. (Getting into the MS/BS program requires both a good record and recommendations from your professors. Basically they need to convince the committee that you can handle grad courses and write a decent thesis.)
+      - think about studying abroad (BSM, Math in Moscow)
+      - get a double digit score on the Putnam. Be active in the Putnam preparation group
+      - do well on the Mathematical Modeling competition
+      - take an independent study in some topic outside of the core curriculum
+    - In the meantime, I'm collecting links for undergraduates interested in theoretical math; check them out [[http://www.nsf.gov/crssprgm/reu/list_result.cfm?unitid=5044][here]].

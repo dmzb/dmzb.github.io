@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>My experience learning Scheme Theory</title>
+<!-- 2020-05-26 Tue 13:50 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">My experience learning Scheme Theory</h1>
+<p>
+When I learned it, I didn't know much coming in (I had taken a course on complex curves, but not schemes). I took a year long scheme theory course my first year from Harthshorne (the person, from his book) in the Fall, and part II in the spring from Paul Vojta. The second semester, I also took a reading course on Silverman's Arithmetic of Elliptic Curves, which is more down to earth and really helped motivate scheme theory (a lot of things just become much cleaner from the scheme theory point of view; example: if you have a variety X over Q (i.e. defined by equations with rational coefficients), and if X is smooth, then the reduction of X mod p is also smooth for all but finitely many primes p [this is very difficult without schemes, and kind of obvious with schemes]). 
+</p>
+
+<p>
+Also concurrently I read (in less detail) as many other texts on the subject as I could. An important one is Eisenbud and Harris's "The Geometry of Schemes", which is a companion book rather than a text. But I also read whatever online course notes I could find (William Stein has some from when he was learning), and read little bits of other books like Shaferevich's books and Qing Lui's books. 
+</p>
+
+<p>
+Also concurrently I would backtrack a bit and read commutative algebra texts, like Atiyah&#x2013;Macdonald (short and concise), and Eisenbud's commutative algebra book (huge, but with lots of examples, motivation, etc). 
+</p>
+
+<p>
+Then I studied over the summer for my oral qualifying exam on Scheme theory, the following September. That was valuable, and I passed.
+</p>
+
+<p>
+Then year 2 I took the scheme theory course again (but put less work into it); Mark Haiman taught it, from EGA. Year 3 I took the first half of the course (from Brian Osserman), but then there was a topics course on stacks in the spring and I decided to stop attending scheme theory every year. Stacks really reinforced what I was learning, as did reading papers and doing research. 
+</p>
+
+<p>
+I also ended up reading a lot of Qing Liu's book while working on research projects (Hartshorne's book often works over an algebraically closed field, and Qing Liu doesn't, and Lui's book has a longer treatment of blow ups, and lots of good stuff about models of curves); Silverman's AEC II (especially the chapters on models of curves) were very useful too.
+</p>
+
+<p>
+Then I got crazy and read about 70% of EGA. Ravi Vakil and others had a "seminar of pain"; we liked the idea and had our own (and even convinced the Clay institute to fund us). The summer before, to prepare, I would wake up and spend about the first 3 hours of each day reading through EGA. (This is surely overkill.) 
+</p>
+
+<p>
+In modern times, one should read Ravi Vakil's book "Foundations of Algebraic Geometry" (and really work through a lot of it, taking a calendar year or more) instead of Harthshorne, backtracking to Atiyah&#x2013;Macdonald and Eisenbud's commutative algebra books when necessary (though, if you have time, working through Atiyah&#x2013;Macdonald is a good warm up for Vakil), reading the Eisenbud&#x2013;Harris "the geometry of schemes", and finding other random things to read to supplement this (again, I really like Silverman's AEC). 
+</p>
+
+<p>
+For motivation, the best answer is that there isn't really a good way to do geometry over finite fields, or Z (or to understand how geometry changes in families, or how geometry is preserved, or changes, when reducing modulo a prime, or understanding singularities) without schemes. (Ditto with sheaves and cohomology, there is a long list of things that are insane to work with without those.) 
+</p>
+
+<p>
+The first really striking example from Hartshorne's class is intersecting a line with a circle. Most of the time you get 2 distinct points, but if the line is tangent you only get one point. But actually, if you work with the scheme theoretic intersection, the "one point" is really a "singular double point" and the scheme structure truthfully and meaningfully keeps track of the fact that the point arose as a limit of two points. In fact, there are whole sub-sub fields which study, basically, the geometry of "0 dimensional" schemes (this leads you to study Hilbert schemes). So in geometry, points can be "big" or "small", and can break apart kind of like atoms. Also, making sense of something like a tangent line to a curve over F<sub>p</sub> is just a lot cleaner with "algebraic" diffrentials and so on.
+</p>
+</div>
+</body>
+</html>

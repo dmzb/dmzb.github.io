@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>My experience learning Mazur's Torsion and Isogeny theorems</title>
+<!-- 2021-06-14 Mon 15:58 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">My experience learning Mazur's Torsion and Isogeny theorems</h1>
+<p>
+I spent about 2-3 months in the summer of 2008 (after my 4th year of graduate school). At that point I was able to read and understand everything (with a lot of work). I had some external motivation to read it: I had posted my first paper to the arxiv (here <a href="https://arxiv.org/abs/0803.0973v1">https://arxiv.org/abs/0803.0973v1</a>); Matt Baker noticed it in the daily posting and wrote to me and suggested that it seemed like Momose's papers about X<sub>sp</sub> were in some sense doing "bad reduction Chabauty", and that it would be worthwhile for me to read those papers and see if I could prove anything new. Reading those papers also mean reading Mazur's papers first. Near the end of that summer, Bilu&#x2013;Parent&#x2013;Rebolledo started posting papers like this <a href="https://arxiv.org/abs/0807.4954">https://arxiv.org/abs/0807.4954</a> which completely solved the problem I was working on (and was published in Annals), so I switched gears (but was happy to have put in the work to read Mazur's papers). 
+</p>
+
+<p>
+Anyway, here's my path before that. 
+</p>
+
+<p>
+As an undergrad, I read Silverman and Tate's book about Elliptic curves, then Koblitz. Then I read this survey by Rubin and Silverberg
+</p>
+
+<p>
+<a href="https://www.ams.org/journals/bull/2002-39-04/S0273-0979-02-00952-7/S0273-0979-02-00952-7.pdf">https://www.ams.org/journals/bull/2002-39-04/S0273-0979-02-00952-7/S0273-0979-02-00952-7.pdf</a>
+</p>
+
+<p>
+and, about Mazur's theorem, thought "what a simple statement, I wonder what the proof is like". I printed out the paper (this was 2003), not realizing that it was 100+ pages. I didn't get very far. 
+</p>
+
+<p>
+In grad school, I spent the first year working through Hartshorne, Neurkirch, and Silverman's AEC (+ some sporadic other reading). Some of the older students like Jared Weinstein or Soroosh Yazdani, who had recently led a reading course working through the proof, explained a lot of the details to me, but I still didn't know enough about modular curves to make any real progress. 
+</p>
+
+<p>
+My second year I started working on research problems. I spent a long time digesting "Twists of X(7) and primitive solutions to x<sup>2</sup> + y<sup>3</sup> = z<sup>7</sup>" by Poonen&#x2013;Schaefer&#x2013;Stoll, and trying to generalize to 2-3-11. (I eventually generalized to 2-3-10&#x2026;) This required really learning about modular curves, modular forms, level lowering, and so on. A lot of this I learned by Poonen explaining things to me in our weekly meetings. I did read through all of Milne's notes on modular curves, and lots of course notes by William Stein, the survey article by Tom Weston, the first two chapters of the Cornel&#x2013;Silverman, the survey by Diamond and Im, and read lots of bits and pieces of Diamond and Sherman. 
+</p>
+
+<p>
+The best thing to happen, though, was the following. I participated in the 2006 Clay summer school on Arithmetic Geometry (in Gottingen). It was fantastic. There were numerous "short courses", sometimes just one or two lectures, many week long, and Darmon gave a 2 week course explaining the proofs of Fermat's Last Theorem, Mazur's Theorem, and the Mordell Conjecture. Obviously he didn't cover every detail; but he explained many of the main ideas of the proofs, and still gave lots of detail. There are now some notes from his lectures
+</p>
+
+<p>
+"Rational points on curves" Proceedings of the Clay Summer School on the arithmetic of curves, surfaces, and higher-dimensional varieties
+</p>
+
+<p>
+that I still frequently refer to. (Rebolledo also wrote some excellent notes on the proof of Merel's theorem, which clarified a lot for me). I should also say that I guess I didn't read Mazur's full paper; there are many parts that are much simpler now (e.g., Kolyvagyn's theorem was not known at the time). I spent a lot of time that summer asking people to explain details to me. I didn't try to read the paper then though.
+</p>
+
+
+<p>
+Brian Conrad also ran a Mazur's method learning seminar at Michigan 
+</p>
+
+<p>
+<a href="http://math.stanford.edu/~conrad/vigregroup/vigre03.html">http://math.stanford.edu/~conrad/vigregroup/vigre03.html</a>
+</p>
+
+<p>
+with several good notes. Honestly, it is possible to meaningfully learn lots of bits of the proof rigorously without too much background (e.g., "ruling out small primes" from his link) and get a good overview of the components of the proof. Assuming you already know about modular curves, and BSD, and modular abelian varieties etc, one could give a fairly faithful outline of the proof in half an hour. If you get anxious about technical stuff like "is the analytification of a modular curve the "analytic" modular curve?", then Conrad has you covered too (he taught a course here <a href="http://virtualmath1.stanford.edu/~conrad/248BPage/handouts.html">http://virtualmath1.stanford.edu/~conrad/248BPage/handouts.html</a> which has several good handouts).
+</p>
+
+
+<p>
+The next year I began working more with Chabauty's method, and wrote a paper (that had an error!) about Chabauty in the bad reduction case. See above re: comments from Matt Baker. I also noticed that Chabauty was related to Mazur's method, though Mazur never mentions Chabauty (and Matt Baker even has a paper making this explicit). I gave some talks at our student seminar about modular curves too (e.g., stuff like how you can see the primes of good reduction from the moduli problem + infinitesimal criterion for smoothness). 
+</p>
+
+<p>
+So I was always learning bits and pieces before I finally sat down to read the paper. Basically I spent 3 hours each morning for about 2 months, and by that point I had most (but definitely not all) of the background I needed.
+</p>
+
+<p>
+Last summer (2020), I was finishing up my (joint) Sporadic Cubic Torsion paper and ended up rereading lots of (parts of) Mazur's papers. There is a lot that I certainly didn't get the significance of during my first read and I learned a lot that is still useful. 
+</p>
+</div>
+</body>
+</html>

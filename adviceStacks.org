@@ -1,0 +1,120 @@
+ #+TITLE: My experience learning Stacks
+#+BIND: org-export-html-auto-postamble nil
+#+ATTR_HTML: border="2" rules="all" frame="border" align="center"
+#+OPTIONS: toc:nil 
+#+OPTIONS: author:nil 
+#+OPTIONS: html-postamble:nil
+#+OPTIONS: num:nil 
+#+OPTIONS: \n
+#+OPTIONS: *
+#+OPTIONS: toc:nil        (no TOC at all)
+#+options: num:nil
+#+OPTIONS:   H:2 
+
+
+My history of learning stacks: the first substantial paper that I tried to read as a grad student was
+
+http://www-math.mit.edu/~poonen/papers/pss.pdf
+
+and Section 3 of that paper explains how stacks are used in the study of Fermat equations.
+
+Around that time, Bjorn Poonen gave this talk
+
+http://www-math.mit.edu/~poonen/slides/campana_s.pdf
+
+and I was hooked; so I started asking lots of different people that I knew or that I met a conference to tell me about stacks.
+
+(Later I also learned about how stacks "explain" where the Frey curve in the proof of Fermat's Last Theorem come from, and lays out a blueprint of where to look for other Fermat equations; in the simliar but non-stack language this is the content of Darmon's "Faltings plus epsilon" paper
+
+http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.142.4831&rep=rep1&type=pdf )
+
+The summer after my first year, several of us worked through Vistoli's "Notes on Grothendieck topologies, fibered categories and descent theory"
+
+http://homepage.sns.it/vistoli/descent.pdf
+
+which helped, but is really more focused on the foundations instead of actual stacks (which was still obviously important!).
+
+Then the following very lucky thing happened to me: Martin Olsson (stacks expert) moved to Berkeley, and his second semester (Spring of my 3rd year) he taught a well attended (40+ people) graduate course on stacks.
+
+Anton Geraschenko lived texed the course, and we spent a lot of time improving the notes
+
+https://stacky.net/files/written/Stacks/Stacks.pdf
+
+exercises are here
+
+https://math.berkeley.edu/~molsson/274.html
+
+That summer, we (about 5 of us) spent 1-2 hours a day re reading through the notes and fixing things we hadn't understood the first time.
+
+Then (also lucky) there was a stacks and deformation theory workshop at MSRI. I was one of the TA's (though I was a TA for Bhargav Bhatt and Andrew Obus, so there was some imbalance..).
+
+Anton also livetexed that. Here are the relevant links, but see especially Vakil's initial lecture. (There are videos too)
+
+https://stacky.net/files/written/defthy07/defthy07.pdf
+http://www.msri.org/people/members/defthy07/
+http://www.msri.org/people/members/defthy07/lectures.html
+http://math.stanford.edu/~vakil/defthy/
+
+A few semesters later, there was a large program at MSRI on algebraic geometry
+
+https://www.msri.org/programs/251
+
+and I learned quite a bit there. In preparation for that I started slowly learning even more of the background material. One thing I did was to slowly read through Knutson's book on algebraic spaces.
+
+https://www.springer.com/us/book/9783540054962
+
+Basically, every morning for a semester, after breakfast and coffee, I would spend 45 minutes reading this book; I would them make a few notes, and also usually have a few questions that I would ask people at tea. I did a similar thing with the first book and a half of SGA IV the following semester (which is on Grothendieck topologies and topoi). That part was overkill, but I enjoyed it.
+
+
+During a student seminar, we spent a lot of time reading Harris and Morrison's book "moduli of curves"
+
+https://www.amazon.com/Moduli-Curves-Graduate-Texts-Mathematics/dp/0387984291
+
+This isn't about stacks per say, but I learned a lot by reading this. The first chapter has especially good exercies to get you started.
+
+There were several other things I read, like Vistoli's thesis; but the content there has been distilled into other references by now.
+
+
+
+Eventually I started working on, then writing, my thesis, about generalizing rigid cohomology to stacks, and ended up learning a lot in the process. Eventually I started writing papers about stacks too, which obviously helped.
+
+At Emory, my second year, I taught a topics course on stacks. Here is the course web page
+
+http://www.mathcs.emory.edu/~dzb/teaching/stacksFall2012/
+
+and there are some links there.
+
+There are some fantastic expository references, like "Stacks for Everybody", by Barbara Fantechi. At this point I've lost track of which expository articles I liked. 
+
+"Champs algebriques"  Laumon, and Moret-Bailly is a great, EGA style treatment of stacks. I didn't read this cover to cover all at once, but did basically end up reading all of it. (While there is a well known error about the lisse-etale site in chapter 13, this doesn't change the instructional value of the book, or the first 12 chapters.)
+
+These days, we have 2 additional great technical resources. Martin Olsson turned his notes from his course into a book
+
+https://www.amazon.com/Algebraic-Colloquium-Publications-American-Mathematical/dp/1470427982
+
+The book is great. It isn't identical to Anton's notes; his include many examples and discussion that happened in class but didn't make it into the book.
+
+Finally, now, there is the motherload of all stacks resources 
+
+https://stacks.math.columbia.edu/
+
+the stacks project. This is really meant as more of a technical manual (I use it all the time), but there are numerous pieces of exposition that help (look through the table of contents to find them). 
+
+That's quite a lot; I obviously don't recommend doing all of that. It was easier to answer the question of "how did I learn stacks" than "how should you learn stacks". At the very least, look at the slides of Poonen, the MSRI lecture by Ravi, and the first chapter of Harris and Morrison. Then think about how much of the foundations you want to learn (2-categories, Grothendieck topologies, etc) and talk to your advisor about which are useful for you to learn.
+
+
+(Added June 22, 2020.) On discord someone asked "What is a stack?". Here is a 4 bullet point explanation.
+
+(1) If you have a variety X (i.e., some equations to solve), you can cook up the functor h_X, which take as input a ring R and produces an output h_X(R) := the set of solutions to the equations defining X. This is a functor, since if R --> S is a ring map, you get a map h_X(R) --> h_X(S) (e.g., you can reduce integer solutions mod a prime). Hopefully this functor seems natural (e.g., if you have a pointless conic, it isn't enough to consider the Q or R solutions, but you need to vary the field to really see what is happening). (If X is a scheme, but not a variety, you should think about how to make sense of h_X.)
+
+(2) A big insight of Grothendieck and others (e.g., Artin) was that you can switch your point of view and work with the functor h_X instead of X. It seems like you're keeping track of a ton of information with h_X (you are), but you are also throwing away information (e.g., h_X(Complex Numbers) doesn't obviously see the complex topology on the points). Yoneda's lemma essentially says that you don't lose any information when you pass to this functor (i.e., the functor X --> h_X is fully faithful). Maybe its better to say that their insight wasn't that you *can* consider h_X, but that it is useful. For instance, it is VERY useful to try to take basic properties of schemes (or maps), and see if you can characterize that property just in terms of functors (e.g., "smoothness" is a priori a definition about some Jacobian matrix, but Grothendieck has an alternative characterization, "the infinitesimal criterion for smoothness" which is just in terms of functors and diagrams). 
+
+(3) You can even go so far as to take the point of view that the functor is the fundamental object, rather than the equations (or the scheme). [Its a bad idea to ONLY take this point of view; but one of the best parts of mathematics is getting to take multiple points of view about the same object]. So you can ask which functors F from Rings to Sets are "representable" by schemes. To start, there are a bunch of obvious axioms that h_X satisfies, like 
+
+(*) "if K subset L is a field extension, then the map h_X(K) --> h_X(L) is injective". 
+
+Obvoiusly, functors are so general that you can cook up a functor for which this fails. If you write down every reasonable axiom you can think of and make this into a definition, you get the notion of an "algebraic space" (still not quite a scheme). Artin proved a useful theoem for identifying which functors F are representable (you need a few axioms that are less obvious, related to local rings and deformation theory). 
+
+(4) Nonetheless, there are still functors that we care about which fail simple axioms like (*). For example: the functor M_g(R) := {smooth projective curves of genus g over the ring R}/isomorphism fails (*). (M_g(Q) --> M_g(Qbar) is not injective; you can have quadratic twists of a hyperelliptic curve which are distinct in M_g(Q) but become isomorphic over Qbar). Another good example is: if I take A^1/G_m, i.e., I set up the functor R --> R/R^*, then Z/Z^* --> C/C^* is not injective (the first is infinite, the second isn't). Stacks are a slight generalization of the notion of functor, which loosens some of the axioms like (*), but still gives you something with enough structure to "do geometry". (I.e., they form a category containing the category of schemes, they have sheaves and cohomology and divisors, you can intersect and deform them, etc.) 
+
+(By "slight", well, there are lots of techncial details. One approach is via pseudo functors. This is kind of cluncky, and Grothendieck found an equivalent, but cleaner, formalism via fibered categories.) 

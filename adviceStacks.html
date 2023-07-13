@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>My experience learning Stacks</title>
+<!-- 2020-06-22 Mon 16:39 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">My experience learning Stacks</h1>
+<p>
+My history of learning stacks: the first substantial paper that I tried to read as a grad student was
+</p>
+
+<p>
+<a href="http://www-math.mit.edu/~poonen/papers/pss.pdf">http://www-math.mit.edu/~poonen/papers/pss.pdf</a>
+</p>
+
+<p>
+and Section 3 of that paper explains how stacks are used in the study of Fermat equations.
+</p>
+
+<p>
+Around that time, Bjorn Poonen gave this talk
+</p>
+
+<p>
+<a href="http://www-math.mit.edu/~poonen/slides/campana_s.pdf">http://www-math.mit.edu/~poonen/slides/campana_s.pdf</a>
+</p>
+
+<p>
+and I was hooked; so I started asking lots of different people that I knew or that I met a conference to tell me about stacks.
+</p>
+
+<p>
+(Later I also learned about how stacks "explain" where the Frey curve in the proof of Fermat's Last Theorem come from, and lays out a blueprint of where to look for other Fermat equations; in the simliar but non-stack language this is the content of Darmon's "Faltings plus epsilon" paper
+</p>
+
+<p>
+<a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.142.4831&rep=rep1&type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.142.4831&rep=rep1&type=pdf</a> )
+</p>
+
+<p>
+The summer after my first year, several of us worked through Vistoli's "Notes on Grothendieck topologies, fibered categories and descent theory"
+</p>
+
+<p>
+<a href="http://homepage.sns.it/vistoli/descent.pdf">http://homepage.sns.it/vistoli/descent.pdf</a>
+</p>
+
+<p>
+which helped, but is really more focused on the foundations instead of actual stacks (which was still obviously important!).
+</p>
+
+<p>
+Then the following very lucky thing happened to me: Martin Olsson (stacks expert) moved to Berkeley, and his second semester (Spring of my 3rd year) he taught a well attended (40+ people) graduate course on stacks.
+</p>
+
+<p>
+Anton Geraschenko lived texed the course, and we spent a lot of time improving the notes
+</p>
+
+<p>
+<a href="https://stacky.net/files/written/Stacks/Stacks.pdf">https://stacky.net/files/written/Stacks/Stacks.pdf</a>
+</p>
+
+<p>
+exercises are here
+</p>
+
+<p>
+<a href="https://math.berkeley.edu/~molsson/274.html">https://math.berkeley.edu/~molsson/274.html</a>
+</p>
+
+<p>
+That summer, we (about 5 of us) spent 1-2 hours a day re reading through the notes and fixing things we hadn't understood the first time.
+</p>
+
+<p>
+Then (also lucky) there was a stacks and deformation theory workshop at MSRI. I was one of the TA's (though I was a TA for Bhargav Bhatt and Andrew Obus, so there was some imbalance..).
+</p>
+
+<p>
+Anton also livetexed that. Here are the relevant links, but see especially Vakil's initial lecture. (There are videos too)
+</p>
+
+<p>
+<a href="https://stacky.net/files/written/defthy07/defthy07.pdf">https://stacky.net/files/written/defthy07/defthy07.pdf</a>
+<a href="http://www.msri.org/people/members/defthy07/">http://www.msri.org/people/members/defthy07/</a>
+<a href="http://www.msri.org/people/members/defthy07/lectures.html">http://www.msri.org/people/members/defthy07/lectures.html</a>
+<a href="http://math.stanford.edu/~vakil/defthy/">http://math.stanford.edu/~vakil/defthy/</a>
+</p>
+
+<p>
+A few semesters later, there was a large program at MSRI on algebraic geometry
+</p>
+
+<p>
+<a href="https://www.msri.org/programs/251">https://www.msri.org/programs/251</a>
+</p>
+
+<p>
+and I learned quite a bit there. In preparation for that I started slowly learning even more of the background material. One thing I did was to slowly read through Knutson's book on algebraic spaces.
+</p>
+
+<p>
+<a href="https://www.springer.com/us/book/9783540054962">https://www.springer.com/us/book/9783540054962</a>
+</p>
+
+<p>
+Basically, every morning for a semester, after breakfast and coffee, I would spend 45 minutes reading this book; I would them make a few notes, and also usually have a few questions that I would ask people at tea. I did a similar thing with the first book and a half of SGA IV the following semester (which is on Grothendieck topologies and topoi). That part was overkill, but I enjoyed it.
+</p>
+
+
+<p>
+During a student seminar, we spent a lot of time reading Harris and Morrison's book "moduli of curves"
+</p>
+
+<p>
+<a href="https://www.amazon.com/Moduli-Curves-Graduate-Texts-Mathematics/dp/0387984291">https://www.amazon.com/Moduli-Curves-Graduate-Texts-Mathematics/dp/0387984291</a>
+</p>
+
+<p>
+This isn't about stacks per say, but I learned a lot by reading this. The first chapter has especially good exercies to get you started.
+</p>
+
+<p>
+There were several other things I read, like Vistoli's thesis; but the content there has been distilled into other references by now.
+</p>
+
+
+
+<p>
+Eventually I started working on, then writing, my thesis, about generalizing rigid cohomology to stacks, and ended up learning a lot in the process. Eventually I started writing papers about stacks too, which obviously helped.
+</p>
+
+<p>
+At Emory, my second year, I taught a topics course on stacks. Here is the course web page
+</p>
+
+<p>
+<a href="http://www.mathcs.emory.edu/~dzb/teaching/stacksFall2012/">http://www.mathcs.emory.edu/~dzb/teaching/stacksFall2012/</a>
+</p>
+
+<p>
+and there are some links there.
+</p>
+
+<p>
+There are some fantastic expository references, like "Stacks for Everybody", by Barbara Fantechi. At this point I've lost track of which expository articles I liked. 
+</p>
+
+<p>
+"Champs algebriques"  Laumon, and Moret-Bailly is a great, EGA style treatment of stacks. I didn't read this cover to cover all at once, but did basically end up reading all of it. (While there is a well known error about the lisse-etale site in chapter 13, this doesn't change the instructional value of the book, or the first 12 chapters.)
+</p>
+
+<p>
+These days, we have 2 additional great technical resources. Martin Olsson turned his notes from his course into a book
+</p>
+
+<p>
+<a href="https://www.amazon.com/Algebraic-Colloquium-Publications-American-Mathematical/dp/1470427982">https://www.amazon.com/Algebraic-Colloquium-Publications-American-Mathematical/dp/1470427982</a>
+</p>
+
+<p>
+The book is great. It isn't identical to Anton's notes; his include many examples and discussion that happened in class but didn't make it into the book.
+</p>
+
+<p>
+Finally, now, there is the motherload of all stacks resources 
+</p>
+
+<p>
+<a href="https://stacks.math.columbia.edu/">https://stacks.math.columbia.edu/</a>
+</p>
+
+<p>
+the stacks project. This is really meant as more of a technical manual (I use it all the time), but there are numerous pieces of exposition that help (look through the table of contents to find them). 
+</p>
+
+<p>
+That's quite a lot; I obviously don't recommend doing all of that. It was easier to answer the question of "how did I learn stacks" than "how should you learn stacks". At the very least, look at the slides of Poonen, the MSRI lecture by Ravi, and the first chapter of Harris and Morrison. Then think about how much of the foundations you want to learn (2-categories, Grothendieck topologies, etc) and talk to your advisor about which are useful for you to learn.
+</p>
+
+
+<p>
+(Added June 22, 2020.) On discord someone asked "What is a stack?". Here is a 4 bullet point explanation.
+</p>
+
+<p>
+(1) If you have a variety X (i.e., some equations to solve), you can cook up the functor h<sub>X</sub>, which take as input a ring R and produces an output h<sub>X</sub>(R) := the set of solutions to the equations defining X. This is a functor, since if R &#x2013;&gt; S is a ring map, you get a map h<sub>X</sub>(R) &#x2013;&gt; h<sub>X</sub>(S) (e.g., you can reduce integer solutions mod a prime). Hopefully this functor seems natural (e.g., if you have a pointless conic, it isn't enough to consider the Q or R solutions, but you need to vary the field to really see what is happening). (If X is a scheme, but not a variety, you should think about how to make sense of h<sub>X</sub>.)
+</p>
+
+<p>
+(2) A big insight of Grothendieck and others (e.g., Artin) was that you can switch your point of view and work with the functor h<sub>X</sub> instead of X. It seems like you're keeping track of a ton of information with h<sub>X</sub> (you are), but you are also throwing away information (e.g., h<sub>X</sub>(Complex Numbers) doesn't obviously see the complex topology on the points). Yoneda's lemma essentially says that you don't lose any information when you pass to this functor (i.e., the functor X &#x2013;&gt; h<sub>X</sub> is fully faithful). Maybe its better to say that their insight wasn't that you <b>can</b> consider h<sub>X</sub>, but that it is useful. For instance, it is VERY useful to try to take basic properties of schemes (or maps), and see if you can characterize that property just in terms of functors (e.g., "smoothness" is a priori a definition about some Jacobian matrix, but Grothendieck has an alternative characterization, "the infinitesimal criterion for smoothness" which is just in terms of functors and diagrams). 
+</p>
+
+<p>
+(3) You can even go so far as to take the point of view that the functor is the fundamental object, rather than the equations (or the scheme). [Its a bad idea to ONLY take this point of view; but one of the best parts of mathematics is getting to take multiple points of view about the same object]. So you can ask which functors F from Rings to Sets are "representable" by schemes. To start, there are a bunch of obvious axioms that h<sub>X</sub> satisfies, like 
+</p>
+
+<p>
+(*) "if K subset L is a field extension, then the map h<sub>X</sub>(K) &#x2013;&gt; h<sub>X</sub>(L) is injective". 
+</p>
+
+<p>
+Obvoiusly, functors are so general that you can cook up a functor for which this fails. If you write down every reasonable axiom you can think of and make this into a definition, you get the notion of an "algebraic space" (still not quite a scheme). Artin proved a useful theoem for identifying which functors F are representable (you need a few axioms that are less obvious, related to local rings and deformation theory). 
+</p>
+
+<p>
+(4) Nonetheless, there are still functors that we care about which fail simple axioms like (<b>). For example: the functor M<sub>g</sub>(R) := {smooth projective curves of genus g over the ring R}/isomorphism fails (</b>). (M<sub>g</sub>(Q) &#x2013;&gt; M<sub>g</sub>(Qbar) is not injective; you can have quadratic twists of a hyperelliptic curve which are distinct in M<sub>g</sub>(Q) but become isomorphic over Qbar). Another good example is: if I take A<sup>1</sup>/G<sub>m</sub>, i.e., I set up the functor R &#x2013;&gt; R/R<sup>*</sup>, then Z/Z<sup>*</sup> &#x2013;&gt; C/C<sup>*</sup> is not injective (the first is infinite, the second isn't). Stacks are a slight generalization of the notion of functor, which loosens some of the axioms like (*), but still gives you something with enough structure to "do geometry". (I.e., they form a category containing the category of schemes, they have sheaves and cohomology and divisors, you can intersect and deform them, etc.) 
+</p>
+
+<p>
+(By "slight", well, there are lots of techncial details. One approach is via pseudo functors. This is kind of cluncky, and Grothendieck found an equivalent, but cleaner, formalism via fibered categories.) 
+</p>
+</div>
+</body>
+</html>

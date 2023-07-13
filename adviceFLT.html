@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>My experience learning Fermat's Last Theorem</title>
+<!-- 2020-05-26 Tue 14:09 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">My experience learning Fermat's Last Theorem</h1>
+<p>
+I'll try to post some longer advice on learning the proof of FLT later. The medium length version of my advice is the following.
+</p>
+
+
+<p>
+(1) read the first 2 chapters of Cornell&#x2013;Silverman&#x2013;Stevens, and rearead it (while also reading Silverman's AEC I and II and asking both technical and conceptual questions to anyone who will answer) until it is crystal clear. (This is the "easy" part.) 
+</p>
+
+<p>
+Full disclosure: for the "crystal clear" part, I didn't understand the parts about finite flat group schemes and what it means for a representation to be "finite" at ell = p until much later, and didn't attempt to understand Ribet's proof of level lowering until much later. 
+</p>
+
+
+<p>
+I think that if you're earlier on in grad school, that spending a semester with (1) (and in particular, focusing as much on Silverman's AEC I) is worthwhile and already enough of a goal.
+</p>
+
+
+
+<p>
+(1.5) One thing that is more difficult that (1), but easier than (2), is to understand in a lot of detail how construct a representation out of a modular form. So you need to know about modular curves, Galois representations, Jacobians, the Hecke algebra, the Eichler&#x2013;Shimura relation, etc, and its kind of difficult to really "get it" while black boxing too much; understanding moduli really helps, and this is a good way and motivation to understand moduli. Diamond and Shurman is great; like I said in another thread, my preferred route is to start with Darmon's Clay 2006 notes + William Stein's various course notes and fill in the reference where needed. 
+</p>
+
+
+
+<p>
+(2) Then for the proof of modularity, systematically read through the rest of Cornell&#x2013;Silverman&#x2013;Stevens, and follow up on whatever other references you need to to understand everything. I skipped a few parts (mainly the automorphic parts, which were too far afield for me), but really gave the rest of it my all. I would usually divide my time between reading ahead before I understood everything, and rereading earlier stuff more carefully. Is also very useful to find other accounts of the same material and read that too (especially expository material, like Darmon's notes that I mention below). The choice of extra material isn't as important in my opinion; just seeing the same ideas explained by different voice helps a lot, and often different authors have their own paritcular details that they have a short and enlightening explanation of, or illuminating but personal examples. 
+</p>
+
+
+<p>
+When I did this, I was a 4th year grad student, and already knew (1) pretty well (Darmon gave lectures on FLT at a Clay summer school in 2006, with excellent notes (available on his webpage) are excellent, and I was writing a paper about generalized Fermat equations, where I really needed to understand (1), but could replace the substantial tools of (2) with much easier techniques), but I also had learned and relearned Scheme theory (see my page <a href="http://www.math.emory.edu/~dzb/adviceSchemeTheory.html">here</a>), Stacks, Deformation theory, formal schemes etc. With this much background, I basically spent 3 hours a day for a semester (2 in the morning right after breakfast, and 1 in the evenings reviewing things) until I worked my way through the book. (I usually had some morning reading project like this each semester [e.g., Knutson's "Algebraic Spaces"]). 
+</p>
+
+<p>
+I had another big advantage + source of motivation: I was in Boston for Bjorn Poonen's sabbatical. Richard Taylor was running a learning seminar where the goal was to read Kisin's paper on Potentially semistable deformation rings. I definitely did not have the background for this, but really wanted to take advantage of the situation, so started (2) systematically. The big advantage was that there was a group of people who knew more than me, that were meeting in the same room once a week that I could ask questions to (including Richard Taylor, Kiran Kedlaya, Bjorn, Rob Pollack, Jay Pottharst, David Geraghty, Ana Caraiani..). (Also, I took 6 years for my phd and had two fellowships [so wasn't teaching, and could spend extra time learning stuff in the mornings]).
+</p>
+
+<p>
+Finally, as an example of why you need so much background: the first step of the proof of modularity is that you write down two functors F and G. F is the functor of "modular Galois representations", and G is the functor of "Galois representations with properties X,Y,Z,&#x2026;", where XYZ etc are all of the properties that modular Galois reps satisfy (odd, 2 dimensional, continuous, complex conjugation acts with char poly x<sup>2</sup> - 1, etc). There is a natural map G &#x2013;&gt; F, which you want to show is an isomorphism. Then you represent these functors. (So you need deformation theory.) By its nature, F you can represent using rings related to the Hecke algebra; lets call the representing ring T. G is more hands on, and you can represent it by some ring R that is constructed with a lot of linear algebra (and less modular techniques). So you get a map T &#x2013;&gt; R, and to prove modularity you need to show that this map of (very differently constructed) rings is an isomorphism. These days folks call these "R = T" theorems. (Also, I swept under the rug that we were working formal schemes, so F = Spf T rather than Spec T.) R and T are both local rings, and you hear a lot about the "commutative algebra" part of Wiles proof. Well, he knew enough about R and T to prove a theorem of the form "if f is a map of local rings with this big list of properties, and if f is an isomorphism mod the maximal ideals + blah, then f is an isomorphism". In even more difficult situations (like Kisin's paper), R and T are much nastier rings (they might have multiple irreducible components for example). I think in Wiles case they're irreducible, and not too singular (they're Gorenstein). (Surely over time I've muddled some of these details.)
+</p>
+</div>
+</body>
+</html>
