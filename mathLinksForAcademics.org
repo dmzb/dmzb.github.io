@@ -1,0 +1,34 @@
+
+** Fun math links for academics
+  - Great [[http://slatestarcodex.com/2016/02/20/writing-advice/][writing advice]] (not from Serre)
+  - Q&A
+    - [[http://mathoverflow.net/][Mathoverflow]]
+    - [[http://math.stackexchange.com/][math.stackexchange]]
+    - [[http://tex.stackexchange.com/][TeX.stackexchange]]
+  - [[matt.might.usesthis.com][UsesThis]]
+  - [[http://www.math.umn.edu/~kwlan/documents/french-glossary.pdf][List of French math words]]\
+  - Blogs
+    - [[http://matt.might.net/articles/preventing-and-managing-rsi/][Matt Might]]
+    - [[http://www.scottaaronson.com/blog/?p=388][Scott Aaronson]]
+    - [[http://mathbabe.org/][Mathbabe]]
+    - [[http://quomodocumque.wordpress.com/][quomodocumque]]
+    - [[http://terrytao.wordpress.com/][Terry Tao]]
+    - [[http://gowers.wordpress.com/][Tim Gowers]]
+    - [[http://science-professor.blogspot.com/][Female Science Professor]]
+    - [[http://ilaba.wordpress.com/][The Accidental Mathematician]]
+    - [[http://publishing.mathforge.org/][Math 2.0]]
+  - [[http://www.khanacademy.org/]]
+  - LaTeX
+    - [[http://www.crcg.de/arXivToBibTeX/?q=&format=bibtex][Arxiv to Bibtex]]
+    - [[http://scholar.google.com/][Google scholar]] (Note that you can get google scholar to produce bibTex [go to settings])
+    - [[http://jabref.sourceforge.net/][JabRef]]
+    - [[http://www.gnu.org/software/auctex/][AucTeX]]
+    - [[http://www.gnu.org/software/auctex/reftex.html][RefTeX]] 
+  - Hacking your favorite math tools:
+    - [[http://publishing.mathforge.org/discussion/84/adding-arxiv-links-on-mathscinet/#Item_0][Scott Morrison's script]] for adding ArXiV links to mathSciNet pages
+    - Emory university [[http://guides.main.library.emory.edu/content.php?pid=66868&sid=681681][proxy]]
+    - [[http://publishing.mathforge.org/discussion/84/adding-arxiv-links-on-mathscinet/?Focus=989#Comment_989][SSH Tunneling]]
+    - [[http://guides.macrumors.com/opendiff][opendiff]]
+
+
+
