@@ -1,0 +1,1407 @@
+\documentclass[margin,line]{res}
+
+\usepackage{multicol}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+
+\usepackage{pdfsync}
+\usepackage{amssymb}
+\usepackage{url}
+
+\newcounter{pubs}
+
+\newcommand{\defi}[1]{\textsf{#1}} 				% for defined terms
+
+\usepackage[baseurl=None, pdfpagemode=None, bookmarks=false, pdfstartview=FitH, % pagecolor=red, filecolor=magenta, citecolor=green, linkcolor=black, urlcolor=blue
+            citecolor=blue, urlcolor=blue, colorlinks=true]{hyperref}
+
+%\newcommand{\QU}[1]{``{#1}"}            %prefer \emph{}
+\makeatletter
+\DeclareRobustCommand{\Cpp}
+{\valign{\vfil\hbox{##}\vfil\cr
+%   \textsf{C\kern-.1em}\cr
+   \rm{C\kern-.1em}\cr
+   $\hbox{\fontsize{\ssf@size}{0}\textbf{\kern+0.09em+\kern-0.05em+}}~$\cr}%
+}
+\makeatother
+
+\oddsidemargin -.5in
+\evensidemargin -.5in
+\textwidth=6.0in
+\itemsep=0in
+\parsep=0in
+
+\newenvironment{list1}{
+  \begin{list}{\ding{113}}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{$\bullet$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+
+\begin{document}
+
+\name{
+David Zureick-Brown \hfill{Emory University \hspace{3cm} \today} \hspace{3cm} 
+% David Zureick-Brown \hfill{Emory University \hspace{3cm} January 16, 2017} \hspace{3cm} 
+\vspace*{.1in}
+}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabular}{@{}p{3in}p{4in}}
+Seeley Mudd 502                            & \emph{Phone:} (+1) 510 508 0255 \\
+Dept.~of Mathematics and Statistics          & \emph{Email:} david.zureick.brown@gmail.com\\
+Amherst College   & \emph{Web:} \url{https://dmzb.github.io/} \\
+Amherst, MA 01002 USA               & U.S.~citizen
+\end{tabular}
+
+
+
+\section{\sc Research Interests}
+ \defi{Broad}: Number Theory, Arithmetic Geometry, Diophantine Geometry, Algebraic Geometry.\\
+ \defi{Specific}: Arithmetic of Varieties, Galois Representations, Modular Curves, $p$-adic and Tropical geometry (especially applications to geometry and number theory), Stacks, Moduli, non-abelian techniques in arithmetic, $p$-adic Cohomology.
+
+\section{\sc Appointments}
+
+{\bf Amherst College } \\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] Professor (2023 - present)
+
+
+  \end{list1}
+\vspace{-7pt}
+
+{\bf Emory University } \\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] Associate Professor (2017 - 2023)
+  \item[] Assistant Professor (2011 - 2017; tenure track)
+
+
+  \end{list1}
+\vspace{-7pt}
+
+{\bf University of Wisconsin-Madison } \\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] Van Vleck Assistant Professor (2010 - 2011, RTG postdoctoral fellow)
+
+  \end{list1}
+
+\section{\sc Visiting \\ Positions}
+{\bf University of Padua, Italy}\\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[]  Visiting Bruno Chiarellotto, May 2012 (one month)
+  \end{list1}
+
+\section{\sc Education}
+{\bf University of California}, Berkeley, California USA\\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] Ph.D., Mathematics, August 2010
+    \begin{list2}
+      \vspace*{.00in}
+    \item [] Dissertation Topic: ``Rigid Cohomology for Algebraic Stacks''
+    \item [] Adviser: Bjorn Poonen (MIT); co-advised by Brian Conrad (Stanford)
+    \end{list2}
+    % \vspace*{.05in}
+    % \item[] M.A., Mathematics, May 2005
+  \end{list1}
+\vspace{-7pt}
+
+ {\bf Technical University of Budapest}, Budapest, Hungary\\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] Budapest Semesters in Mathematics\\
+    Two semesters of study (Spring 2002, Spring 2004).
+  \end{list1}
+\vspace{-7pt}
+
+{\bf The University of Arizona}, Tucson, Arizona USA\\
+  \vspace*{-.15in}
+  \begin{list1}
+  \item[] B.S., Mathematics with Honors, December, 2003\\
+  \end{list1}
+
+\vspace{-7pt}
+\section{\sc Grants  {(Personal)}}
+(2023-2026) \textbf{NSF Standard Grant} (DMS-2302356, Emory University, \$210,000.00) \\
+(2023-2028) \textbf{Simons Foundation: Travel Support for Mathematicians} (Declined) \\
+(2016-2022) \textbf{NSF Career} (DMS-1555048 Emory University, \$416,997.00) \\
+(2011-2013) \textbf{NSA Young Investigator Grant} (Emory University, \$40,000)\\
+
+\vspace{-7pt}
+\section{\sc Grants {(Conference)}}
+
+(2023) \textbf{ICERM: Algebraic points on curves}\vspace{.15cm}\\
+(2023) \textbf{AMS Mathematical Research Communities: Explicit Computations with Stacks}\vspace{.15cm}\\
+(2022) \textbf{Simons Symposium: Geometry of Arithmetic Statistics}  \vspace{.15cm}\\
+(2020-2023)  \textbf{NSF Award for the Georgia Algebraic Geometry Symposium}\\
+  \vspace{5pt} (Co-PI, with UGA and Georgia Tech) \vspace{.05cm}\\
+\textbf{NSF Award for the Arizona Winter School in Arithmetic Geometry}\\
+    \vspace{1pt}   (The University of Arizona, Co-PI) \\
+    \vspace{5pt}   (2023-2025 \$448,399), (2020-2023, \$550,000), (2015-2019, \$550,000) \vspace{.05cm}\\
+% 2200721
+%https://www.nsf.gov/awardsearch/showAward?AWD_ID=2200721
+(2016-21/23) \textbf{CMI: Enhancement and Partnership Program Proposal; Arizona Winter School Southwest Center for Arithmetic Geometry}\\
+    \vspace{5pt} (The University of Arizona, Co-PI, yearly application, \$25,000-\$30,000/yr) \vspace{.05cm}\\
+% REU Site: Arithmetic Geometry and Number Theory (Emory University, Co-Pi, \$101,000, 2016-2019) \vspace{.05cm}\\
+(2020-2021)  \textbf{NSA Award for the Arizona Winter School in Arithmetic Geometry}\\
+    \vspace{5pt} (The University of Arizona, Co-PI, \$25,000) \vspace{.05cm}\\
+
+\section{\sc Honors and Awards}
+\begin{tabular}{rl}
+(Fall 2010) & \defi{Residence Halls Honored instructor} (UW-Madison)\\
+  (Spring 2006) & \defi{NDSEG (National Defense Science and Engineering Graduate) Fellowship} \\
+  &  (UC-Berkeley)\\
+(Spring 2005) & \defi{National Science Foundation Graduate Research Fellowship} (UC-Berkeley) \\
+ % Outstanding Senior, Department of Mathematics (The University of Arizona),&  Fall 2003\\
+(Spring 2003) & \defi{Goldwater Scholarship} (The University of Arizona)\\
+  (Spring 2003) & \defi{CATTS (Collaboration to Advance Teaching, Technology and Science)} \\
+  & \defi{Fellowship} (The University of Arizona, funded by NSF DGE-9979670)
+\end{tabular}
+
+
+% \section{\sc Publication Notes }
+
+% Authorship in mathematics is alphabetical; in particular, there is no emphasis on ``first author'' or ``main contributor'', and each author is considered to have an equal contribution to the work (which is the case for my publications).
+
+% The publications (excluding preprints) above have a total of 68 citations (as of January 16, 2017). We note that the average time to acceptance for publication in mathematics is 7.6 months and the average time to publication is 14 months (averaged from the data here  \url{http://www.ams.org/publications/journals/notices/201610/rnoti-p1194.pdf}) and can typically take much longer (my submission ``The canonical ring of a stacky curve'' is currently in month 21 of review).
+
+% % \vspace{-7pt}
+% \section{\sc Publications (Peer reviewed journal articles)}
+% 1. \textbf{Primitive Integral Solutions to $x^2 + y^3 = z^{10}$}; \emph{International Mathematics Research Notices} IMRN 2012, no. 2, 423-436; 6 citations: 5 from published papers, 1 from  preprints. \vspace{.08cm}\\
+% 2. \textbf{The Chabauty-Coleman bound at a prime of bad reduction and Clifford bounds for Geometric Rank Functions}; with Eric Katz; \emph{Compositio Mathematica} 149 (2013), no. 11, 1818-1838;  10 citations: 4 from  published papers, 6 from preprints. \vspace{.08cm}\\
+% 3. \textbf{Random Dieudonn\'e modules, random $p$-divisible groups, and   random curves over finite fields}; with Bryden Cais and Jordan Ellenberg; \emph{J. Math. Inst. Jussieu} 12 (2013), no. 3, 651-676; 4 citations: 3 from published papers, 1 from preprints. \vspace{.08cm}\\
+% 4. \textbf{Integral Monsky-Washnitzer cohomology and the overconvergent de Rham-Witt complex}; with Christopher Davis; \emph{Mathematical Research Letters} 21 (2014), No 2; 281-288. \vspace{.08cm}\\
+% 5. \textbf{Cohomological Descent on the Overconvergent Site}; \emph{Research in the Mathematical Sciences}, 2014, 1:8; 20 pages;  2 citations: 1 from  published papers, 1 from preprints.\vspace{.08cm}\\
+% 6. \textbf{Formal GAGA for Good Moduli Spaces}; with Anton Geraschenko; \emph{Algebraic Geometry}, 2 (2015), no. 2, 214-230;  10 citations: 2 from published papers, 8 from preprints and theses. \vspace{.08cm}\\
+% 7. \textbf{A heuristic for the distribution of point counts for random   curves over a finite field}; with Jeffrey D.~Achter, Daniel Erman, Kiran S. Kedlaya, Melanie Matchett Wood; \emph{Philosophical Transactions of the Royal Society}, 2015, no. 373 2040310; 12 pages; 4 citations: 1 from published papers, 3 from preprints. \vspace{.08cm}\\
+% 8. \textbf{Elliptic curves over $\mathbb{Q}$ and 2-adic images of Galois}; with Jeremy Rouse;  \emph{Research in Number Theory}, Volume 1, Issue 1, 2015; 34 pages;  14 citations: 4 from published papers, 10 from preprints and theses. \vspace{.08cm}\\
+% 9. \textbf{Uniform bounds for the number of rational points on curves of small Mordell--Weil rank}; with Eric Katz and Joe Rabinoff, \emph{Duke Mathematical Journal}, Volume 165, Number 16 (2016), 3189-3240;  14 citations; 2 published, 12 from preprints and theses. \vspace{.08cm}\\
+
+% % 11. \textbf{Total Jet Spaces And Uniform Bounds For Torsion Points On Curves With Compact Type Reduction}; with Taylor Dupuy, Eric Katz, and Joe Rabinoff, to be submitted. \vspace{.08cm}\\
+
+% \vspace{-7pt}
+% \section{\sc Publications \\ {(accepted \\ pending \\ revisions)}}
+% 10. \textbf{Cohomology with closed support on the overconvergent site}; accepted to \emph{Advances in Geometry} (conditionally, pending revisions; see referee report in my scholarly materials to confirm this); 36 pages; 2 citations, both from publications. \vspace{.08cm}\\
+% % XX. \textbf{Integral arithmetic invariant theory}; with Asher Auel and Anton Geraschenko, submitted. \vspace{.08cm}\\
+% % XX. \textbf{Abelian varieties with real multiplication and maximal image of Galois. }; with D. Corwin, T. Feng, Z. K. Li, and S. Trebat-Leder. , submitted. \vspace{.08cm}\\
+%  % XX. \textbf{Smoothability of genus 6 Petri general curves}; with Aaron Landesman, submitted. \vspace{.08cm}\\
+%  % XX. \textbf{Total jet spaces and uniform bounds for torsion points on curves with compact type reduction}; with Taylor Dupuy, Eric Katz, Joseph Rabinoff, and David Zureick-Brown, submitted. \vspace{.08cm}\\
+%  % XX. \textbf{Abelian Varieties with Real Multiplication and Maximal image of Galois}; with David Corwin, Tony Feng, Zane Kun Li, Sarah Trebat-Leder, submitted. \vspace{.08cm}\\
+% %  \textbf{Overconvergent de Rham-Witt Cohomology for Algebraic Stacks}; with Chris Davis; in preparation.\vspace{.08cm}\\
+% \section{\sc Publications (non-math)}
+%  % \textbf{The Galois Group of Cyclotomic Fields of Fermat Primes}; unpublished.\vspace{.08cm}\\ 
+% 14.  \textbf{Crack azimuths on Europa: The G1 lineament sequence revisited}; Alyssa R. Sarid, Richard Greenberg, Gregory V. Hoppa, David M. Brown Jr., and Paul Geissler; Icarus, 2005; 173 (2). \vspace{.08cm}\\ 
+% % \textbf{Counting a certain type of multigraph with given Euler characteristic}; with Andrew Rupinski; 2003 Notre Dame REU research project; unpublished.
+
+
+
+
+
+% \vspace{-7pt}
+\section{\sc Publications (Peer reviewed journal articles)}
+\stepcounter{pubs} \arabic{pubs}. \textbf{Primitive Integral Solutions to $x^2 + y^3 = z^{10}$}; \emph{International Mathematics Research Notices} IMRN 2012, no.~2, 423-436. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{The Chabauty-Coleman bound at a prime of bad reduction and Clifford bounds for Geometric Rank Functions}; with Eric Katz; \emph{Compositio Mathematica} 149 (2013), no.~11, 1818-1838. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Random Dieudonn\'e modules, random $p$-divisible groups, and   random curves over finite fields}; with Bryden Cais and Jordan Ellenberg; \emph{J.~Math.~Inst.~Jussieu} 12 (2013), no.~3, 651-676. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Integral Monsky-Washnitzer cohomology and the overconvergent de Rham-Witt complex}; with Christopher Davis; \emph{Mathematical Research Letters} 21 (2014), No 2; 281-288. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Cohomological Descent on the Overconvergent Site}; \emph{Research in the Mathematical Sciences}, 2014, 1:8; 20 pages.\vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Formal GAGA for Good Moduli Spaces}; with Anton Geraschenko; \emph{Algebraic Geometry}, 2 (2015), no.~2, 214-230. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{A heuristic for the distribution of point counts for random   curves over a finite field}; with Jeffrey D.~Achter, Daniel Erman, Kiran S.~Kedlaya, Melanie Matchett Wood; \emph{Philosophical Transactions of the Royal Society}, 2015, no.~373 2040310; 12 pages. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Elliptic curves over $\mathbb{Q}$ and 2-adic images of Galois}; with Jeremy Rouse;  \emph{Research in Number Theory}, Volume 1, Issue 1, 2015; 34 pages. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}. \textbf{Uniform bounds for the number of rational points on curves of small Mordell--Weil rank}; with Eric Katz and Joe Rabinoff, \emph{Duke Mathematical Journal}, Volume 165, Number 16 (2016), 3189-3240. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Chip-firing groups of iterated cones}; with
+Morgan Brown and Jackson S.~Morrow; \emph{Linear Algebra and its Applications}, 556 (2018), 46--54. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Total $p$-differentials on schemes over $\mathbb{Z}/p^2$}; with Taylor Dupuy, Eric Katz, Joseph Rabinoff; \emph{Journal of Algebra} Volume 524 (2019) \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{The canonical ring of a stacky curve}; with John Voight; \emph{Mem.~Amer.~Math.~Soc.}~277 (2022), no.~1362, 137 pages. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Deligne--Illusie Classes as Arithmetic Kodaira--Spencer Classes}; with Taylor Dupuy; \emph{Journal de Th\'eorie des Nombres de Bordeaux} 31 (2019), no. 2, 371--383. \vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Sporadic Cubic Torsion}, with Maarten Derickx, Anastassia Etropolski, Mark van Hoeij, and Jackson S.~Morrow, \emph{Algebra \& Number Theory} 15-7 (2021), 1837--1864. DOI~\url{https://doi.org/10.2140/ant.2021.15.1837}
+\vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$}, with Jeremy Rouse and Andrew Sutherland and an appendix with John Voight; Forum of Mathematics, Sigma, Volume 10, 2022. DOI~\url{https://www.doi.org/10.1017/fms.2022.38}
+\vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Heights on stacks and a generalized Batyrev--Manin--Malle conjecture}, with Jordan S.~Ellenberg and Matthew Satriano; accepted for publication in Forum of Mathematics, Sigma
+\vspace{.08cm}\\
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Angle Ranks of Abelian Varieties}, with Taylor Dupuy and Kiran S. Kedlaya; accepted for publication in Mathematische Annalen. 
+% \section{\sc Publications \\ {(accepted \\ pending \\ revisions)}}
+% \stepcounter{pubs} \arabic{pubs}.  \textbf{Cohomology with closed support on the overconvergent site}; accepted to \emph{Advances in Geometry}; 36 pages. \vspace{.48cm}\\
+
+
+
+\vspace{-7pt}
+\section{\sc Publications \\ {(Submitted)}}
+
+
+
+\stepcounter{pubs} \arabic{pubs}.  \textbf{A predicted distribution for Galois groups of maximal unramified extensions}, with Yuan Liu and Melanie Matchett Wood
+
+
+
+\section{\sc Preprints}
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Cohomology with closed support on the overconvergent site}; 36 pages. \vspace{.48cm}\\
+
+% \section{\sc Proceedings \\ {(accepted)}}
+\vspace{-7pt}
+\section{\sc Proceedings }
+\stepcounter{pubs} \arabic{pubs}. \textbf{Diophantine and tropical geometry, and uniformity of   rational points on curves}; with Eric Katz and Joe Rabinoff, Survey article for the 2015 Summer Research Institute on Algebraic Geometry Proceedings, \emph{Proceedings of Symposia in Pure Mathematics}, Volume 97.2, 2018. \vspace{.08cm}\\
+
+
+
+\section{\sc Publications {(Thesis)}}
+\stepcounter{pubs} \arabic{pubs}. \textbf{Rigid Cohomology for Algebraic Stacks}; David Brown; UC Berkeley thesis; 76 pages. \vspace{.08cm}\\
+
+% \section{\sc Publications \\ {(Drafts)}}
+
+% \section{\sc Publications \\ {(In preparation)}}
+
+
+\section{\sc Publications (non-research)}
+\stepcounter{pubs} \arabic{pubs}. \textbf{Early Career: How to balance research with everything else we have to do}, Notices of the American Mathematical Society, May 2020
+
+
+
+\section{\sc Publications (non-math)}
+
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Crack azimuths on Europa: The G1 lineament sequence revisited}; Alyssa R. Sarid, Richard Greenberg, Gregory V. Hoppa, David M. Brown Jr., and Paul Geissler; Icarus, 2005; 173 (2). \vspace{.08cm}\\ 
+
+
+\section{\sc Editorial}
+
+
+\stepcounter{pubs} \arabic{pubs}.  \textbf{Analytic Methods in Arithmetic Geometry}; Contemporary
+Mathematics, 740. Centre de Recherches Math\'ematiques Proceedings. \emph{American Mathematical Society, [Providence], RI}, 2019. vii+248 pp.~ISBN: 978-1-4704-3784-8. Co-edited with Alina Bucur. \vspace{.08cm}\\ 
+
+
+\newpage
+\vspace{-7pt}
+\section{\sc Teaching \\ (Emory)}
+
+{\bf Emory University}, Atlanta, GA\\
+\emph{Assistant/Associate Professor}. 
+\vspace{2pt}
+
+Average teaching evaluation score: \textbf{8.51/9}; 377 undergraduate students over 11 years. 
+\vspace{2pt}
+
+
+
+{\bf Undergraduate} (21 courses)\footnote{See \url{http://www.math.emory.edu/~dzb/teaching/oldCourses.html} for course webpages}
+\vspace*{-.1in}
+
+\begin{tabular}{rll}
+ Fall 2022 & \defi{Foundations of Mathematics} & Math 250\\  
+ Spring 2022 & \defi{Foundations of Mathematics} & Math 250\\
+ Fall 2021 & \defi{Foundations of Mathematics} & Math 250  \\
+ Fall 2021 & \defi{Number Theory} & Math 328   \\   
+ Fall 2020 & \defi{Foundations of Mathematics} & Math 250 (2 lectures, online) \\
+ Fall 2020 & \defi{Number Theory} & Math 328 (online)  \\    
+ Spring 2020 & \defi{Honors Multivariable Calculus} & Math 276 \\
+ Fall 2019 & \defi{Foundations of Mathematics} & Math 250 \\
+ Spring 2018 & \defi{Foundations of Mathematics} & Math 250 \\
+ Spring 2017 & \defi{Honors Multivariable Calculus} & Math 276  (co-developed the course) \\
+ Fall 2016 & \defi{Honors Linear Algebra} & Math 275 (co-developed the course) \\
+ Fall 2016 & \defi{Abstract Algebra I} & Math 421 \\
+ Spring 2016 & \defi{Foundations of Mathematics} & Math 250 \\
+ Spring 2015 & \defi{Abstract Algebra II} & Math 422 \\
+ Fall 2014 & \defi{Abstract Algebra I} & Math 421 \\
+ Fall 2013 & \defi{Foundations of Mathematics} & Math 250 (2 lectures) \\
+ Fall 2012 & \defi{Foundations of Mathematics} & Math 250 (2 lectures) \\
+ Spring 2012 & \defi{Linear Algebra} & Math 221 \\
+ Fall 2011 & \defi{Foundations of Mathematics} & Math 250 \\
+\end{tabular}
+
+{\bf Graduate} (9 courses)
+  \vspace*{-.1in}
+
+\begin{tabular}{rll}  
+  Fall 2022 & \defi{Stacks} & Math 788 (Online, 100 registered participants)\\
+  Fall 2019 & \defi{Local Class Field Theory}  & Math 528\\
+Spring 2019&  \defi{Algebraic Topology II}  & Math 544\\
+Spring 2019&  \defi{Algebra  II}  & Math 522\\
+Fall 2018&  \defi{Algebra  I}  & Math 521\\
+Spring 2018&  \defi{Scheme Theory}  & Math 788\\
+Spring 2016&  \defi{Algebraic Topology II}  & Math 544\\
+Fall 2014&  \defi{Local Class Field Theory}  & Math 528\\
+Spring 2014&  \defi{Algebraic Topology II}  & Math 544\\
+Fall 2012&  \defi{Stacks}  & Math 788\\
+\end{tabular}
+
+{\bf Reading courses} Math 497R\footnote{See \url{http://www.math.emory.edu/~dzb/teaching/Emory-Elliptic-Reading-Undergrad-Spring2014/} for an example}
+\vspace*{-.1in}
+
+\begin{tabular}{rll}  
+Fall 2020 &\defi{The Arithmetic of Elliptic Curves}  & 4 Ph.D.~students            \\
+Fall 2019 &\defi{The Arithmetic of Elliptic Curves}  & 2 Ph.D.~students            \\  
+Fall 2018 &\defi{Topology}   & 5 undergraduates\\
+Spring 2018 &\defi{Rational Points on Elliptic Curves}  & 4 undergraduates\\
+Spring 2017 &\defi{Mathematical Cryptography}   & 7 undergraduates        \\
+Spring 2015 &\defi{Rational Points on Elliptic Curves}  & 3 undergraduates\\
+Spring 2015 &\defi{Foundations of Algebraic Geometry}  & 2 undergraduates, 6 Ph.D.~students    \\
+Spring 2014 &\defi{Rational Points on Elliptic Curves}  & 8 undergraduates\\
+Spring 2014 &\defi{The Arithmetic of Elliptic Curves}  & 3 Ph.D.~students                \\
+Spring 2013 &\defi{Number theory and quadratic forms}  & 3 undergraduates\\
+Spring 2013 &\defi{The Arithmetic of Elliptic Curves}  & 3 Ph.D.~students            \\
+\end{tabular}
+
+{\bf Student Seminars}\footnote{See
+  \url{https://sites.google.com/site/quadraticchabautyatemory/} for a sample}
+\vspace*{-.1in}
+
+\begin{tabular}{rll}
+Fall 2022   & \defi{JUICE}   & Just an Unlikely Intersections Colloquium at Emory\\
+Spring 2022 &    & Automorphic forms Seminar\\
+  Fall 2021 &    & Modular forms and modular curves Seminar\\
+Spring 2021 &   \defi{GASES} & Geometric Arithmetic Statistics Emory Seminar\\
+Fall 2020 &   \defi{EARSSS} & Emory ARithmetic Statistics Student Seminar\\
+Spring 2020 &   \defi{QUICHE} & QUadratIc CHabauty at Emory\\    
+Fall 2019 &   \defi{NACHOS} & Non-Abelian CHabauty and Other Stuff\\
+Spring 2018 &   \defi{SITAR} & Seminar on Iwasawa Theory And Ramification\\
+Summer 2017 &   \defi{NACHOS} & Non-Abelian CHabauty and Other Stuff\\
+Spring 2017 &   \defi{PASTA} & Perfectoid \& Adic Spaces: Trending Applications\\
+Fall 2016 &   \defi{NAPS} & Non-Archimedean and Perfectoid Spaces seminar\\
+Spring 2016 &   \defi{NAGS} & Non-Archimedean Geometry student Seminar\\
+Spring 2015 &  \defi{RAPS} & Rational Points on higher dimensional varieties\\
+\end{tabular}
+
+\section{\sc Teaching \\ (Other)}
+
+{\bf University of Wisconsin, Madison}, Madison, Wisconsin USA\\
+\emph{Van Vleck Assistant Professor}. 
+  \vspace*{-.1in}
+
+  \begin{tabular}{lll}  
+    (Spring 2011) &CURL (Collaborative Undergraduate Research Lab) &  (Math 490) \\
+                  & \url{http://www.math.emory.edu/~dzb/teaching/490Spring2011/} &\\
+(Fall 2010)& Calculus I (209 students) & (Math 221) 
+  \end{tabular}
+  
+
+
+{\bf University of California, Berkeley}, Berkeley, California USA\\
+\emph{Graduate Student Instructor}.  Led discussion sections (3 hours per week per section). Wrote weekly quizzes, graded quizzes and exams, and held office hours.
+  \vspace*{-.1in}
+
+  \begin{tabular}{lll}    
+(Fall 2006)  & Multivariable Calculus I & (Math 53) \\
+(Spring 2005) & Calculus II & (Math 1B)\\
+(Fall 2004)  & Calculus I & (Math 1A) 
+  \end{tabular}
+  
+
+
+
+{\bf Ha:San High School}, Tucson, AZ \hfill { Fall 2002 - Spring 2003}\\
+{\em CATTS (Collaboration to Advance Teaching, Technology and Science)
+  Fellowship.} Used fellowship to spend 15 hours a week in a local
+Native American high school as a teaching assistant for two classes
+(one Algebra 1 and one Geometry) and helped to develop science
+curriculum and projects geared toward students with weak
+math and science backgrounds.
+
+
+\section{\sc REU (Summer Research Experiences for Undergraduates)}
+
+  \begin{minipage}{\textwidth}
+{\bf Emory University NSF REU in Number Theory}, Atlanta, GA
+  \begin{list1}
+  \item[]
+    (2011-2017) Advised 22 students (see below for a list)
+  \end{list1}
+\end{minipage}
+
+{\bf UW-Madison NSF REU in Number Theory}, Madison, Wisconsin USA
+  \begin{list1}
+  \item[]
+    (2010) Advised 2 students 
+  \end{list1}
+
+% % \section{\sc Honors and Awards}
+% \section{\sc Awards}
+
+%  Residence Halls Honored instructor (UW-Madison), Fall 2010\\
+% \vspace{-2pt}
+
+
+\section{\sc Mentoring and advising}
+
+
+
+{\bf Tenure Track Faculty}
+\vspace*{-.1in}
+
+\begin{tabular}{lll}
+  (2020-) & \defi{Brooke Ullery} & 
+\end{tabular}
+
+{\bf Postdocs and visiting faculty}
+\vspace*{-.1in}
+
+\begin{tabular}{lll}
+  (2021-24) & \defi{Andrew Kobin} & (Postdoctoral fellow)
+    \vspace{4pt}\\
+  (2021-23) & \defi{Kaelin Cook-Powell} & (Visiting assistant Professor)
+    \vspace{4pt}\\    
+  (2021-22) & \defi{Matthew Just} & (Visiting assistant Professor)
+    \vspace{4pt}\\  
+  (2019-22) & \defi{Jeffrey Yelton} & (Visiting assistant Professor)
+    \vspace{4pt}\\
+\end{tabular}
+
+{\bf Ph.D. Students}
+\vspace*{-.1in}
+
+\begin{tabular}{lll}
+  (2026) & \defi{Ariella Lee} & (expected)
+    \vspace{4pt}\\    
+  (2025) & \defi{Roberto Hernandez} & (expected)
+    \vspace{4pt}\\    
+  (2025) & \defi{Santiago Arango-Pi\~neros} & (expected)
+    \vspace{4pt}\\  
+  (2025) & \defi{Alexis Newton} & (expected)
+    \vspace{4pt}\\
+  (2024) & \defi{Michael Cerchia} & (expected)
+    \vspace{4pt}\\
+  % (2024) & \defi{Michael Cerchia} &  ``\emph{}'' \\
+  %        && \hspace{4 pt} 1st job: \\
+  %   \vspace{4pt}\\
+  (2023) & \defi{Chris Keyes} &  ``\emph{Topics in Arithmetic Statisticcs}'' \\
+         && \hspace{4 pt} 1st job: Heilbronn Institute for Mathematical Research
+         \vspace{4pt}\\
+  (2021) & \defi{Tomer Reiter} &  ``\emph{Isogenies of Elliptic Curves and Arithmetical Structures on Graphs}'' \\
+         && \hspace{4 pt} 1st job: Duolingo 
+    \vspace{4pt}\\ 
+  (2020) & \defi{Jackson Morrow} &  ``\emph{Non-Archimedean and Tropical Techniques in Arithmetic Geometry}'' \\
+         && \hspace{4 pt} 1st job: Centre de Recherches Mathematiques (2020)\\
+         &&  \hspace{4 pt} 2nd job: RTG postdoc at Berkeley (2021-2023)
+    \vspace{4pt}\\
+%         && \hspace{4 pt} Currently: Tenure Track faculty at University of Wisconsin--Eau \\
+  (2018) & \defi{Charles Morrissey} &   ``\emph{Topics in Tropical and Analytic Geometry}'' \\
+         && \hspace{4 pt} Currently: working in industry
+    \vspace{4pt}\\
+  (2016) & \defi{Anastassia Etropolski} &   ``\emph{Rational Points on Curves}'' \\
+         && \hspace{4 pt} 1st job: RTG Postdoctoral fellow at Rice \\
+         && \hspace{4 pt} Currently: a Machine Learning Engineer at Foursquare
+    \vspace{4pt}\\
+  (2016) & \defi{Mckenzie West} &   ``\emph{Brauer-Manin Computations for Surfaces}'' \\
+         && \hspace{4 pt} 1st job: Postdoc at Reed College\\
+         &&  \hspace{4 pt} 2nd job: Postdoc at Kalamazoo College \\
+         && \hspace{4 pt} Currently: Tenure Track faculty at University of Wisconsin--Eau \\
+         && \hspace{4 pt}  Claire\\
+
+
+\end{tabular}
+
+{\bf Masters students}
+
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+  (2016) &  Jackson Morrow & ``\emph{Topics in Elliptic curves}'' \\
+  & & Currently: Ph.D.  candidate at Emory
+\end{tabular}
+
+  
+{\bf Joint MS/BS students}
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+  (2017) & \defi{Noam Kantor} & ``\emph{Rank-Favorable Bounds for Rational Points on Superelliptic Curves}'' \\
+         &&   Goldwater fellow and Marshall Scholarship winner \\
+  &&  DPhil in Mathematics, 2019,  Oxford \\
+  (2016) & \defi{William Baker} & ``\emph{The Log canonical ring of a graph curve}" \\
+&&    Ph.D.~at UCLA (2021)\\
+  (2014) & \defi{Dalton Bidleman} & ``\emph{Toric rank functions on graphs}'' \\
+  && Ph.D.~candidate at Auburn\\
+
+\end{tabular}
+
+
+
+
+{\bf Undergraduates} (Honors)
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+  (2019/20/21) & \defi{Lingxin Cheng} & ``\emph{Local-To-Global Property of Transitive Subgroups of} $S_p$''\\
+  (2018/19/20) & \defi{David Luo} & ``\emph{Nonuniqueness Properties of Zeckendorf Related Partitions}'' \\
+         % &&   Cambridge part III program (2020) \\
+  (2018) & \defi{Yitong Lu} & ``\emph{Local-to-Global Principle in Symmetric Groups}'' \\
+  (2018) & \defi{Amy Miller} & ``\emph{On Direct-Sum Decompositions of the Picard Group of a Graph}''
+\end{tabular}
+
+{\bf Undergraduates} (Non REU/Honors research)
+\vspace*{-.15in}
+
+\begin{tabular}{ll}
+ (2021) & \defi{Zhenke Liu} \\
+ (2016) & \defi{Jon King} \\  
+ (2012 - 2014) & \defi{Henry Yelin} \\
+ (2012 - 2014) & \defi{Jackson Morrow} \\
+ (2010) &  \defi{Larry Rolen} (UW Madison); co-advised a research project; \\
+\end{tabular}
+
+
+{\bf Undergraduates} (Emory REU)\footnote{The Morgan and Schafer prizes are the yearly national prizes for best undergraduate research in mathematics; see \url{https://en.wikipedia.org/wiki/Morgan_Prize} and \url{https://en.wikipedia.org/wiki/Alice_T._Schafer_Prize} for more info.}
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+
+(2017) & Sanath Devalapurkar  & (\textbf{Soros} Fellowship) \\
+(2017) & John Halliday & \\
+(2017) &  Sameera Vemulapalli & (\textbf{Schafer Prize} honorable mention)  \\
+(2017) & Danielle Wang & (\textbf{Schafer Prize} honorable mention)  \\
+
+(2016) & Ashvin Swaminathan & (\textbf{Morgan Prize} winner)  \\
+(2016) & James Tao & \\
+(2016) & Yujie Xu & \\
+
+(2015/16) & Aaron Landesman & (\textbf{Morgan Prize} honorable mention)      \\
+(2015) & Peter Ruhm & \\
+(2015) & Robin Zhang & \\
+
+(2014) & Evan O'Dorney    & (\textbf{Morgan Prize} honorable mention) \\
+(2014) & Benjamin Gunby & \\
+(2014) & Alexander Smith & \\
+(2014) & David Yang & (\textbf{Morgan Prize} Winner)  \\
+(2014) & Allen Yuan & \\
+
+(2013) & Akhil Mathew  & (\textbf{Morgan Prize} honorable mention)  \\
+(2013) & Jesse Silliman & \\
+(2013) & Isabel Vogt & \\
+
+(2012) & David Corwin & \\
+(2012) & Tony Feng & \\
+(2012) & Zane Li & \\
+(2012) & Sarah Trebat-Leder & \\
+
+(2010/13) & Eric Larson  & (\textbf{Morgan Prize} Winner) \\
+(2010) & Dmitry Vaintrob & \\
+\end{tabular}
+
+
+
+
+{\bf Ph.D.~Thesis Committees (Emory, mathematics)}
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+% (2023) & Jack Barlow & Advisor: Parimala\\    
+(2022) & Jayanth Guhan & Advisor: Suresh Venapally\\    
+(2021) & Maryam Khaqan & Advisor: John Duncan\\    
+(2020) & Sumit Chandra Mishra & Advisor: Suresh Venapally\\  
+(2020) & Lea Beneish & Advisor: John Duncan\\
+(2019) & Victor Aricheta & Advisor: John Duncan\\
+(2018) & Olivia Beckwith & Advisor: Ken Ono\\
+(2018) & Bastian Haase & Advisor: Parimala\\
+(2018) & Sarah Trebet-Leder & Advisor: Ken Ono\\
+(2017) & Reed Gordon-Sarney & Advisor: Parimala\\
+(2016) & Amanda Clemm & Advisor: Ken Ono\\
+(2016) & Zhengyao Wu & Advisor: Suresh Venapally\\
+(2016) & Nivedita Bhaskhar & Advisor: Parimala\\
+(2015) & Michael Griffin & Advisor: Ken Ono\\
+(2013) & Larry Rolen & Advisor: Ken Ono\\
+(2013) & Robert Lemke Oliver & Advisor: Ken Ono\\
+\end{tabular}
+
+
+
+{\bf Masters Thesis Committees (Emory, mathematics)}
+\vspace*{-.15in}
+
+\begin{tabular}{lll}
+  (2022) & Adheep Joseph & Advisor: Parimala\\
+  (2021) & Yazan Alamoudi & Advisor: Parimala\\    
+\end{tabular}
+
+{\bf Ph.D. Thesis Committees (mathematics; external)}
+\vspace*{-.15in}
+
+\begin{tabular}{llll}
+(2022) & Jacob Mayle & Advisor:  Nathan Jones & (University of Illinois, Chicago)\\    
+(2021) & Sergio Zapata Ceballos & Advisor:  Chris Hall & (Western Ontario, Canada)\\  
+(2020) & Sudarshan Shinde & Advisor:  Razvan Barbaud & (Jussieu, Paris)\\
+(2014) & Spencer Backman & Advisor: Matt Baker & (Georgia Tech)\\
+(2014) & Ye Luo & Adivsor: Matt Baker & (Georgia Tech)\\
+(2013) & Farbod Shokreih &  Advisor: Matt Baker & (Georgia Tech)\\
+\end{tabular}
+
+{\bf Honors and MS/BS Committees (Emory)}
+\vspace*{-.15in}
+
+\begin{tabular}{llll}
+(2022) & Angela Cao & Honors, Linguistics & Advisor: Jinho Choi\\
+(2022) & Leisheng Yu & Honors, Math &  Advisor: Carl Yang\\
+(2022) & Siwei Xu& Honors, Math &  Advisor: Parimala\\    
+(2021) & John Cox  & Honors, QTM & Advisor: Jeremy Jacobson\\    
+(2020) & Kimberly Sharp & Honors, Chemistry & Advisor: Simon Blakely\\  
+(2019) & Alan Rohrbach & Honors, Physics & Advisor:  Connie Roth\\
+(2019) & Varoon Pazhyanur & Honors, Math BS & Advisor:  David Borthwick\\
+(2018) & Morad Hassan & MS/BS, Math BS & Advisor:  John Duncan\\
+(2018) & Robert Dicks & MS/BS, Math BS & Advisor:  John Duncan\\
+(2018) & Paul Vienhage & MS/BS, Math BS & Advisor:  John Duncan\\
+(2017) & Ethan Alwaise & MS/BS, Math BS & Advisor:  Ken Ono\\
+(2016) & Kevin Sheng & Honors, Math BS & Advisor:  Ken Ono \\
+(2015) & Hanqiu Xia   & Honors, Applied Math & Advisor:  Jim Nagy\\
+(2014) & Shannon Buckley & Honors, Applied Math & Advisor:  Alessandro Veneziani\\
+(2014) & Hyewon Yoon & Honors, Economics & Advisor:  Andrew Francis\\
+                 	% "Francis, Andrew" <andrew.francis@emory.edu>, & Advisor
+                  % "Murphy, Vinnie" <vmurphy@emory.edu>
+(2014) & Tyler Shuman & MS/BS, Political Science & Advisor:  Shawn Ramirez\\
+      % "Staton, Jeffrey" <jkstato@emory.edu>,
+                 % "Ramirez, Shawn L." <slramirez@emory.edu>, Advisor
+                 % "Francis, Andrew" <andrew.francis@emory.edu>,
+\end{tabular}
+
+
+{\bf Tenure-Track faculty, teaching mentorship}
+\vspace*{-.15in}
+
+\begin{tabular}{ll}
+  (2022) & Elizabeth Newman \\
+  (2022) & Talea Mayo \\  
+  (2021) & Liana Yepremyan \\
+  (2020/21) & Yiran Wang \\    
+  (2019) & Hao Huang\\
+  (2018) & John Duncan \\
+  (2018) & Manuela Manetta 
+\end{tabular}
+
+{\bf Graduate student teaching mentorship}
+\vspace*{-.15in}
+
+\begin{tabular}{ll}
+  (2022) & Rohan Nair \\
+  (2021) & Marcelo Sales \\  
+  (2020) & Dylanger Pittman \\
+  (2016/17) & Lea Beneish \\
+  (2016) & Huiqiang Shi                     \\
+  (2015) & Warren Shull                     \\
+  (2014) & Troy Retter \\
+  (2013) & Amanda Clemm \\
+  (2013) & Victor Larsen \\
+  (2012/14) & Mckenzie West                     \\  
+\end{tabular}
+
+
+\section{\sc Synergistic Activities}
+{\bf MathOverflow} (2009, Cofounder, with Anton Gerashenko and Scott Morrison)\\
+Created a highly successful math Q\&A/discussion website (\url{http://mathoverflow.net}). MathOverflow is now incorporated as a nonprofit, and I am President its board of Directors.
+
+\newpage
+\section{\sc Service (Departmental)}
+
+\begin{tabular}{ll}
+ (2022-present) & Emory Math 4+1 program committee \\    
+ (2020-present) & Emory Research-Teaching Fellows in Math hiring committee \\  
+ (2019) & Chair of Algebra and Number Theory hiring committee \\
+ (2017/18) & Graduate Student Research Award committee \\
+ (2012-present) & Emory's Algebra Seminar, main organizer \\
+  (2012-present) & Undergraduate committee \\
+ (2017-present) & Colloquium committee     \\
+ (2017-present) & Mathematics graduate committee  \\
+  (2016-present) & Departmental Honors program coordinator  \\
+  (2016-2018) & Math and CS MS/BS coordinator  \\
+
+
+\end{tabular}
+
+
+\section{\sc Service (University)}
+
+\begin{tabular}{ll}
+  (2021-2024) & Faculty Senate   \\
+  (2020-2023) & Education Abroad Committee   \\
+  (2020) & TATTO 600 \\
+         & (Gave a lightning talk about active learning, and held a followup session with students)  \\    
+ (2012-present) & Emory Scholars Finalists Luncheons  \\  
+ (2015-present) & Budapest Semesters in Mathematics; math faculty contact and CIPA originator   \\
+  (2012-present) & PACE advising  \\
+  (2020) & University Nominations Committee \\
+ (2020) & Reviewer for the University Research Committee \\  
+ (2018) & Academic Showcase   \\
+ (2018) & Stem-Minisymposium judge and screener  \\
+ (2018) & Oxford Virtual Majors fair  \\
+ (2015/16/17) & Math and CS ``Last Call admissions counsel'' pilot    \\
+
+\end{tabular}
+
+
+% \newpage
+\section{\sc Service (Community)}
+\textbf{Arizona Winter School}:
+  \vspace*{-.15in}
+  
+\begin{tabular}{ll}
+  (Fall 2014-present) & Organizer and advisory board   \\
+  (Spring 2021) & Main Scientific Organizer  \\
+                     &Topic:  \defi{``Arizona Winter Semester'': Virtual School on Number Theory}\\
+                        &(200 participants, mostly undergraduates) \\
+  (Spring 2020) & Main Scientific Organizer and speaker \\
+  &Topic:  \defi{Nonabelian Chabauty} \\
+  (Spring 2019) & Main Scientific Organizer \\
+  & Topic: \defi{Topology and Arithmetic} \\
+  (Spring 2017) & Scientific Organizer \\
+&   Topic: Perfectoids \\
+  (Spring 2016) & Main Scientific Organizer (w/Alina Bu\c cur)\\
+  &  Topic:     \defi{Analytic methods in Arithmetic Geometry}\\
+ (Spring 2014) & Project leader w/ \defi{Jordan Ellenberg}  \\
+ (Spring 2015) & Project leader w/ \defi{Ravi Vakil}  \\
+\end{tabular}
+
+
+  \textbf{Other Conference organization}:
+  \vspace*{-.15in}
+  
+\begin{tabular}{ll}
+  (2022/24/26) & \defi{Simons Symposium: Geometry of Arithmetic Statistics} \\
+  & Co-organizers: Alina Bucur, Jordan Ellenberg, and Ila Varma \\
+  (Spring 2022) & \defi{Georgia Algebraic Geometry Symposium}\\
+               & Co-organizers: Parimala, Brooke Ullery, Suresh Venapally   \\
+  (Fall 2020) & \defi{PAlmetto Joint Arithmetic, Modularity, and Analysis Series} (Online)\\
+               & (September 2020 and December 2020)\\
+               & Co-organizers: Jenny Fuselier, Arindam Roy, Padmavathi Srinivasan, Frank Thorne \\
+(Spring 2020) & \defi{Georgia Algebraic Geometry Symposium} (Rescheduled due to Pandemic) \\
+               & Co-organizers: Parimala, Suresh Venapally   \\
+  (Fall 2019) & \defi{Modular Forms, Arithmetic, and Women in Mathematics} (MAAIM) \\
+               & Co-organizers Lea Beneish and Hannah Larson \\  
+  (Fall 2015) & \defi{Georgia Algebraic Geometry Symposium} \\
+               &  Co-organizers: Parimala, Suresh Venapally   \\
+ (Fall 2015) & \defi{PAlmetto Number Theory Series XXIV}; co-organizer: Ken Ono  \\
+\end{tabular}
+
+\textbf{National Committees}: 
+  \vspace*{-.15in}
+  
+\begin{tabular}{ll}
+(2016-2020) & AMS Sectional Meetings Travel Grants Committee \\
+\end{tabular}
+
+\textbf{Refereeing} for 
+Acta Arithmetica,
+Algebra and Number Theory, 
+Algebraic Geometry,
+Algorithmic Number Theory Symposium,  
+Annales de l'Institut Fourier,
+Cambridge University Press,
+Crelle, 
+Compositio,
+Contemporary Math., 
+Discrete \& Computational Geometry
+Experimental Mathematics
+International Journal of Number Theory, 
+International Mathematics Research Notices,
+Inventiones Mathematicae, 
+Journal of Algebra, 
+Journal de  Th\'eorie des Nombres de Bordeaux,
+Journal of the London Mathematical Society,
+Journal of the European Mathematical Society,
+Journal Math. Inst. Jussieu,
+Mathematische Annalen,
+Mathematics of Computation, 
+Mathematics Research Letters, 
+Mathematische Zeitschrift, 
+Monatshefte für Mathematik,
+Proceedings of the American Mathematical Society,
+Proceedings of the London Mathematical Society, 
+Research in Number Theory, 
+Research in the Mathematical Sciences,
+and 
+Transactions of the American Mathematical Society.
+
+
+\textbf{Panelist} for the National Science Foundation (2016, 2019).
+
+\vspace{-5pt}
+\textbf{Reviewer} for: 
+\begin{list1}
+\item[] (2020) The Royal Society (UK)
+\item[] (2018) Netherlands Organisation for Scientific Research
+\item[] (2017) Israel Science Foundation 
+\item[] (2015) National Security Agency 
+\item[] (2012) Math Reviews
+\end{list1}
+\vspace{.05in} 
+
+
+% \newpage
+\section{\sc Service (previous departments)}  
+  \begin{tabular}{ll}
+    (2010) & \textbf{UW-Madison Number Theory Seminar} co-organized with Bryden Cais\\
+    (2010) & \textbf{UW-Madison Graduate Participation Seminar}; with Bryden Cais\\
+    & In this seminar the students give a `warm up talk' for the week's seminar talk.\\
+    (2009) & \textbf{Arithmetic Geometry and Moduli Spaces in Algebraic Geometry}\\
+    & Zhejiang University in Hangzhou, China. Planned and ran tutorial sessions.\\
+    (2008) & \textbf{Berkeley Student Algebraic and Arithmetic Geometry Seminar} \\
+    & with Dan Erman and Tony Varilly\\
+    (2007) & \textbf{Deformation Theory Workshop}; MSRI. Ran problem sessions.\\
+    (2007) & \textbf{Student Number Theory Seminar}, with Tony Varilly. UC Berkeley.\\
+    (2005) & \textbf{Many Cheerful Facts}  (UC Berkeley's graduate student colloquium)\\
+    & Co-organized with Adam Booth. \\
+  \end{tabular}
+
+  \section{\sc Invited Talks}
+(Spring 2023) \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$};
+Invited lecture at SLMath's Diophantine Geometry Program Research Seminar
+\vspace{.05cm}\\  
+(Spring 2023) \textbf{Diophantine and Tropical Geometry};
+Colloquium at University of Toronto
+\vspace{.05cm}\\  
+(Spring 2023) \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$};
+Invited lecture at  the Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation Annual Meeting
+(Spring 2023) \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$};
+Invited lecture at  the Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation Annual Meeting
+(Spring 2023) \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$};
+Invited lecture at  the Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation Annual Meeting
+\vspace{.05cm}\\
+(Spring 2023) \textbf{Distributions of unramified extensions of global fields};
+Joint Mathematics Meetings, Special Session on ``Arithmetic Statistics''
+\vspace{.05cm}\\
+%     (Spring 2023) \textbf{Diophantine Geometry};
+% Semester program at MSRI
+% \vspace{.05cm}\\
+(Spring 2022) \textbf{$\ell$-adic images of Galois for elliptic curves over $\mathbb{Q}$};
+Invited lecture at  the Simons Collaboration on Arithmetic Geometry, Number Theory, and Computation Annual Meeting, cancelled due to Omicron
+\vspace{.05cm}\\
+(Summer 2021) \textbf{Arithmetic Statistics};
+Lecture series at UC Berkeley RTG Research Workshop
+\vspace{.05cm}\\
+(Summer 2021) \textbf{Rational Points and Galois Representations};
+Problem session moderator; online conference at University of Pittsburg
+\vspace{.05cm}\\
+(Spring 2021) \textbf{Diophantine and Tropical Geometry};
+Colloquium at The Ohio State University 
+\vspace{.05cm}\\
+(Spring 2021) \textbf{Sporadic points on modular curves};
+Joint Berkeley--Caltech--Stanford Number Theory Seminar
+\vspace{.05cm}\\
+(Fall 2020) \textbf{The canonical ring of a stacky curve};  
+Plenary Talk at Madison Moduli Weekend 
+\vspace{.05cm}\\
+(Fall 2020) \textbf{The canonical ring of a stacky curve};  
+Seminar Talk at University of Arkansas
+\vspace{.05cm}\\
+(Summer 2020) \textbf{Sporadic points on modular curves};
+Chicago Number Theory Day 
+\vspace{.05cm}\\
+(Spring 2020) \textbf{Classical Chabauty};
+Arizona Winter School lecture series (4 lectures)
+\vspace{.05cm}\\
+(Spring 2020) \textbf{Moduli spaces and arithmetic statistics};
+VANTAGE
+\vspace{.05cm}\\
+(Fall 2019) \textbf{Counting fields, rational points, and heights on stacks};
+Berkeley Number Theory Seminar
+\vspace{.05cm}\\
+(Summer 2019) \textbf{Mazur's ``Program B''};  
+Plenary talk at Rational Points 2019, Franken-Akademie Schloss Schney, Germany
+\vspace{.05cm}\\
+(Summer 2019) \textbf{Mazur's ``Program B''};  
+Plenary talk at ``Rational points on irrational varieties'' part of the  ``Reinventing rational points'' trimester program at Institut Henri Poincare, Paris, France
+\\
+(Summer 2019) \textbf{Progress on Mazur's ``Program B''};  
+Seminar talk at Universite Blaise Pascal Clermont-Ferrand 2, Aubiere, France
+\vspace{.05cm}\\
+(Spring 2019) \textbf{Arithmetic of Stacks};  
+Seminar talk at  University of Wisconsin, Madison
+\vspace{.05cm}\\
+(Spring 2019) \textbf{Progress on Mazur's ``Program B''};  
+AMS Special Session on ``Algebraic Points'', University of Hawaii.
+\vspace{.05cm}\\
+(Spring 2019) \textbf{The canonical ring of a stacky curve};  
+Seminar Talk at University of Georgia
+\vspace{.05cm}\\
+(Spring 2019) \textbf{Beyond Fermat's last theorem};
+Colloquium at Miami University 
+\vspace{.05cm}\\
+(Winter 2019) \textbf{Progress on Mazur's ``Program B''};  
+Joint Mathematics Meetings, Special Session on ``Number Theory, Arithmetic Geometry, and Computation''
+\vspace{.05cm}\\
+(Winter 2019) \textbf{Counting fields, rational points, and heights on stacks};
+Joint Mathematics Meetings, Special Session on ``Arithmetic Statistics''
+\vspace{.05cm}\\
+(Fall 2018) \textbf{Progress on Mazur's ``Program B''};  
+Northwestern University
+\vspace{.05cm}\\
+(Summer 2018) \textbf{Progress on Mazur's ``Program B''};  
+Oberwolfack, ``Explicit Methods''
+\vspace{.05cm}\\
+(Summer 2018) \textbf{Counting fields, rational points, and heights on stacks};
+``Rational points on Schiermonnikoog''
+\vspace{.05cm}\\
+(Summer 2018) \textbf{Progress on Mazur's ``Program B''};  
+``Torsion on Elliptic Curves'', Zagreb, Croatia
+\vspace{.05cm}\\
+(Summer 2018) \textbf{Counting fields, rational points, and heights on stacks};
+BIRS Oaxaca, ``Algebraic and Analytic methods for integral and rational points on varieties"
+\vspace{.05cm}\\
+(Spring 2018) \textbf{Diophantine and $p$-adic Geometry};
+Speaking at the University of Arkansas 43rd annual Spring Lecture Series, ``Old and New Themes in $p$-adic cohomology"
+\vspace{.05cm}\\
+(Spring 2018) \textbf{The canonical ring of a stacky curve};  
+Seminar Talk at Johns Hopkins University
+\\
+(Spring 2018) \textbf{The canonical ring of a stacky curve};  
+Seminar Talk at Colorado State University
+\\
+(Spring 2018) \textbf{Beyond Fermat's last theorem};
+Colloquium at Colorado State University 
+\vspace{.05cm}\\
+(Spring 2018) \textbf{The canonical ring of a stacky curve};  
+Seminar Talk at Rice University
+\vspace{.05cm}\\
+(Winter 2018) \textbf{Beyond Fermat's last theorem};
+Joint Mathematics Meetings in San Diego, special session on ``Accessible Problems in Modern Number Theory" 
+\vspace{.05cm}\\
+(Fall 2017) \textbf{Beyond Fermat's last theorem};
+Portland State Colloquium
+\vspace{.05cm}\\
+(Fall 2017) \textbf{Progress on Mazur's ``Program B''};  
+Southern California Number Theory Day
+\vspace{.05cm}\\
+(Fall 2017) \textbf{Progress on Mazur's ``Program B''};  
+Stanford University Number Theory Seminar
+\vspace{.05cm}\\
+(Fall 2017) \textbf{The canonical ring of a stacky curve};  
+Seminar talk at University of Arizona
+\vspace{.05cm}\\
+(Fall 2017) \textbf{Progress on Mazur's ``Program B''};  
+University of Wisconsin, Madison Number Theory Seminar
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Progress on Mazur's ``Program B''};  
+BIRS Workshop on ``Arithmetic Aspects of Explicit Moduli Problems''
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Colloquium at Reed 
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Seminar talk at University of Rochester
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Colloquium at Tufts University 
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Conference talk at Lectures in Arithmetic Geometry at Rice
+\vspace{.05cm}\\
+(Spring 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Seminar talk at University of California, Berkeley
+\vspace{.05cm}\\
+(Winter 2017) \textbf{Tropical Geometry and Uniformity of Rational Points};
+Joint Mathematics Meetings in Atlanta, special session on ``Minimal integral models of algebraic curves"  
+\vspace{.05cm}\\
+(Fall 2016) \textbf{The canonical ring of a stacky curve};  
+Seminar talk at University of Miami
+\vspace{.05cm}\\
+(Fall 2016) \textbf{The canonical ring of a stacky curve};  
+Seminar talk at University of Kentucky
+\vspace{.05cm}\\
+(Fall 2016) \textbf{Fundamental groups and reconstruction theorems}; Expository talk at ``Kummer Classes and Anabelian Geometry'' (focused on expositing Mochizuki's proof of the ABC conjecture); University of Vermont  
+\vspace{.05cm}\\
+(Spring 2016) \textbf{Sporadic cubic torsion};  
+SERMON, James Madison University, 
+\vspace{.05cm}\\
+(Spring 2016) \textbf{Progress on Mazur's ``Program B''};  
+AMS Special Session on  ``Elliptic Curves", University of Georgia
+\vspace{.05cm}\\
+(Spring 2016) \textbf{The canonical ring of a stacky curve};  
+Seminar talk at University of Tennessee
+\vspace{.05cm}\\
+(Spring 2016) \textbf{Uniformity and Tropical Geometry};
+Colloquium at University of Tennessee
+\vspace{.05cm}\\
+(Fall 2015) \textbf{The canonical ring of a stacky curve};  
+Seminar talk at University of Oregon
+\vspace{.05cm}\\
+(Fall 2015) \textbf{Uniformity and Tropical Geometry};
+Colloquium at University of Oregon
+\vspace{.05cm}\\
+(Fall 2015) \textbf{Uniformity and Tropical Geometry};
+Number Theory Seminar, UW-Madison
+\vspace{.05cm}\\
+(Fall 2015) \textbf{Hilbert schemes of canonically embedded curves of low genus};
+Geometry Seminar, UW-Madison
+\vspace{.05cm}\\
+(Summer 2015) \textbf{Uniformity and Tropical Geometry};
+AIM workshop Degenerations in algebraic geometry
+\vspace{.05cm}\\
+(Summer 2015) \textbf{The canonical ring of a stacky curve};  
+2015 AMS summer institute in Algebraic Geometry, Utah
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Uniformity and Tropical Geometry};
+Coleman Memorial Conference
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Uniformity and Tropical Geometry};
+Colloquium at University of Copenhagen
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+Cornell Number Theory Seminar
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+UIC Number Theory Seminar
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+Stanford Number Theory Seminar
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+Duke Number Theory Seminar
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Uniformity and Tropical Geometry};
+SERMON, Winthrop University, 
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+UC-Boulder Colloquium
+\vspace{.05cm}\\
+(Spring 2015) \textbf{The canonical ring of a stacky curve};  
+UC-Boulder Algebraic Geometry Seminar
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Diophantine and Tropical Geometry};
+UW-Madison Colloquium
+\vspace{.05cm}\\
+(Spring 2015) \textbf{The canonical ring of a stacky curve};  
+UW-Madison Number Theory Seminar
+\vspace{.05cm}\\
+(Fall 2014) \textbf{Gauss composition and integral arithmetic invariant theory};  
+AMS Special Session on  ``Connections in Number Theory" Greensboro, NC
+\vspace{.05cm}\\
+(Fall 2014) \textbf{The canonical ring of a stacky curve};
+AMS Special Session on ``Automorphic forms and related topics'' Greensboro, NC
+\vspace{.05cm}\\
+(Fall 2014) \textbf{Tropical geometry, $p$-adic integration, and uniformity};
+AMS Special Session on ``Combinatorics and Algebraic Geometry'', San Francisco, CA
+\vspace{.05cm}\\
+(Fall 2014) \textbf{The canonical ring of a stacky curve};  
+University of Virginia, VA
+\vspace{.05cm}\\
+(Spring 2014) \textbf{Overconvergent de Rham-Witt cohomology and algebraic stacks};  
+AMS special session on ``Arithmetic and Differential Algebraic Geometry", Albuquerque, NM
+\vspace{.05cm}\\
+(Spring 2014) \textbf{Rational points on curves and tropical geometry};  
+BIRS Workshop on ``Specialization of Linear Series for Algebraic and Tropical Curves", Banff, canada
+\vspace{.05cm}\\
+(Spring 2014) \textbf{Rational points on curves and tropical geometry};  
+AMS special session on ``Arithmetic of Algebraic Curves", Knoxville, TN
+\vspace{.05cm}\\
+(Spring 2014) \textbf{The canonical ring of a stacky curve};  
+University of South Carolina, SC
+\vspace{.05cm}\\
+(Spring 2014) \textbf{Rational points on curves and tropical geometry};  
+Joint Mathematics Meetings in Baltimore, special session on ``Tropical and Nonarchimedean Geometry"  
+\vspace{.05cm}\\
+(Fall 2013) \textbf{Abelian varieties with maximal monodromy};  
+Clemson Number Theory Seminar 
+\vspace{.05cm}\\
+(Fall 2013) \textbf{Elliptic curves over $\mathbb{Q}$ and 2-adic images of Galois representations};  
+PANTS; Davidson, NC
+\vspace{.05cm}\\
+(Fall 2013) \textbf{Elliptic curves over $\mathbb{Q}$ and 2-adic images of Galois representations};  
+SIAM Conference on Applied Algebraic Geometry at Colorado State University 
+\vspace{.05cm}\\
+(Spring 2013) \textbf{Beyond Fermat's last theorem};
+Wake Forest University Colloquium
+\vspace{.05cm}\\
+(Spring 2013) \textbf{Explicit Modular approaches to Generalized Fermat Equations};
+University of Arizona Colloquium
+\vspace{.05cm}\\
+(Spring 2013) \textbf{Abelian Varieties with Maximal Monodromy};
+University of Arizona Number Theory Seminar 
+\vspace{.05cm}\\
+(Spring 2013) \textbf{Families of abelian varieties with maximal monodromy};
+AMS special session on Monodromy, 
+Denver, CO
+\vspace{.05cm}\\
+(Winter 2013) \textbf{Overconvergent de Rham-Witt Cohomology for Algebraic stacks};
+Joint mathematics meeting, special session on Witt Vectors, San Diego, CA, 
+\vspace{.05cm}\\
+(Winter 2013) \textbf{Abelian Varieties with Maximal Monodromy};
+Joint mathematics meeting, special session on Geometry and Number Theory, San Diego, CA
+\vspace{.05cm}\\
+(Fall 2012) \textbf{Random Dieudonn\'e Modules};
+Workshop: Arithmetic of abelian varieties in families, EPFL, Lausanne, Switzerland 
+\vspace{.05cm}\\
+(Fall 2012) \textbf{Explicit Modular approaches to Generalized Fermat Equations};
+Georgia Tech Number Theory Seminar, Atlanta, GA 
+\vspace{.05cm}\\
+(Fall 2012) \textbf{Random Dieudonn\'e Modules};
+PANTS XVIII, Wake Forest, NC 
+\vspace{.05cm}\\
+(Fall 2012) \textbf{Abelian Varieties with Maximal Monodromy};
+Colorado State Number Theory Seminar, Ft. Collins, Colorado 
+\vspace{.05cm}\\
+(Summer 2012) \textbf{Algebraic Stacks and p-adic Cohomology};
+Series of 4 lectures, Padua
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Abelian Varieties with Maximal Monodromy};
+Number Theory Seminar, UC Berkeley
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Abelian Varieties with Maximal Monodromy};
+Number Theory Seminar, UC Irvine
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Random Dieudonn\'e Modules};
+AMS special session on Arithmetic Geometry, University of Hawaii, Honolulu 
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Rigid Cohomology for Algebraic Stacks};
+New York Joint Number Theory Seminar, CUNY
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Abelian Varieties with Maximal Monodromy};
+Number Theory Seminar, UGA
+\vspace{.05cm}\\
+(Winter 2012) \textbf{Random Dieudonn\'e Modules};
+Joint Meetings, special session on Rational Points on Varieties
+\vspace{.05cm}\\
+(Winter 2012) \textbf{Rigid Cohomology for Algebraic Stacks};
+Joint Meetings, special session on Arithmetic Geometry
+\vspace{.05cm}\\
+% (Fall 2011) % \textbf{Abelian Varieties with Maximal Monodromy};
+% Algebra and Number Theory Seminar, Emory University
+(Fall 2011) \textbf{Random Dieudonn\'e Modules};
+Number Theory Seminar, Harvard University
+\vspace{.05cm}\\
+(Fall 2011) \textbf{Rigid Cohomology for Algebraic Stacks};
+Algebraic Geometry Seminar, Caltech.
+\vspace{.05cm}\\
+(Fall 2011) \textbf{Random Dieudonn\'e Modules};
+Athens-Atlanta Joint Number Theory Seminar, at Georgia Tech)
+\vspace{.05cm}\\
+(Fall 2011) \textbf{Explicit Modular approaches to Generalized Fermat Equations};
+AMS special session on Modular Forms and Elliptic Curves, Wake Forest University, NC
+\vspace{.05cm}\\
+(Spring 2011) \textbf{Explicit Modular approaches to Generalized Fermat Equations};
+Emory University Colloquium, Emory University
+\vspace{.05cm}\\
+(Spring 2011) \textbf{Explicit Modular approaches to Generalized Fermat Equations};
+ UW-Madison Number Theory Seminar, UW Madison.
+\vspace{.05cm}\\
+(Spring 2011) \textbf{Rigid Cohomology for Algebraic Stacks};
+Algebraic Geometry Seminar, Rice University.
+\vspace{.05cm}\\
+(Fall 2010) \textbf{Rigid Cohomology for Algebraic Stacks};
+Fall Southeastern AMS Section Meeting, Special Ses-
+sion on Applications of Non-Archimedean Geometry; Richmond; VA (Fall 2010)
+\vspace{.05cm}\\
+(Fall 2010) \textbf{Rigid Cohomology for Algebraic Stacks};
+ UW-Madison Number Theory Seminar, UW Madison.
+\vspace{.05cm}\\
+(Spring 2010) \textbf{Rigid Cohomology for Algebraic Stacks};
+ Berkeley Number Theory Seminar, UC Berkeley.
+\vspace{.05cm}\\
+(Spring 2010) \textbf{Rigid Cohomology for Algebraic Stacks};
+Algebraic Geometry Seminar, UBC.
+\vspace{.05cm}\\
+(Spring 2010) \textbf{Explicit Modular approaches to Generalized Fermat Equations.};
+ Number Theory Seminar, UBC.
+\vspace{.05cm}\\
+(Spring 2010) \textbf{Explicit Modular approaches to Generalized Fermat Equations.};
+ Number Theory Seminar, Stanford.
+\vspace{.05cm}\\
+(Spring 2008) \textbf{The Chabauty-Coleman bound at a prime of bad reduction};
+ Berkeley Number Theory Seminar, UC Berkeley.
+\vspace{.05cm}\\
+(Summer 2005) \textbf{The Galois Group of Cyclotomic Fields of Fermat Primes};
+Budapest Semesters Reunion, Budapest, Hungary. 
+\vspace{.05cm}\\
+  
+  
+\section{\sc Panels}
+(Spring 2023) \textbf{ Writing and Publishing Research Work};
+SLMath's Career Development Seminar
+\vspace{.05cm}\\  
+(Summer 2020) \textbf{Mentoring and being mentored};
+Lunch in the time of Covid. 
+\vspace{.05cm}\\
+% \section{\sc Seminar Presentations (expository)}
+
+% \textbf{Introduction to $p$-adic Cohomology};
+% UW-Madison Graduate Participation Seminar.
+% (Fall 2010)\vspace{.05cm}\\
+% \textbf{De Rham Cohomology, and the Infinitesmal Site};
+% Stanford Student Arithmetic Geometry Seminar.
+% (Spring 2009)\vspace{.05cm}\\
+% \textbf{De Rham Cohomology, and the Infinitesmal Site};
+%   MSRI Graduate Student Seminar, UC Berkeley.
+% (Spring 2009)\vspace{.05cm}\\
+% \textbf{Artin's Representation Theorem};
+% Student Arithmetic and Algebraic Geometry Seminar
+% (Fall 2008)\vspace{.05cm}\\
+% \textbf{The Siegel Modular Variety};
+% Shimura Varieties Student Seminar. 
+% (Fall 2008)\vspace{.05cm}\\
+% \textbf{GIT and moduli of curves};
+%  RAGS (Rest of Algebraic Geometry Seminar), UC Berkeley.
+% (Fall 2008)\vspace{.05cm}\\
+% \textbf{Surfaces with $p_g = 0$ and $q \geq 1$};
+%  RAGS (Rest of Algebraic Geometry Seminar), UC Berkeley.
+% (Fall 2008)\vspace{.05cm}\\
+% \textbf{Formal GAGA: Base Change};
+% Clay sponsored EGA seminar. 
+% (Summer 2008) \vspace{.05cm}\\
+% \textbf{A basic introduction to rigid cohomology};
+% Olsson Student Seminar, UC Berkeley.
+% (Spring 2008)\vspace{.05cm}\\
+% \textbf{The infinitesimal site};
+% Olsson Student Seminar, UC Berkeley. 
+% (Spring 2008)\vspace{.05cm}\\
+% \textbf{An introduction to crystalline cohomology};
+% Student Algebraic and Arithmetic Geometry Seminar, UC Berkeley
+% (Spring 2008)\vspace{.05cm}\\
+% \textbf{The Method of Chabauty and Coleman};
+% STAGE (Seminar on Topics in Algebra, Geometry, etc.), MIT.
+% (Fall 2007)\vspace{.05cm}\\
+% \textbf{Deformation Theory and Surface Obstructions};
+% BAGS: MIT/Harvard Student Geometry Seminar.
+% (Fall 2007)\vspace{.05cm}\\
+% \textbf{The Riemann-Hilbert Correspondence};
+%  D-Modules Seminar; UC Berkeley 
+% (Summer 2007)\vspace{.05cm}\\
+% \textbf{Modular Curves as Smooth $\mathbb{Z}[1/N]$-Schemes};
+%  Student Number Theory Seminar, UC Berkeley.
+% (Spring 2007)\vspace{.05cm}\\
+% \textbf{Number Theory for Everyone};
+%  Graduate Student Colloquium, UC Berkeley
+% (A talk about many fun consequences of the solution to Hilbert's tenth problem). (Fall 2006)\vspace{.05cm}\\
+% \textbf{Derived Schemes};
+%  Derived Algebraic Geometry Seminar, UC Berkeley. 
+% (Fall 2006)\vspace{.05cm}\\
+% \textbf{Generalized Fermat Equations and Descent};
+%  Graduate Student Colloquium, UC Berkeley.
+% (Fall 2005)\vspace{.05cm}\\
+% \textbf{An Infinitude of Proofs (of the infinitude of primes)};
+% Graduate Student Colloquium, UC Berkeley. 
+% (Spring 2005)\vspace{.05cm}\\
+
+\section{\sc Public presentations}
+(Spring 2023) \textbf{Beyond Fermat's Last Theorem};
+Math club, Amherst College
+\vspace{.05cm}\\
+(Fall 2018) \textbf{Beyond Fermat's Last Theorem};
+Emory math club, Emory University
+\vspace{.05cm}\\
+(Spring 2015) \textbf{Beyond Fermat's Last Theorem};
+Georgia State math club, Georgia State University
+\vspace{.05cm}\\
+(Spring 2013) \textbf{Mathoverflow};
+ScienceOnline2013, Raleigh, NC
+\vspace{.05cm}\\
+(Spring 2012) \textbf{Beyond Fermat's Last Theorem};
+EUMMA (Emory Undergraduate Mathematics Major Association, Emory University
+\vspace{.05cm}\\
+(Spring 2011) \textbf{Mathoverflow};
+Special Lunch Seminar, Rice University.
+\vspace{.05cm}\\
+
+
+
+
+\section{\sc Software Skills}
+Proficient in Magma and Unix/Bash
+
+\section{\sc More Info}
+Visit \url{math.emory.edu/\~dzb} for more detailed information, including preprints and course webpages.
+% and  research and teaching statements.
+
+  % \begin{minipage}{\textwidth}
+%\newpage
+% \section{\sc References}
+
+% % \vspace{.13cm}
+% % \begin{tabular}{cc}
+% % {\parbox{2in}{
+% % {\bf Bjorn Poonen}\\
+% % Department of Mathematics\\
+% % MIT\\
+% % Cambridge, MA 02139-4307\\
+% % poonen@math.mit.edu\\
+% % }}&
+
+% % {\hspace{1cm}\parbox{2in}{
+% % {\bf Brian Conrad}\\
+% % Department of Mathematics\\
+% % Stanford University\\
+% % Stanford, CA 94305\\
+% % conrad@math.stanford.edu\\
+% % }}\\
+
+% % {\parbox{2in}{
+% % {\bf Martin Olsson}\\
+% % Department of Mathematics\\
+% % The University of California\\
+% % Berkeley, CA 94720-3840\\
+% % molsson@math.berkeley.edu\\
+% % }}&
+% % \end{tabular}
+
+
+% \begin{tabular}{cc}
+% {\parbox{2in}{
+% {\bf Bjorn Poonen}\\
+%   \vspace*{-.1in}
+%   \begin{list1}
+%   \item[] Department of Mathematics
+%   \item[] MIT
+%   \item[] Cambridge, MA 02139-4307
+%   \item[] poonen@math.mit.edu
+%     % \vspace*{.05in}
+%     % \item[] M.A., Mathematics, May 2005
+%   \end{list1}}
+% }&
+
+% \parbox{2in}{
+% {\bf Brian Conrad}\\
+%   \vspace*{-.1in}
+%   \begin{list1}
+%   \item[] Department of Mathematics
+%   \item[] Stanford University
+%   \item[] Stanford, CA 94305
+%   \item[] conrad@math.stanford.edu
+%     % \vspace*{.05in}
+%     % \item[] M.A., Mathematics, May 2005
+%   \end{list1}
+% }\\
+% &\\
+
+
+% \parbox{2in}{
+% {\bf Jordan Ellenberg}\\
+%   \vspace*{-.1in}
+%   \begin{list1}
+%   \item[] Department of Mathematics
+%   \item[] UW-Madison
+%   \item[] Madison, WI 53706
+%   \item[] ellenber@math.wisc.edu
+%   \end{list1}}&
+
+% \parbox{2in}{
+% {\bf Martin Olsson}\\
+%   \vspace*{-.1in}
+%   \begin{list1}
+%   \item[] Department of Mathematics
+%   \item[] The University of California
+%   \item[] Berkeley, CA 94720-3840
+%   \item[] molsson@math.berkeley.edu
+%   \end{list1}}
+
+% \end{tabular}
+
+%   \end{minipage}
+
+% % \section{\sc Collaborators and Other Affiliations}
+% % {\bf Collaborators.} Bryden Cais (The University of Arizona),
+% % Christopher Davis (University of California-Irvine), Jordan Ellenberg
+% % (University of Wisconsin-Madison, Anton Geraschenko (Google),
+% % Eric Katz (University of Waterloo), Jeremy Rouse (Wake Forest University), John Voight (University of Vermont)\\
+% % {\bf Graduate coadvisors.} Bjorn Poonen (main, MIT), Brian Conrad 
+% % (co-advisor, Stanford University) \\
+% % {\bf Postdoctoral Sponsor.} Jordan Ellenberg (University of Wisconsin-Madison)
+
+
+
+\end{resume}
+\end{document}
