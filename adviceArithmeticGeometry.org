@@ -1,0 +1,140 @@
+ #+TITLE: Advice for potential graduate students in Arithmetic Geometry (Last updated May 2020)
+#+BIND: org-export-html-auto-postamble nil
+#+ATTR_HTML: border="2" rules="all" frame="border" align="center"
+#+OPTIONS: toc:nil 
+#+OPTIONS: author:nil 
+#+OPTIONS: html-postamble:nil
+#+OPTIONS: num:nil 
+#+OPTIONS: \n
+#+OPTIONS: *
+#+OPTIONS: toc:nil        (no TOC at all)
+#+options: num:nil
+#+OPTIONS:   H:2 
+
+ Below is a collection of advice that I have written to various Emory and Wisconsin graduate students.
+
+ (This page is in progress - I will eventually put up much more advice, but for now here is some ad hoc initial advice and a collection of links.)
+
+  A summary of the advice is the following: learn Algebraic Geometry and Algebraic Number Theory early and repeatedly, read Silverman's AEC I, and half of AEC II, and read the two sets of notes by Poonen ([[http://www-math.mit.edu/~poonen/papers/Qpoints.pdf][Qpoints]] and [[http://math.mit.edu/~poonen/papers/curves.pdf][Curves]]). Qing Lui's book and Ravi Vakil's notes are great, either as an alternative to Hartshorne's book or as a supplement. Read other topics too (with suggestions below).  
+
+Also, it is worth reading Poonen's advice on mathematical [[http://www-math.mit.edu/~poonen/papers/writing.pdf][writing]] and [[http://www-math.mit.edu/~poonen/papers/speaking.pdf][speaking]].
+
+** Main Advice
+
+
+Your main first priority is to learn algebraic geometry very well and the core material from algebraic number theory. Second is to begin learning more advanced material. (Zeroth is to pass your qualifying exams.) Below is my advice for what someone in NT or algebra (but not analytic number theory) needs to know from algebraic geometry.
+
+My own students: after this I will give you a starter project (something that I have a good idea of how to do but haven't actually tried to do), with the expectation that you will solve it and submit it for publication within a year. As this project nears its end, I will suggest other things for you to read to get a sense of what you are interested in, and will help you form a long term research plan and find other projects to work on.
+
+** Algebraic geometry.
+
+ The following is the core material, which typically takes a strong student a (calendar) year to learn well. I personally have needed to carefully learn the rest of Hartshorne for various projects, but the following is a good first pass.
+
+
+Hart II.1-8, III.1-5,9, and IV.1-3. (Also, know the statement of Serre duality from III.6.)
+
+This is easily a (calendar) year's work of material to learn. Also, its pretty difficult to learn this by just reading Hartshorne. (I had a large department's worth of people to ask questions to, and read lots of other sources too, e.g., "The geometry of schemes" and Eisenbud's commutative algebra book, as well as William Stein's latex'd notes from Hartshorne's 2000 algebraic geometry course.)
+
+There of course is a small bit of healthy disagreement. If I were writing the syllabus for an AG qual, the above would be it. Suresh Venapally suggested a slightly shorter version (Hart II.1-6, III.1-5, and IV.1-2), but with more commutative algebra. 
+
+Its also good to know a little bit of chapter 5 (e.g. V.1-2, so being familiar with the intersection pairing on a surface, what a blow up is, and the story of the 27 lines on a cubic surface). 
+
+You should of course solicit other opinions. But to support my opinion, 10/13 of Parimala's papers on the arxiv have the word "scheme" in them. (I didn't search the other 3 for "variety" or other geometric terms).
+
+
+
+** Algebraic Number Theory.
+
+ I consider the first 2 1/2 chapters of Neukirch to contain most of the core material. Neukirch has great exposition, but not too many problems, so I would supplement this with problems from Marcus's Number Fields book (this one has many more problems, especially computational ones). Keith Conrad has quite a few good notes. See also [[http://mathoverflow.net/questions/13282/good-algebraic-number-theory-books][this]] MO question.
+
+ Its also important to know the statements of class field theory and how to apply them in various situations. (The proofs, while beautiful, aren't what I'd consider core background.) On the other hand, you do need to know Galois cohomology, adeles, statements of proofs, etc.
+
+
+#** MO posts to read (I haven't curated much from this yet.)
+
+#*** http://math.stackexchange.com/questions/27122/why-is-the-coordinate-ring-of-a-projective-variety-not-determined-by-the-isomorp
+
+** Emory's qualifying exams
+
+You must take the algebra and analysis exams, and one more. (If you can, take these immediately upon arrival at Emory.) If you are hoping to work in algebra, I recommend taking the algebraic geometry exam. There will not always be a course in algebraic geometry; if not, take a year long reading course. 
+
+** After this.
+
+ Below is an email I sent early on to a Wisconsin graduate student, on what to do to complement learning algebraic geometry.
+
+Here is my running list of advice, which, for now, is geared more for someone who has already been through Hartshorne and Silverman I.
+
+ 1) I would pick something easy, like Silverman II or one of Serre's old papers (GAGA, FAC)
+ 2) and also pick something hard (e.g., Mazur's Eisenstein paper, or the proof of one of the `big three') to read.
+
+Also see Emerton's advice: http://terrytao.wordpress.com/career-advice/learn-and-relearn-your-field/#comment-36823/ 
+and info for students http://www.math.uchicago.edu/~emerton/research.html#students
+
+Here are some more detailed suggestions.
+
+A proof of any of the big three is worthwhile to learn:
+ - Proof of FLT
+ - Proof of Faltings theorem
+ - Proof of Weil conjectures
+
+(It is important with these to find a nice balance between learning background and technical details and plowing forward to get a big picture of what is going on and how things fit together. Each of these have lots of `moving parts', and its good to first get a sense of what those parts are before learning each part in isolation. So for instance, it is easy to fall into the trap of spending 6 months just reading about the basics of etale cohomology, without ever reading about any interesting application of it or understanding an overview of the Weil conjectures. OTOH, you should spend *some* time doing basic exercises about etale morphisms and sites and such.)
+
+Silverman II contains a nice survey of topics, and is lighter reading than the above. Learn about 
+  - Neron models and minimal models of curves, 
+  - CFT of imaginary quadratic etc. 
+  - Tate curve
+  - There's more stuff too (e.g., modular forms) that I haven't read as carefully.
+
+Papers 
+ - Serre's GAGA and FAC are classics and will really solidify your knowledge.
+ - Mazur's modular curves papers (Eisenstein ideal, etc). One of Jordan's [[http://quomodocumque.wordpress.com/2009/07/24/le-groupe-fondamental-de-la-droite-projective-moins-trois-points-is-now-online/][three favorite papers]]. 
+ - Another of his favorites is the article mentioned by Deligne in that link. 
+ - Serre-Tate.
+
+More generally, see Emerton's advice:
+
+  - http://math.uchicago.edu/~emerton/research.html#students
+  - http://mathoverflow.net/questions/3041/the-importance-of-ega-and-sga-for-students-of-today/14550#14550 (see the Emerton's comment too)
+  - http://terrytao.wordpress.com/career-advice/learn-and-relearn-your-field/#comment-36823/ (this comment by Emerton was something we thought and talked a lot about as motivation for mathoverflow)
+
+If you're looking for more geometric things with less NT content 
+ - Beauville's book "Complex Algebraic Surfaces"
+ - Harris and Morrison (this is worth spending a lot of time on)  
+ - Deligne and Mumford's Irreducibility of the Moduli space of curves paper
+
+
+
+
+** Other advice
+
+ - Go to the algebra seminar every week, no matter what. It will be difficult to understand things at first, but write down things you don't understand and ask me about them later. See also  Ravi's [[http://math.stanford.edu/~vakil/threethings.html][Three things]].
+
+
+
+
+** Collection of advice pages 
+  -  [[http://www-math.mit.edu/~poonen/advice.html][Bjorn Poonen]]
+  -  [[http://www-math.mit.edu/~kedlaya/notes_students.shtml][Kiran Kedlaya]]
+  -  [[http://www.math.wisc.edu/~ellenber/gradstudents.html][Jordan Ellenberg]]
+  -  Ravi Vakil
+   - [[http://math.stanford.edu/~vakil/recommendations.html][Advice on recommendations]]
+   - [[http://math.stanford.edu/~vakil/threethings.html][Three things exercise]]
+  -  [[http://terrytao.wordpress.com/career-advice/][Terry Tao]]
+  -  [[http://www.math.uchicago.edu/~emerton/research.html#students][Matt Emerton]]
+  -  [[http://math.berkeley.edu/~allenk/advising.html][Allen Knutson's old advice page]]
+
+
+
+** Collection of pages with substantial expository content
+ -  [[http://swc.math.arizona.edu/][Arizona Winter School]], especially [[http://swc.math.arizona.edu/notes/index.html][here]]
+ -  [[http://www.math.uconn.edu/~kconrad/][Keith Conrad]], especially [[http://www.math.uconn.edu/~kconrad/blurbs/][here]]
+ -  [[http://www.math.uchicago.edu/~emerton/][Matt Emerton]], especially [[http://www.math.uchicago.edu/~emerton/][here]]
+ -  [[http://www.math.harvard.edu/~mazur/][Barry Mazur]] (several articles throught)
+ -  [[http://www-math.mit.edu/~mckernan/][James Mckernan]], especially [[http://math.mit.edu/~mckernan/Teaching/teaching.html][here]]
+ -  [[http://math.bu.edu/people/potthars/][Jay Pottharst]], especially [[http://math.bu.edu/people/potthars/writings/][here]]
+
+** A few lengthy notes on my experience learning certain topics. (Your mileage may vary.)
+ - My experience [[http://www.math.emory.edu/~dzb/adviceSchemeTheory.html][learning scheme theory]]
+ - My experience [[http://www.math.emory.edu/~dzb/adviceStacks.html][learning stacks]]
+ - My experience [[http://www.math.emory.edu/~dzb/adviceFLT.html][learning Fermat's Last Theorem]]
+ - My experience [[http://www.math.emory.edu/~dzb/adviceMazursTheorem.html][learning Mazur's Torsion and Isogeny theorems]]
