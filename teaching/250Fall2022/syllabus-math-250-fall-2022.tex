@@ -1,0 +1,315 @@
+\documentclass[12pt]{article}
+\textwidth=7in
+\textheight=9.5in
+\topmargin=-1in
+\headheight=0in
+\headsep=.5in
+\hoffset  -.85in
+
+\usepackage{ulem}
+\usepackage{url}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+\pagestyle{empty}
+
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\begin{document}
+\noindent\rule{18cm}{0.4pt}
+\begin{center}
+  {\bf MATH 250, Foundations of Mathematics \\
+Aug 24 - Dec 6, 2022    
+}
+\end{center}
+\noindent\rule{18cm}{0.4pt}
+\begin{center}
+  {\bf 
+    Section 005 TuTh 2:30-3:45 \\
+    % MSC E406
+    MSC E308a 
+}
+\end{center}
+
+\noindent\rule{18cm}{0.4pt}
+
+
+
+% \setlength{\unitlength}{1in}
+% \begin{picture}(6,.1) 
+% \put(0,0) {\line(1,0){6.25}}         
+% \end{picture}
+
+ 
+
+\renewcommand{\arraystretch}{2}
+
+\vskip.25in
+\noindent\textbf{Instructor:} David Zureick-Brown, Office: W430 Math and Science Center
+
+\vskip.25in
+\noindent\textbf{Contact:} \href{mailto: dzureic@emory.edu}{dzureic@emory.edu}; office phone: \href{tel:6086160153}{(608) 616-0153}
+\vskip.25in
+
+\noindent\textbf{Office Hours:} Mondays 4:30-5:30pm, via Zoom and by appointment.
+\begin{center}
+\url{https://emory.zoom.us/j/93045569704}
+\end{center}
+
+\vskip.25in
+
+% \noindent My other course has office hours from 4:30-5:30 on Wednesdays; you are welcome to drop in then, but those students will get priority.
+
+\vskip.25in
+\noindent\textbf{Required textbook:}  \href{https://www.amazon.com/Introduction-Abstract-Mathematics-Robert-Bond/dp/1577665392}{``An Introduction to Abstract Mathematics"}, Bond and Keane
+
+\vskip.25in
+\noindent\textbf{Course website:} \url{http://www.math.emory.edu/~dzb/teaching/250Fall2022/}
+
+% \vskip.25in
+% \noindent\textbf{Remote start.}
+% During January the course will be online. The Zoom link for the meetings is
+% \begin{center}
+% \url{https://emory.zoom.us/j/96732624542} %
+% \end{center}
+
+
+
+
+\vskip.25in
+\noindent\textbf{Other online tools that we will use:}
+\begin{itemize}
+\item \url{https://miro.com/}
+\item \url{https://www.overleaf.com/} or \url{https://latexbase.com/}
+\end{itemize}
+It will be worthwhile to familarize yourself with these ahead of time and to make accounts.
+
+% \vskip.25in
+% \noindent\textbf{Prerequisites:}
+% Math 112
+
+\vspace*{.15in}
+\noindent\rule{18cm}{0.4pt}
+\vspace*{.15in}
+
+ \noindent\textbf{Prerequisites:}
+ Math 112 or equivalent
+
+%  \vspace*{.15in}
+% \noindent\rule{18cm}{0.4pt}
+% \vspace*{.15in}
+
+\newpage
+\noindent \textbf{Learning objectives}: we will cover the following topics.
+
+
+
+\begin{itemize}
+\item Logic -- statements, negation, converse, etc. \vspace{-5pt}
+\item Mathematical prose and rigor -- how to write mathematics
+  correctly and in complete sentences.\vspace{-5pt}
+\item Techniques of proof -- proof by contradiction, induction, proof by cases; \vspace{-5pt}
+\item Sets, relations, functions -- the building blocks of mathematics \vspace{-5pt}
+\item Some additional topics: Cardinality (different sizes of infinity);
+Numbers (what they are, divisibility transcendental numbers vs. algebraic
+   numbers (i.e., the difference between $\pi$ and $2^{(1/2)}$)) \vspace{-5pt}
+  % non-constructive proofs, "consider a minimal X" proofs, pigeonhole
+  % principle
+\end{itemize}
+
+ \vspace*{.15in}
+\noindent\rule{18cm}{0.4pt}
+\vspace*{.15in}
+
+
+\noindent \textbf{Homework} is \textbf{due \underline{Tuesdays at 2:25pm}}, via \underline{Canvas}. The assignment should be submitted as a \underline{single pdf}, produced using \LaTeX. Please name your file sensibly (I would prefer: lastname-HW-01.pdf).
+See the document here
+\begin{center}
+  \url{https://www.math.emory.edu/~dzb/teaching/250Fall2022/assignments-math-250.pdf}
+\end{center}
+for a list of all assigned work and a weekly breakdown of the course content.
+
+%  This class will meet 28 times. I will cover roughly one section of
+%  our text each class. Some sections will be skipped and many will be
+%  covered out of order.
+% \\
+
+ % There will be many short in class activities in addition to
+ % lecturing. % In fact, there will be an activity every day at the
+ % % beginning of class (even on non quiz days), so please show up on time! 
+
+
+
+
+\noindent\textbf{Grading:} 
+Your grade will consist of the following. Your lowest weekly assignment will be dropped.
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    Weekly Homework Assignments & $40\%$ \\
+    \hline
+    Midterm & $30\%$ \\     
+    Final Exam & $30\%$ 	 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+
+\vspace*{.15in}
+\noindent\textbf{Grade scale:} 
+A lower bound on your grade is given by the following table. 
+
+\begin{center}
+  \begin{tabular}{|ll|ll|ll|ll|l|}
+\hline
+A  &\hspace{-3 pt}\hspace{-7 pt}= 93-100   &B+ &\hspace{-7 pt}= 87-89  &C+ &\hspace{-7 pt}= 77-79 & D+ &\hspace{-7 pt}= 67-69  & F = 0-62\\
+A- &\hspace{-3 pt}\hspace{-7 pt}= 90-92    &B  &\hspace{-7 pt}= 83-86  & C &\hspace{-7 pt}= 73-76  & D  &\hspace{-7 pt}= 63-66 &\\
+   &                         &B- &\hspace{-7 pt}= 80-82  &C- &\hspace{-7 pt}= 70-72 &    &        &\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\vspace*{.15in}
+\noindent\textbf{Typical rubric:} 
+Proofs will typically be graded on the following rubric (out of 10 points).
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    10& Flawless\\
+    9& Basically correct, but not literally 100\% correct\\
+    7& Mostly correct, but with at least one error\\    
+    5& Numerous errors\\
+    2& Proof contains a fundamental misunderstanding\\
+    0& No part of the proof was correct\\
+    \hline
+  \end{tabular}
+\end{center}
+
+
+
+\noindent\textbf{Assignment dates:}
+
+\begin{center}
+  \begin{tabular}{|l|l|}
+    \hline
+    Weekly Assignments & Generally due Tuesdays at 2:25pm via Canvas.\\
+                       & Please submit a single pdf, produced by LaTeX\\
+    \hline
+    Midterm  & Thursday, October 20 \\     
+    Final Exam  & Thursday December 8, 3:00pm - 5:30pm	 \\
+    \hline
+  \end{tabular}
+\end{center}
+
+
+
+
+% \textbf{Calculators, notes, and textbooks are not allowed in exams or quizzes.}
+
+% \vskip.25in
+% \noindent\textbf{Homework}:  There will be homework assigned every week. There
+% will be many simple problems, checking your understanding of the
+% definitions, that will be collected and graded for completness but not
+% correctness. In addition to this, most weeks there will be a number of proofs assigned. You
+% are expected to write them up very carefully. I will very carefully grade 3-5 of
+% the proofs each week. Homework assignments will typically be worth 40-60 points, depending on the length of the assignment. 
+% Only your top 10 homework grades will be counted towards your final grade.
+
+% The homework assignments are available at the course web page, and will be updated after each lecture. \textbf{Please check the webpage (todo: move to Canvas) for changes before beginning the assignment.}
+% \\
+
+\vskip.25in
+\noindent\textbf{Rewrites} will be allowed, and in fact expected, on weekly graded assignments, and students will be able to recover up to half of the missed points. To submit a rewrite, please simply resubmit the assignmetn on Canvas in place of the original one (I will still be able to see the original assignment and be able to compare). You may rewrite a problem multiple times, and you may resubmit a rewrite as late as you like (you can even bring them to the final exam).
+\vskip.25in
+
+\noindent To submit a rewrite, please include your original assignment, the date of the original assignment, and please make it clear which problems you are rewriting.
+
+\vskip.25in
+\noindent\textbf{Late submissions}. Any assignment submitted after the due date will be treated as a ``rewrite'' (you can receive up to half credit for the assignment).
+
+% \vskip.25in
+% \noindent\textbf{Asynchronous content}: each week, you will have a few short videos to watch, some assigned reading, and a short activity (usually, a quiz or writing assignment) due by Tuesday, 4pm. (This deadline is important, since it will inform the planned synchronous content.)
+
+% \vskip.25in
+% \noindent\textbf{Synchronous content}: in the synchronous sessions we will work through problems together, and I will give you feedback on your mathematical writing. The two tools we will use to do this are
+% \begin{itemize}
+% \item \url{https://awwapp.com/b/}
+% \item \url{https://latexbase.com/}
+% \end{itemize}
+% as well as Zoom. 
+
+
+\vskip.25in
+\noindent\textbf{Honor Code}:  Remember that copying another student's work is a violation of the Honor Code and will be treated as such. Please review Emory's Honor Code, available \href{http://catalog.college.emory.edu/academic/policies-regulations/honor-code.html}{here}.
+
+% If you must leave class during an exam for \textbf{any reason}, please leave all of your belongings (\textbf{including your \sout{handheld supercomputer} phone!}). 
+
+You are free to consult any sources (animate or inanimate) while doing your homework; working in groups is encouraged! But, if you use anything (or anyone) other than your class notes or the texts listed above, you should say so on your homework -- please state at the end of every problem any sources used. 
+
+On the other hand, you are expected to make an honest attempt to do every problem on your own before consulting other sources. 
+
+A good rule of thumb to avoid plagiarism is the following -- when doing the final write up of a problem, do not have any text books, web pages, or classmate's write up open in front of you. If you get stuck when writing up an assignment, go back and look again; just make sure that you organize the mathematics in your head before writing a proof rather than copying a solution from some source. \textbf{This is a generous homework policy. Please do not abuse it.} 
+
+
+
+\vskip.25in
+\noindent\textbf{Accessibility and accomodations}. 
+Emory University complies with the regulations of the Americans with Disabilities Act of 1990 and offers accommodations to students with disabilities.  If you are in need of an accommodation, please contact your instructor to discuss this as soon as possible.  All information will be held in the strictest confidence, and appropriate documentation should be presented within a week of the beginning of the course. For more information, please go \href{http://accessibility.emory.edu/}{here}.
+\vskip.25in
+
+
+% \noindent\textbf{Classroom safety}. Everybody must keep their face mask on at all times when they are indoors on campus, and this includes in our classroom.  Your face mask must cover your nose, mouth, and chin, and should fit snugly.    Due to the necessity of keeping your PPE on, eating and drinking is forbidden in the classroom.  \href{https://hr.emory.edu/eu/working-covid-19/face-coverings/using-face-coverings.html}{Please read this Emory advice about quality and fit of mask}.
+
+% \vskip.25in
+% \noindent\textbf{Health considerations}. At the very first sign of not feeling well, stay at home and reach out for a health consultation. Please consult the \href{https://www.emory.edu/forward/resources/faq/index.html#anchor-health}{campus FAQ} for how to get the health consultation. As you know, Emory does contact tracing if someone has been diagnosed with COVID-19. A close contact is defined as someone you spend more than 15 minutes with, at a distance less than 6 feet, not wearing facial coverings. This typically means your roommates, for example. However, your classmates are not close contacts as long as we are following the personal protective equipment protocols in the classroom: wearing facial coverings, staying six feet apart.
+
+\vskip.25in
+\noindent \textbf{Attendance policy}. Attendance is always optional (except for exams). % This semester due to the pandemic, some students might be sick or will need to go into isolation or quarantine.
+If you are sick, I would prefer that you stay home from class; I have notes and videos from previous semesters that I can send you.
+
+% understand that I will be flexible about assginemnts. Please make sure to email me so that we can discuss your individual circumstances. For students in quarantine who are well, I will provide ways that you can keep up with your schoolwork.  Please also contact me via email if you are in quarantine.
+
+
+% \vskip.25in
+% \noindent\textbf{Overloads}: Ken Mandelberg handles all overloads for the department. The overload form is available at \url{http://www.math.emory.edu/overload-policy.pdf}.
+
+
+% \vskip.25in
+% \noindent\textbf{Additional resources}: todo
+
+
+% \vskip.25in
+% \noindent\textbf{Weekly learning outcomes}: (todo: add section numbers). See table below.n
+
+% \begin{center}
+%   \begin{tabular}{|r|l|}
+%     \hline
+% Week& content \\
+%     \hline    
+%  0& Introduction to the course.  \\
+%     1& Working from definitions. Simple divisibility proofs. Logic: statements, statement forms,\\
+%        & truth tables, identity proofs.  \\
+%  2& Implications. Converse and contrapositive. Proofs of very basic divisibility properties.\\
+%  3& Emphasis on problem solving techniques. ``Proof by cases". More difficult divisibility problems. \\
+%  4& Proof by contradiction. Unsolvability of equations. Irrationality.\\
+%  5& More contradiction. Introduction to induction.\\
+%  6& More induction.\\
+%  7& Exam. Basics of set theory. Empty set. Proofs with sets.\\
+%  8& Operations with Sets. Proofs.\\
+%  9& More proofs with sets. De Morgan's laws. Cartesian Product. Power set. \\
+%  10& Introduction to functions. Images, domain, codomain. \\
+%  11& Exam. More difficult problems with images; preimages.\\
+%  12& Injectivity and surjectivity.\\
+%  13& Composition and inverse.\\
+%     14& Relations.\\
+% \hline    
+%   \end{tabular}
+% \end{center}
+    
+\end{document}

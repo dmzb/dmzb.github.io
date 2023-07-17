@@ -1,0 +1,100 @@
+\documentclass[12pt, reqno]{amsart}
+
+\textwidth=7in
+\textheight=9.5in
+\topmargin=0in
+\headheight=0in
+\headsep=.5in
+\hoffset  -.85in
+
+
+\begin{document}
+
+\title[Math 250 Handout 12 - Compositions and injectivity/surjectivity]{Math 250 Handout 12 - Compositions and injectivity/surjectivity}\maketitle
+
+
+\begin{enumerate}
+
+
+\item Let $f\colon \mathbf{R} \to \mathbf{R}$ be the function $f(x) = \frac{1}{1+x^2}$
+  and let  $g\colon \mathbf{R} \to \mathbf{R}$ be the function $g(x) = e^x$. \vspace{6pt}
+
+  \begin{enumerate}
+  \item What is $g \circ f(0)$?
+  \item What is $f \circ g(0)$?
+  \item Give a formula for $f \circ g$ and $g \circ f$.
+  \end{enumerate} \vspace{1.5in}
+
+\item Let $f\colon \mathbf{R} \to \mathbf{Z}$ be the function $f(x) = \lfloor x \rfloor$ (i.e., round
+  $x$ down to the nearest integer)
+  and let  $g\colon \mathbf{Z} \to \mathbf{Z}$ be the function $g(n) = $ `the number
+  of distinct
+  prime factors of $n$'. (So $g(0) = g(1) = 0$, $g(4) = 1$, $g(6) =
+  2)$) \vspace{6pt}
+
+  \begin{enumerate}
+  \item What is $g \circ f(\pi)$?
+  \item What is $g \circ f(91.1023124)$?
+  \item Is $g \circ f$ injective? Surjective?
+  \end{enumerate} \vspace{1.5in}
+
+\item Let $f\colon \mathbf{Z} \to P(\mathbf{Z})$ be the function $f(n) = \{n\}$
+  and let  $g\colon P(\mathbf{Z}) \to P(\mathbf{Z})$ be the function $g(S) = S \cap \{1\}$. \vspace{6pt}
+
+  \begin{enumerate}
+  \item What is $g \circ f(0)$?
+  \item What is $g \circ f(1)$?
+  \item Give a formula for $g \circ f$.
+  \end{enumerate} \vspace{1in}
+
+
+\newpage
+\item   Let $f\colon A \to B$ and $g \colon B \to C$ be functions. Prove or
+  disprove each of the following:
+  \begin{enumerate}
+  \item If $f$ and $g$ are injections, then $g \circ f$ is an injection.
+  \item If $f$ and $g$ are surjections, then $g \circ f$ is a surjection.
+  \item If $f$ and $g$ are bijections, then $g \circ f$ is a bijection.
+  \item If $g \circ f$ is an injection, then $f$ and $g$ are injections.
+  \item If $g \circ f$ is a surjection, then $f$ and $g$ are surjections.
+  \item If $g \circ f$ is a bijection, then $f$ and $g$ are bijections.
+  \item If $g \circ f$ is an injection, then $f$ is an injection.
+  \item (HW) If $g \circ f$ is an injection, then $g$ is an injection.
+  \item (HW) If $g \circ f$ is a surjection, then $f$ is a surjection.
+  \item (HW) If $g \circ f$ is a surjection, then $g$ is a surjection.
+  \item If $g \circ f$ is a bijection, then $f$ is a bijection.
+  \item If $g \circ f$ is a bijection, then $g$ is a bijection.
+  \item If $g \circ f$ is an injection and $g$ is a bijection, then $f$ is an
+    injection.
+  \end{enumerate}
+
+\vspace{1in}
+
+\item Let $f\colon A \to B$ be a function. Let $X,Y \subset
+  A$ and let $W,V \subseteq B$. Each of the following statements are false as stated. Which
+  become true if we assume that $f$ is injective or surjective? In
+  each case ($f$ is injective, or $f$ is surjective), prove your
+  assertion or give a counterexample.
+  \begin{enumerate}
+  \item $X \subseteq Y \Leftarrow f(X) \subseteq f(Y)$.
+  \item (HW)$f(X \cap Y) \subseteq f(X) \cap f(Y)$.
+  \item $f(X) - f(Y) \subseteq f(X - Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \item $X \subseteq f^{-1}(f(X))$.
+  \item $W \subseteq f(f^{-1}(W))$.
+  \item $V \subseteq W \Leftarrow f^{-1}(V) \subseteq f^{-1}(W)$.
+  \end{enumerate}
+
+
+  
+\end{enumerate}
+
+
+\end{document}
+
+
+
+
