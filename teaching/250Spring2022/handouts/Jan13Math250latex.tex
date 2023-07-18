@@ -1,0 +1,195 @@
+\documentclass[12pt, reqno]{amsart}
+
+\textwidth=7in
+\textheight=9.5in
+\topmargin=0in
+\headheight=0in
+\headsep=.5in
+\hoffset=-.85in
+
+\usepackage{xcolor}
+
+\begin{document}
+
+\title[Math 250 Handout 1 - Logic]{Math 250 Handout 1 - Logic}\maketitle
+
+
+A \textbf{statement} is a sentence for which `true or false' is meaningful.
+\\
+
+1. Which of these are \textbf{statements}? 
+\vspace{10pt}
+\begin{enumerate}
+\item Today it is raining.
+\item {\color{red} What is your name?}
+\item Every student in this class is a math major.
+\item $2 + 2 = 5$.
+\item {\color{red} $x + 1  > 0$.} (This is what is called an `open statement'. This isn't a statement `yet', but it is a statement if we specify $x$)
+\item {\color{red} $x^2 + 1  > 0$.} This is true for all real numbers $x$. This isn't true for $x = i$ ($i^2 = -1$). 
+
+If we `quantified' the statement as `for all real numbers $x$, $x^2 + 1 > 0$; then this is a statement. (And in fact it is true.) 
+\item If it is raining, then I will wear my raincoat.
+\item {\color{red} Give me that.}
+\item {\color{red} This sentence is false.} If this is a statement, then it is either true or false. If it is true, then it is false. (That's nonsense.). But if it is false, then it is true. Also nonsense. Thus either way something goes wrong. I.e., it doesn't make sense for this to be true or false.
+\item If $x$ is a real number, then $x^2 > 0$.
+\end{enumerate}
+\vspace{20pt}
+
+2. Which of these are true? 
+\vspace{10pt}
+\begin{enumerate}
+\item (F) Every student in this class is a math major and a human being.
+\item (T) Every student in this class is a math major or a human being.
+\item (T) $2 + 2 = 5$ or  $1  > 0$.
+\item (T or F) If $x$ is a real number, then $x^2 \geq 0$.
+\item (T or F) If $x$ is a complex number, then $x^2 \geq 0$.
+\end{enumerate}
+\vspace{20pt}
+
+3. Write the negations of the following.
+\vspace{10pt}
+\begin{enumerate}
+\item $2 + 2 \not = 5$
+\item $1  \leq 0$.
+\item $2 + 2 \not = 5$ and  $1  \leq 0$.
+\item Every student in this class is a math major.
+\item Every student in this class is a math major or a human being.
+\item If $x$ is a real number, then $x^2 > 0$.
+\end{enumerate}
+\vspace{20pt}
+
+4. Prove the following using truth tables.
+\vspace{10pt}
+\begin{enumerate}
+\item $P \wedge(  Q\vee R) = (P\wedge Q) \vee (P \wedge R)$,
+\item $(P \vee Q) \vee R = P \vee (Q \vee R)$. (We thus write $P \vee Q \vee R$ for both.)
+\item \label{enum:distNeg} $\neg (P \vee Q) = \neg P \wedge \neg Q$,
+\item $\neg (P \wedge Q) =$ (make a guess similar to problem \ref{enum:distNeg}),
+\item $\neg (\neg P) = P$.
+\end{enumerate}
+\vspace{20pt}
+
+\newpage
+
+5. In exercise 6, you may use the following variants of exercise 4.
+\vspace{10pt}
+\begin{enumerate}
+\item $P \vee(  Q\wedge R) = (P\vee Q) \wedge (P \vee R)$,
+\item $(P \wedge Q) \wedge R = P \wedge (Q \wedge R)$. (We thus write $P \wedge Q \wedge R$ for both.)
+\item $P \vee Q = Q \vee P$.
+\item $P \wedge Q = Q \wedge P$.
+\end{enumerate}
+\vspace{20pt}
+
+6. Prove or disprove the following \emph{without} using truth tables. 
+\vspace{10pt}
+\begin{enumerate}
+\item $\neg(P \wedge \neg Q) = \neg P \vee Q$.
+\item $P \vee ((Q \wedge R) \wedge S) = (P \wedge Q) \vee (P \wedge R)
+  \vee (P \wedge S)$.
+\item $P \vee (Q \wedge R) \wedge S) = (P \vee Q) \wedge (P \vee R)
+  \wedge (P \vee S)$.
+
+\end{enumerate}
+\vspace{20pt}
+
+7. Write the negations of the following implications.
+\vspace{10pt}
+\begin{enumerate}
+\item If $n$ is even, then $n^2$ is even.
+\item If $1 = 0$, then $2 + 2 = 5$.
+\item If there is free coffee, then DZB will drink it
+\item If $1 = 0$ and $2 + 2 = 5$, then the sky is blue and kittens are popular on youtube
+\item If $x$ and $y$ are real numbers such that $xy = 0$, then $x = 0$ or $y = 0$.
+\end{enumerate}
+\vspace{20pt}
+
+8. Which of these are true? 
+\vspace{10pt}
+\begin{enumerate}
+\item (T or F) For all $x \in \mathbf{Z}$, $x$ is divisible by 2.
+\item (T or F) There exists an $x \in \mathbf{Z}$ such that $x$ is divisible by $2$.
+\item (T or F) For all $x \in \mathbf{R}$, if $x \neq 0$, then there exists a $y \in \mathbf{R}$ such that $xy = 1$.
+\item (T or F) For all $x \in \mathbf{R}$, there exists a $y \in \mathbf{R}$ such that $xy = 1$.
+\end{enumerate}
+\vspace{20pt}
+
+9. Write the negations of the following.
+\vspace{10pt}
+\begin{enumerate}
+\item For all $x \in \mathbf{Z}$, $x$ is divisible by 2.
+\item There exists an $x \in \mathbf{Z}$ such that $x$ is divisible by $2$.
+\item $\neg(\forall x, P(x))$,
+\item $\neg( \exists x $ s.t. $Q(x)$)
+\item $\forall x, (P(x) \wedge Q(x))$.
+\item If $\exists x \in \mathbf{R}$ such that $2x = 1$, then for all $y$, $y^2 < 0$.  
+\item For all $x \in \mathbf{R}$, there exists a $y \in \mathbf{R}$ such that $xy = 1$.
+\end{enumerate}
+\vspace{20pt}
+
+10. Write the converse and contrapositive of the statements from problem 7.
+
+
+\newpage
+
+
+Here are some basic identities.
+\begin{enumerate}
+\item $P \wedge Q = Q \wedge P$
+\item $P \vee Q = Q \vee P$
+\item $(P \wedge Q) \wedge R = P \wedge (Q \wedge R) = P \wedge Q \wedge R$
+\item $(P \vee Q) \vee R = P \vee (Q \vee R) = P \vee Q \vee R$  
+\end{enumerate}
+\smallskip
+
+Here are some useful identities.
+
+\begin{enumerate}
+\item $\neg(P \wedge Q) = \neg P \vee \neg Q$
+\item $\neg(P \vee Q) = \neg P \wedge \neg Q$
+\item $\neg(\neg P) = P$
+\item $P \vee (Q \wedge R) = (P \vee Q) \wedge (P \vee R)$
+\item $P \wedge (Q \vee R) = (P \wedge Q) \vee (P \wedge R)$
+\item $\neg (P \Rightarrow Q) = P \wedge \neg Q$
+\item $\neg (\forall x, P(x)) = \exists x$  such that $\neg P(x)$
+\item $\neg (\exists x$ such that $P(x)) = \forall x, \neg P(x)$
+
+\end{enumerate}
+\vspace{10pt}
+
+We can combine these to negate more complicated statements
+
+\begin{enumerate}
+\item $\neg(P \Rightarrow (Q \vee R)) = $ 
+\item [] $P \wedge \neg (Q \vee R)) = $ 
+\item [] $P \wedge \neg Q \wedge \neg R$ 
+\item []
+\item If $1 = 0$ and $2 + 2 = 5$, then the sky is blue and kittens are cute
+\item [] If (P and Q) then (R and T)
+\item [] 
+\item [] Its negation:
+\item [] (P and Q) and not (R and T)
+\item [] ($1 = 0$ and $2 + 2  = 5$) and (the sky is not blue or kittens are not cute)
+\item []
+\item $\neg Q \Rightarrow \neg P$
+\item [] $\neg (\neg Q \Rightarrow \neg P)$
+\item [] $\neg Q \wedge \neg(\neg P)$
+\item [] $\neg Q \wedge P$
+\end{enumerate}
+
+\vspace{10pt}
+
+This last example is called the \textbf{contrapositive}, and is a useful proof technique! (Try it on your homework.)
+\\
+
+\begin{enumerate}
+\item[] $(P \Rightarrow Q) = (\neg Q \Rightarrow \neg P)$ because they have the same negation.
+\end{enumerate}
+
+
+
+
+
+
+\end{document}
+

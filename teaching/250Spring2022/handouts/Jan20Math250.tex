@@ -1,0 +1,37 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Jan 20 Math 250}
+\author{David Zureick-Brown}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Definition.} Let $a$ and $b$ be integers. We say that $a$ divides $b$ if there exists an integer $k$ such that $b =ak$. In this case, we write $a \mid b$. 
+\\
+
+Prove that $3 \mid 4^n -1$ for all non-negative integers $n$.
+\\
+
+\textbf{Definition}. We say that an integer is prime if $n \not = \pm 1$ and $a \mid n$ implies that $a = \pm 1$ or $\pm n$.
+\\
+
+Examples: 7 is prime. To prove this, just try every integer between 1 and 7, and check whether they divide 7. (This is called ``brute force" or proof by computation.)
+
+Example: 6 is not prime. To prove this, give an example of a divisor $a$ which is not $\pm 1$ or $\pm 6$; $a = 2$ works.
+\\
+
+Why isn't 1 prime? Because we want factorizations to be unique. I.e., $6 = 2*3 = 3*2$. If we allow 1 to be prime, then $6 = 1*2*3 = 1*1*2*3 = ...$
+\\
+
+Problem: for which integers $n$ is $n^3 -1$ prime? If $n = 2$, $n^3 - 1 = 8-1 = 7$, which is prime. If $n = 3$, then $3^3 - 1 = 27-1=26$, which is not prime.
+
+Note: if $n$ is odd, then $n^3 - 1$ is even, so it is not prime (unless it is equal to 2, because 2 is the only even prime). 
+
+
+
+
+
+\end{document}

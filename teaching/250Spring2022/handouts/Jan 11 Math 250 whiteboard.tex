@@ -1,0 +1,78 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Jan 11 Math 250}
+\author{DZB and class}
+\date{January 2022}
+
+\begin{document}
+
+\maketitle
+
+\textbf{Definition}. We say that an integer $n$ is even if there exists an integer $m$ such that $n = 2m$. 
+\\ % This is a comment. This doens't appear.
+% \\ creates an extra space
+
+\textbf{Examples}. Is 6 even? Let's check the definition.  Is there an integer $m$ such that $6 = 2m$? Sure. If $m = 3$, then $6 = 2m$. So 6 is even.
+\\
+
+What about $n = 7$? Well, if $7 = 2m$, then $m = 7/2 = 3.5$, which is not an integer. 
+\\
+
+What about $n = -8$? Sure. $-8 = 2(-4)$. Since -4 is an integer, $-8$ is even.
+\\
+
+What about 0? Is 0 even? Can we solve the equation $0 = 2m$ for $m$? Yes: $m = 0$ is a solution. So 0 is even.
+\\
+
+(A ``lemma" is usually a ``small" piece of math. A theorem is a big piece. This is subjective.)\\
+
+\textbf{Lemma}. Let $a$ and $b$ be integers. Suppose that $a$ and $b$ are both even. Then $a + b$ is also even. 
+\\
+
+\textbf{Proof}. Since $a$ is even, there exists an integer $m$ such that $a = 2m$. Since $b$ is even, there exists an integer $n$ such that $b = 2n$. Then, $a + b = 2m + 2n$. By the distributive property of multiplication and addition, $a + b = 2(m+n)$. Since $m + n$ is an integer, we conclude that $a + b$ is even.
+\\
+
+\textbf{Note}. The reason we can conclude that $a + b$ is even is that we verified the definition of even on the previous line.
+\\
+
+\newpage
+
+Put math between dollar signs.
+\\
+
+a + b vs $a + b$
+\\
+
+This appears inline $\int_0^{\infty} e^{-x^2} dx$. To `display' the equation, use double dollar signs
+$$\int_0^{\infty} e^{-x^2} dx$$
+
+$\alpha \beta \gamma \Gamma \sum \times \oplus \otimes \bigoplus$
+
+
+\newpage
+
+The structure of proofs. The `proof technique' of the ``even + even = even" proof is a `direct proof'. 
+\\
+
+There are four steps.
+\begin{enumerate}
+    \item Find your hypotheses and assume them.
+    \item Write out what your hypotheses mean; i.e., write out the definitions of everything. (I.e., unwind.)
+    \item Think of something; usually, manipulate the definitions.
+    \item Conclude. (Verify the definitions of the thing you want to prove.)
+\end{enumerate}
+I.e., Assume, Unwind, Manipulate, Conclude (AUMC)
+\\
+
+\textbf{Definition}. Let $a$ and $b$ be integers. We say that $a$ is a multiple of $b$ if there exists some integer $c$ such that $a = bc$. In this case, we say that $b$ divides $a$, and write $b \mid a$.
+\\
+
+\textbf{Lemma}. Suppose that $a$ and $b$ are even integers. Then $ab$ is a multiple of 4.
+\\
+
+\textbf{Proof}.  Since $a$ is even, there exists an integer $m$ such that $a = 2m$. Since $b$ is even, there exists an integer $n$ such that $b = 2n$. Then $ab = (2m)(2n) = 4(mn)$. (Since multiplication commutes.) Since $mn$ is an integer, $ab$ is a multiple of 4.
+
+
+
+\end{document}
