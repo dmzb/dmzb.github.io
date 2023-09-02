@@ -1,6 +1,7 @@
 \documentclass[12pt]{article}
 \textwidth=7in \textheight=9.5in \topmargin=-1in \headheight=0in \headsep=.5in \hoffset  -.85in
-\usepackage{ulem, url, hyperref}
+\usepackage{ulem, url, hyperref, booktabs}
+\usepackage[table]{xcolor}
 \hypersetup{colorlinks=true, linkcolor=blue, filecolor=magenta, urlcolor=cyan}
 \pagestyle{empty}
 
@@ -13,27 +14,21 @@ Fall 2023
 \end{center}
 
 
-\begin{center}
+
 % \rule{6in}{0.4pt}
 \hrule
-\begin{minipage}[t]{.75\textwidth}
-\begin{tabular}{llcccll}
-\textbf{Instructor:}     & David Zureick-Brown & & &  & \textbf{Time:} & MWF 2:00 -- 2:50 \\
-  \textbf{Email:}        &  \href{mailto: dzureickbrown@amherst.edu}{dzureickbrown@amherst.edu} & & & & \textbf{Place:} & 204 Seeley Mudd \\
-  \textbf{Office:}       &  502 Seeley Mudd & & & &  & \\
-  \textbf{Office hours:} &  Mondays 3-4 & & & &  &\\
-  \textbf{}              &  Thursdays 2-5 & & & &  &                                                   
-
-
-
-                                           
+\smallskip
+\noindent \begin{tabular}{@{}llcccll}
+\textbf{Instructor:}     & David Zureick-Brown & & &  & \textbf{Office:} & 502 Seeley Mudd \\
+  \textbf{Email:}        &  \href{mailto: dzureickbrown@amherst.edu}{dzureickbrown@amherst.edu} & & & &  \textbf{Office hours:} & Mondays 3-4 (in person)\\
+  \textbf{Time:}        &  MWF 2:00 -- 2:50  & & & &  &Thursdays 2-3 (via zoom) \\
+  \textbf{Place:}        &  204 Seeley Mudd & & & &  & Thursdays 3-5 (in person)
 \end{tabular}
-\end{minipage}
-% \rule{6in}{0.4pt}
+\smallskip
 \hrule
-\end{center}
 
 
+\medskip
 \noindent\textbf{Textbook:}
 \href{https://www.amazon.com/Course-Linear-Algebra-Dover-Mathematics/dp/0486469085}
 {``A Course in Linear Algebra,"}  by David Damiano and John Little
@@ -70,8 +65,8 @@ Fall 2023
 
 
  
-
-% \hrule
+\medskip
+ \hrule
 \medskip
 
 \noindent \textbf{Homework} is \textbf{due \underline{Fridays at 1:55pm}}, via \underline{Gradescope}. The assignment should be submitted as a \underline{single file}. Please be kind to our dear graders and take care to make the assignment legible.
@@ -105,10 +100,10 @@ Your grade will consist of the following. Your lowest weekly assignment will be 
     Weekly Homework Assignments & $20\%$ \\
     \hline    
     3 midterms and a comprehensive final exam  & $80\% = $   	 \\
-    Best exam  & $25\% + $ 	 \\
+    Best exam  & $30\% + $ 	 \\
     Second best exam& $20\% + $ 	 \\
     Third best exam & $20\% + $ 	 \\
-    Fourth best exam & $15\%$ 	 \\ 
+    Fourth best exam & $10\%$ 	 \\ 
     \hline
   \end{tabular}
 \end{center}
@@ -140,13 +135,14 @@ Assignments will typically be graded on the following rubric (out of 10 points).
     7& Mostly correct, but with at least one error\\    
     5& Numerous errors\\
     2& Solution contains a fundamental misunderstanding\\
+    1& Blank \\    
     0& No part of the proof was correct\\
     \hline
   \end{tabular}
 \end{center}
 
 
-
+\newpage
 \noindent\textbf{Assignment and exam dates:}
 
 \begin{center}
@@ -207,16 +203,16 @@ Assignments will typically be graded on the following rubric (out of 10 points).
 % If you must leave class during an exam for \textbf{any reason}, please leave all of your belongings (\textbf{including your \sout{handheld supercomputer} phone!}). 
 
 You are free to consult any sources (animate or inanimate) while doing your homework; working in groups is encouraged! % But, if you use anything (or anyone) other than your class notes or the texts listed above, you should say so on your homework -- please state at the end of every problem any sources used. 
-On the other hand, you are expected to make an honest attempt to do every problem on your own before consulting other sources. An effective approach to learning and retaining knowledge is a back and forth process of trying problems on your own and asking for help or for a small hint.
+On the other hand, you are expected to make an honest attempt to do every problem on your own before consulting other sources. Learning and retaining knowledge is a back and forth process of trying problems on your own and asking for help or for a small hint.
 \smallskip
 
-A good rule of thumb to avoid plagiarism is the following -- when doing the final write up of a problem, do not have any text books, web pages, or classmate's write up open in front of you. If you get stuck when writing up an assignment, go back and look again; just make sure that you organize the mathematics in your head before writing a proof rather than copying a solution from some source. \textbf{This is a generous homework policy. Please do not abuse it.} 
+\noindent\textbf{Plagiarism}: a good rule of thumb to avoid plagiarism is the following -- when doing the final write up of a problem, do not have any text books, web pages, or classmate's write up open in front of you. If you get stuck when writing up an assignment, go back and look again; just make sure that you organize the mathematics in your head before writing a proof rather than copying a solution from some source. \textbf{This is a generous homework policy. Please do not abuse it.} 
 
 
 
 \vskip.25in
 \noindent\textbf{Accessibility and accomodations}. 
-Amherst College complies with the regulations of the Americans with Disabilities Act of 1990 and offers accommodations to students with disabilities. Please \emph{do not hesitate} to contact me about accommodations. (Please also do so as soon as possible.)  For more information, please go \href{https://www.amherst.edu/offices/student-affairs/accessibility-services}{here}.
+Amherst College complies with the regulations of the Americans with Disabilities Act of 1990 and offers accommodations to students with disabilities. Please \emph{do not hesitate} to ask for accommodations or to contact me about accommodations. (Please also do so as soon as possible.)  For more information, please go \href{https://www.amherst.edu/offices/student-affairs/accessibility-services}{here}.
 
 % \vskip.25in
 % \noindent\textbf{Health considerations}. At the very first sign of not feeling well, stay at home and reach out for a health consultation. Please consult the \href{https://www.emory.edu/forward/resources/faq/index.html#anchor-health}{campus FAQ} for how to get the health consultation. As you know, Emory does contact tracing if someone has been diagnosed with COVID-19. A close contact is defined as someone you spend more than 15 minutes with, at a distance less than 6 feet, not wearing facial coverings. This typically means your roommates, for example. However, your classmates are not close contacts as long as we are following the personal protective equipment protocols in the classroom: wearing facial coverings, staying six feet apart.
