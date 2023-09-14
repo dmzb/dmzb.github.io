@@ -2,6 +2,8 @@
 \documentclass[12pt]{article}
 \usepackage{amssymb, latexsym, amsmath, verbatim, multicol}
 
+\usepackage[normalem]{ulem}
+
 \pagestyle{empty}
 \newcommand{\courseNumber}{220}
 \newcommand{\courseName}{Mathematical Reasoning and Proof}
@@ -152,7 +154,7 @@
   
 \item Suppose that $n$ is an odd integer. Prove that $n^2$ is an odd integer. (Hint: an integer $n$ is odd if and only if there exists an integer $k$ such that $n = 2k+1$.)
 
-\item Prove that if $n^2$ is even, then $n$ is even. (Hint: page 67.)  
+\item Prove that if $n^2$ is even, then $n$ is even. (Hint: \sout{page 67} contrapositive.)  
   \end{enumerate}
 
 %***************************************************************************************************************
@@ -297,26 +299,26 @@ is divisible by 12. (It suffices to prove that it is divisible by 4 and 3 separa
 
 
  
+***************************************************************************************************************
 %***************************************************************************************************************
-% %***************************************************************************************************************
-% \newpage
-% \section[5 (due \csname dateWeek5\endcsname): Set theory. Basic operations. Proofs with sets.]{Assignment 5}
+\newpage
+\section[5 (due \csname dateWeek5\endcsname): Set theory. Basic operations. Proofs with sets.]{Assignment 5}
 
-% \textbf{Topics}: Basics of set theory. Basic operations. Proofs with sets.
-% \\
+\textbf{Topics}: Basics of set theory. Basic operations. Proofs with sets.
+\\
 
-% \noindent \textbf{Reading TODO}:
-% \begin{enumerate}
-% \item Section 2.1, p.~49-57; 
-% \item Section 2.2, p.~61-65 (stop at DeMorgan's laws)
-% \end{enumerate}
-
+\noindent \textbf{Reading TODO}:
+\begin{enumerate}
+\item Section 2.1, p.~49-57; 
+\item Section 2.2, p.~61-65 (stop at DeMorgan's laws)
+\end{enumerate}
 
 
 
-% \noindent \textbf{TODO Suggested problems (do not hand in; these are just for extra practice)}
 
-% % Section 2.1, \#7,9,12,14,21,D1 \#13, \#18a, 19a-c, 20e-f, §2.2, \#14, \#26 (2.1) 6,7,9,10,12,13
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}: \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H06-sets-I.pdf}{Handout 6}
+\\
+% Section 2.1, \#7,9,12,14,21,D1 \#13, \#18a, 19a-c, 20e-f, §2.2, \#14, \#26 (2.1) 6,7,9,10,12,13
 
 % \begin{enumerate}
 % \item With answers (many of these are calculations; do as many as you need to do to understand the definitions):
@@ -331,36 +333,36 @@ is divisible by 12. (It suffices to prove that it is divisible by 4 and 3 separa
 %  \item Section 2.2, \#1-12
 %  \end{enumerate}
 
-% \item \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H06-sets-I.pdf}{Handout 6}
-% \end{enumerate}
 
-% \noindent \textbf{Assignment 6, due Friday, \csname dateWeek6\endcsname, via Gradescope TODO}:
+% \end{enumerate}
+\smallskip
+\noindent \textbf{Assignment 6, due Friday, \csname dateWeek6\endcsname, via Gradescope}:
+\begin{enumerate}
+\item Let $A = \{ n \in \Z | n \text{ is a multiple of } 4\}$ and $B = \{ n \in \Z | n^2 \text{ is a multiple of } 4\}$ 
+ \begin{enumerate}
+ \item Prove or disprove: $A \subseteq B$. 
+ \item Prove or disprove: $B \subseteq A$. 
+ \end{enumerate}
+
+\item Prove that $A \cup (A \cap B) = A.$
+\item Let $A,B$ and $C$ be sets. 
+ \begin{enumerate}
+ \item Prove that $(A \subseteq C) \wedge (B \subseteq C) \Rightarrow A \cup B \subseteq C$.
+ \item State the contrapositive of part (a).
+ \item State the converse of part (a). Prove or disprove it.
+ \end{enumerate}
+% \item Let $A = \{ n \in \Z | n = 8t+7 \text{ for some } t \in \Z \}$ and $B = \{ n \in \Z | n = 4t + 3 \text{ for some } t \in \Z\}$ 
 % \begin{enumerate}
-% \item Let $A = \{ n \in \Z | n \text{ is a multiple of } 4\}$ and $B = \{ n \in \Z | n^2 \text{ is a multiple of } 4\}$ 
-%  \begin{enumerate}
-%  \item Prove or disprove: $A \subseteq B$. 
-%  \item Prove or disprove: $B \subseteq A$. 
-%  \end{enumerate}
-
-% \item Prove that $A \cup (A \cap B) = A.$
-% \item Let $A,B$ and $C$ be sets. 
-%  \begin{enumerate}
-%  \item Prove that $(A \subseteq C) \wedge (B \subseteq C) \Rightarrow A \cup B \subseteq C$.
-%  \item State the contrapositive of part (a).
-%  \item State the converse of part (a). Prove or disprove it.
-%  \end{enumerate}
-% % \item Let $A = \{ n \in \Z | n = 8t+7 \text{ for some } t \in \Z \}$ and $B = \{ n \in \Z | n = 4t + 3 \text{ for some } t \in \Z\}$ 
-% % \begin{enumerate}
-% % \item Prove of disprove: $A \subseteq B$. 
-% % \item Prove of disprove: $B \subseteq A$. 
-% % \end{enumerate}
-% \item Let $n$ and $m$ be integers. Prove that if $n\Z \subseteq m\Z$ then $m$ divides $n$.
+% \item Prove of disprove: $A \subseteq B$. 
+% \item Prove of disprove: $B \subseteq A$. 
 % \end{enumerate}
+\item Let $n$ and $m$ be integers. Prove that if $n\Z \subseteq m\Z$ then $m$ divides $n$.
+\end{enumerate}
 
 
-% % Shpeal about sets (containers, some examples, anything can be a set).
-% % How to do proofs with sets. Subset. Definition is an implication. What is your hypothesis? Conclusion? One example, then transitivity. 
-% % Empty set. Set containing empty set. Worksheet?
+% Shpeal about sets (containers, some examples, anything can be a set).
+% How to do proofs with sets. Subset. Definition is an implication. What is your hypothesis? Conclusion? One example, then transitivity. 
+% Empty set. Set containing empty set. Worksheet?
 
 % %***************************************************************************************************************
 % %***************************************************************************************************************
