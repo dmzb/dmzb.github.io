@@ -660,20 +660,20 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 \newpage
 \section[9 (due \csname dateWeek9\endcsname): Injectivity.]{Assignment 9}
 
-\warning 
+% \warning 
 
 \noindent\textbf{Topics}: Injectivity.
 \\
 
-\noindent \textbf{Reading TODO}: Section 3.2, p.~100-105
+\noindent \textbf{Reading}: Section 5.2
 \\
 
-\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
 \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H11-injectivity.pdf}{Handout 11}
 \\
 
 
-\noindent \textbf{Assignment 9, due Friday, \csname dateWeek9\endcsname, \HWdueTime via Gradescope TODO}:
+\noindent \textbf{Assignment 9, due Friday, \csname dateWeek9\endcsname, \HWdueTime via Gradescope}:
 \begin{enumerate}
 \item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
  \begin{enumerate}
@@ -681,18 +681,6 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
  \item $f^{-1}(X - Y) \supseteq f^{-1}(X) - f^{-1}(Y)$.
  \end{enumerate} 
 
-\item Which of the following functions $f \colon \mathbf{R}\to \mathbf{R}$ are injective? If the function is injective, give a proof. If it is not injective, give a counterexample.
- \begin{enumerate}
- \item $f(x) = x^4 + x^2$;
- \item $f(x) = x^3 + x^2$;
- \item $f(x) =
- \begin{cases}
- -x-1, & \text{if $x > 0$} \\
- x^2, & \text{if $x \leq 0$}.
- \end{cases}
- $ 
- \end{enumerate}
-\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f \colon A \to B$ be an injective function. Prove that $f(X \cap Y) = f(X) \cap f(Y)$.
 \item Let $f \colon A \to B$ be a function. Which of the followings statements are equivalent to the statement `$f$ is injective'? (No proof necessary.)
  \begin{enumerate}
  \item $f(a) = f(b)$ if $a = b$;
@@ -702,12 +690,39 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
  \item If $a$ and $b$ are in $A$ and $f(a) \neq f(b)$, then $a \neq b$;
  \item If $a$ and $b$ are in $A$ and $a \neq b$, then $f(a) \neq f(b)$. 
  \end{enumerate}
-\item We define a function $f\colon [a,b] \to \mathbf{R}$ to be \textbf{decreasing} if for all $x_1,x_2 \in [a,b]$, if $x_1 < x_2$, then $f(x_1) > f(x_2)$.
+ 
+\item Prove that the following functions are not injective. 
+
+\begin{enumerate}
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^4 + x^2$;
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^3 + x^2$;
+ \item $f \colon P(\mathbf{Z}) \to P(\mathbf{Z});\, f(S) = S \cap \{1,2\}$.
+
+ \end{enumerate}
+
+\item Prove that the following functions are injective.
+  \begin{enumerate}
+  \item $f\colon \mathbf{R}^2 \to \mathbf{R}^3;\, f(x,y) =  (x+y,x-y,x^2 + y^2)$.
+  \item $f \colon \mathbf{R} \to \mathbf{R};\, f(x) = e^{x+1}$.
+\item $f\colon \mathbf{R}\to \mathbf{R}, f(x) =
+ \begin{cases}
+ -x-1, & \text{if $x > 0$} \\
+ x^2, & \text{if $x \leq 0$}.
+ \end{cases}
+ $
+\end{enumerate}
+
+\item Let $f\colon \{1,2,3,4,5\} \to \{1,2,3,4\}$ be a functon. Can $f$ be injective? Explain your answer.  
+
+\item We say that a function $f\colon [a,b] \to \mathbf{R}$ is \textbf{decreasing} if for all $x_1,x_2 \in [a,b]$, if $x_1 < x_2$, then $f(x_1) > f(x_2)$.
  \begin{enumerate}
  \item Negate the definition of decreasing.
  \item Prove that a decreasing function is injective.
  \end{enumerate}
+ 
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f \colon A \to B$ be an injective function. Prove that $f(X \cap Y) = f(X) \cap f(Y)$.
 
+\item Let $A$ and $B$ be sets and let $W$ be a subset of $B$. Let $f \colon A \to B$ be a surjective function. Prove that $W \subseteq f(f^{-1}(W))$.
 
 \end{enumerate}
 
@@ -727,7 +742,7 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 
 \noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H12-compositions.pdf}{Handout 12}
 
-\noindent \textbf{Assignment 10, due Friday, \csname dateWeek10\endcsname, \HWdueTime via Gradescope TODO}:
+\noindent \textbf{Assignment 10, due Friday, \csname dateWeek10\endcsname, \HWdueTime via Gradescope}:
 \begin{enumerate}
 \item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove or disprove each of the following.
  \begin{enumerate}
@@ -805,7 +820,7 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 \noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H13-inverses.pdf}{Handout 13}
 
 
-\noindent \textbf{Assignment 11, due Friday, \csname dateWeek11\endcsname, \HWdueTime via Gradescope TODO}:
+\noindent \textbf{Assignment 11, due Friday, \csname dateWeek11\endcsname, \HWdueTime via Gradescope}:
 \begin{enumerate}
 \item Define $f \colon \mathbf{R}-\{1\} \to \mathbf{R} - \{1\}$ by $f(x) = \frac{x+1}{x-1}$. Prove that $f$ is a bijection. Find a formula for the inverse $f^{-1}(x)$, and prove that it is correct.
 \item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove that if $f$ and $g$ are invertible, then so is $g \circ f$, and prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
