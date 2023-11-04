@@ -731,25 +731,28 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 \newpage
 \section[10 (due \csname dateWeek10\endcsname): Composition of functions.]{Assignment 10}
 
-\warning 
+% \warning 
 
 \noindent\textbf{Topics}: Composition of functions.
 \\
 
-\noindent \textbf{Reading TODO}: Section 3.3, p.~110-113
+\noindent \textbf{Reading}: Section 5.1
 \\
 
 
-\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H12-compositions.pdf}{Handout 12}
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}: \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H12-compositions.pdf}{Handout 12}
+\\
 
 \noindent \textbf{Assignment 10, due Friday, \csname dateWeek10\endcsname, \HWdueTime via Gradescope}:
-\begin{enumerate}
-\item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove or disprove each of the following.
+\\
+
+\noindent For problems 1, 2, and 3, let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. 
  \begin{enumerate}
- \item If $g\circ f$ is an injection, then $g$ is an injection.
- \item If $g\circ f$ is a surjection, then $f$ is a surjection.
- \item If $g\circ f$ is a surjection, then $g$ is a surjection.
- \end{enumerate}
+ \item Prove or disprove: If $g\circ f$ is an injection, then $g$ is an injection.
+ \item Prove or disprove: If $g\circ f$ is a surjection, then $f$ is a surjection.
+ \item Prove or disprove: If $g\circ f$ is a surjection, then $g$ is a surjection.
+
+
 \item Let $A$ and $B$ be sets and let $f \colon A \to B$ and $g \colon B \to A$ be functions. Prove that if $g \circ f$ and $f \circ g$ are bijective, then so are $f$ and $g$.
 
  \item Let $f \colon \R \to \R$ and $g \colon \R \to \R$ be functions. Suppose that $f$ and $g$ are both decreasing. Prove that $g \circ f$ is increasing.
@@ -760,9 +763,9 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 %***************************************************************************************************************
 %***************************************************************************************************************
 \newpage
-\section[ (November 17) Midterm]{Midterm}
+\section[ (November 17) Midterm]{Midterm (November 17)}
 
-\warning 
+% \warning 
 
 \noindent \textbf{Content}: The questions will all be either
 \begin{enumerate}
@@ -791,7 +794,9 @@ There will be at least one definition, and around 4-5 problems involving proofs 
 % \smallskip
 
 For definitions, I want a definition, in prose (complete sentences), and I want ``just'' the definition, and not any additional facts about the definition. (E.g., if you give the definition of rational, do not include that a rational number can be written in reduced form; that is a fact about rational numbers not part of the definition of rational.)
+\smallskip
 
+There will be one problem verbatim from Assignment 10 (on compositions).
 
 
 
@@ -804,28 +809,45 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 \newpage
 \section[11 (due \csname dateWeek11\endcsname): Inverse functions.]{Assignment 11}
 
-\warning 
+% \warning 
 
-\noindent \textbf{Thanksgiving break is Monday, November 20 and Friday, November 24};
+\noindent \textbf{Thanksgiving break is Monday, November 20 through Friday, November 24};
 
-\noindent There will no class these days.
+\noindent There will no class those days.
 \\
 
 \noindent \noindent\textbf{Topics}: Inverse functions.
 \\
 
-\noindent \textbf{Reading TODO}: Section 3.3, p.~114-116
+\noindent \textbf{Reading}: Section 5.3
 \\
 
 \noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H13-inverses.pdf}{Handout 13}
-
+\\
 
 \noindent \textbf{Assignment 11, due Friday, \csname dateWeek11\endcsname, \HWdueTime via Gradescope}:
 \begin{enumerate}
 \item Define $f \colon \mathbf{R}-\{1\} \to \mathbf{R} - \{1\}$ by $f(x) = \frac{x+1}{x-1}$. Prove that $f$ is a bijection. Find a formula for the inverse $f^{-1}(x)$, and prove that it is correct.
-\item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove that if $f$ and $g$ are invertible, then so is $g \circ f$, and prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 \item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function $f(x) = x^3 + x$. Prove that $f$ is invertible without finding a formula for $f^{-1}$.
+\item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove that if $f$ and $g$ are invertible, then so is $g \circ f$, and prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
 \item Let $A$ and $B$ be sets and let $f \colon A \to B$ be a function. Suppose that $f$ has a \emph{left inverse} $g$; that is, suppose that there exists a function $g \colon B \to A$ such that $g \circ f = id_A$. Prove that $f$ is injective.
+\item Let $f \colon A \to B$ be a bijection. Let $g \colon B \to A$ be the inverse of $f$. Prove that $g$ is also a bijection.
+\item Let $A$ be a set and let $f \colon A \to A$ be a function. Prove that $f$ is invertible and $f = f^{-1}$ if and only if $f \circ f = id_A$.
+
+\item Let $f,g \colon A \to B$ be two functions, and let $h \colon B \to C$ be a function. 
+  \begin{enumerate}
+  \item Prove that if $h$ is injective and
+    $h \circ f = h \circ g$ then $f = g$.
+  \item Give an example where $h$ is not surjective and     $h \circ f = h \circ g$ but $f \neq g$.
+\end{enumerate}
+  
+\item Let $f \colon A \to B$ be a function, and let $g,h \colon B \to C$ be two functions. 
+  \begin{enumerate}
+  \item Prove that if $f$ is surjective and
+    $g \circ f = h \circ f$ then $g = h$.
+  \item Give an example where $f$ is not surjective and $g \circ f = h \circ f$ but $g \neq h$.
+\end{enumerate}
+
 \end{enumerate}
 
 %***************************************************************************************************************
@@ -833,23 +855,26 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 \newpage
 \section[12 (due \csname dateWeek12\endcsname): Relations]{Assignment 12}
 
-\warning
+% \warning
 
 \noindent\textbf{Topics}: Relations.
 \\
 
-\noindent \textbf{Reading TODO}: Section 4.2, p.~139-144 (stop at the proof of Theorem 4.2.6)
+\noindent \textbf{Reading}: Chapter 4.
 \\
 
-\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
 \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H14-equivalence-relations.pdf}{Handout 14}
-
+\\
 
 
 \noindent \textbf{Assignment 12, due Friday, \csname dateWeek12\endcsname, via Gradescope}:
 \begin{enumerate}
-\item Let $A = \{1,2,3\}$ and define a relation on $A$ by $a \sim b$ if $a + b \neq 3$. Determine whether this relation is reflexive, symmetric, transitive.
-\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a-b$ is divisible by $4$.
+\item Define a relation $R$ on the set $\mathbb{R}$ as follows: we say that $x \sim y$ if $|x| = |y|$. (Recall that $|x|$ is the absolute value of $x$) Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Let $A = \{1,2,3\}$ and define a relation on $A$ by $a \sim b$ if $a + b \neq 3$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a-b$ is divisible by $3$.
  \begin{enumerate}
  \item Prove that this is an equivalence relation.
  \item What integers are in the equivalence class of 18? (No proof necessary.)
@@ -862,6 +887,19 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
  \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
  \end{enumerate} 
 \item Let $A$ be a set, and let $P(A)$ be the power set of $A$. Assume that $A$ is not the empty set. Define a relation on $P(A)$ by $X \sim Y$ if $X \subseteq Y$. Is this relation reflexive, symmetric, and/or transitive? In each case give a proof, or disprove with a counterexample. (For a counterexample, give an example of $A$, $X$, and $Y$ that disproves the statement.)
+
+\item Define a relation $R$ on the set $\mathbb{R}$ as follows: we say that $x \sim y$ if $x - y \in \mathbb{Q}$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+  
+\item Define a relation $R$ on the set $\mathbb{Z}$ as follows: we say that $x \sim y$ if there exists a non-negative integer $n$ such that $x = 2^ny$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Define a relation $R$ on the set $\mathbb{Z}\times \mathbb{Z} - \{(0,0)\}$ as follows: we say that $(a,b) \sim (c,d)$ if $ad = bc$. Prove that this is an equivalence relation. What are the equivalence classes?
+ \begin{enumerate}
+ \item Prove that this is an equivalence relation.
+ \item What pairs $(c,d)$ are in the equivalence class of $(1,1)$? (No proof necessary.)
+ \item What pairs $(c,d)$ are in the equivalence class of $(1,2)$? (No proof necessary.)   
+ \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
+ \end{enumerate} 
+  
 \end{enumerate}
 
 
@@ -876,43 +914,74 @@ For definitions, I want a definition, in prose (complete sentences), and I want 
 
 \warning
 
-\noindent\textbf{Topics}: Relations.
+\noindent\textbf{Topics}: Binary Operations and Bijections/Countability
 \\
 
-\noindent \textbf{Reading TODO}: Section 4.2, p.~139-144 (stop at the proof of Theorem 4.2.6)
+\noindent \textbf{Reading}: Chapter 4; Chapter 8
+% Section 4.2, p.~139-144 (stop at the proof of Theorem 4.2.6)
 \\
 
 
 
-\noindent \textbf{TODO Suggested problems (do not hand in; these are just for extra practice)}
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
+TODO  \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H14-equivalence-relations.pdf}{Handout 14}
 
-\begin{enumerate}
-\item With answers: Section 4.2 \#1(a), 3(ad), 4(a), 5(a), 12(a)
-\item Without answers: Section 4.2 \#1, 3, 4
-\item \href{https://www.math.emory.edu/~dzb/teaching/250Fall2021/handouts/250-H14-equivalence-relations.pdf}{Handout 14}
-\end{enumerate}
 
 
 \noindent \textbf{Assignment 13, due Friday, \csname dateWeek13\endcsname, via Gradescope}:
+
+
+
+
 \begin{enumerate}
-\item Let $A = \{1,2,3\}$ and define a relation on $A$ by $a \sim b$ if $a + b \neq 3$. Determine whether this relation is reflexive, symmetric, transitive.
-\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a-b$ is divisible by $4$.
- \begin{enumerate}
- \item Prove that this is an equivalence relation.
- \item What integers are in the equivalence class of 18? (No proof necessary.)
- \item What integers are in the equivalence class of 31? (No proof necessary.) 
- \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
- \end{enumerate}
-\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a^2-b^2$ is divisible by $4$.
- \begin{enumerate}
- \item Prove that this is an equivalence relation.
- \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
- \end{enumerate} 
-\item Let $A$ be a set, and let $P(A)$ be the power set of $A$. Assume that $A$ is not the empty set. Define a relation on $P(A)$ by $X \sim Y$ if $X \subseteq Y$. Is this relation reflexive, symmetric, and/or transitive? In each case give a proof, or disprove with a counterexample. (For a counterexample, give an example of $A$, $X$, and $Y$ that disproves the statement.)
+\item Let $S$ be one of the following sets. Give an example of a bijection from $S$ to $\mathbb{Z}$. (No proof is necessary.)
+  \begin{enumerate}
+  \item $S = n\mathbb{Z}$ (for some fixed positive integer $n$).
+  \item $S = \mathbb{Z} \times \{0\}$.    
+  \item $S = \mathbb{Z} \times \{-1,1\}$.
+  \item $S = \sin^{-1}(\{0\})$.
+  \end{enumerate}
+
+\item Give an example of a bijection from $\mathbb{N\}$ to ..
+  
+\item  Let $g\colon \text{Fun}(S, \{0,1\})  \to P(S)$ be the function $f
+\mapsto f^{-1}(\{0\})$. Prove that $f$ is a bijection.\\
+
+\item  As in class, let $P_{\text{BD}}(S)$ be the set of all finite
+subsets of $S$, i.e., 
+\[
+P_{\text{BD}}(S) = \{ A \subset S \,|\, |A| < \infty \}
+\]
+and for $i \in \Z_{ >  0}$ let 
+\[
+P_{i}(S) = \{ A \subset S \,|\, |A| \leq i \}.
+\]
+\begin{itemize}
+\item [(a)] Prove that
+\[
+P_{\text{BD}}(S) = \bigcup_{i \in \Z_{> 0}} P_i(S).
+\]
+\item [(b)] Prove that the map
+\[
+ S^i \to P_i(S) 
+\]
+given by 
+\[
+(a_1, \ldots, a_i) \mapsto \{a_1,\ldots,a_i\}
+\]
+is a surjection.
+\item [(c)] Prove that $P_{\text{BD}}(\Z)$ is countable.\\
+\end{itemize}
+
+\item  Prove that $|S| \neq |\text{Fun}(S, \{0,1\})|$ by the same
+technique as the proof from class that $|S| \neq |P(S)|$. (In other
+words, proceed by contradiction, assuming that there is a bijection
+$f\colon S \to \text{Fun}(S, \{0,1\})$ and then construct some $g \in
+\text{Fun}(S, \{0,1\})$ which is not in the image of $f$.)
 \end{enumerate}
 
 
-% \noindent \textbf{Please note the unusual due date of the homework assignment}.
+ \noindent \textbf{Please note the unusual due date of the homework assignment}.
 
 
 
@@ -983,3 +1052,15 @@ A typical exam will have one or two questions from each week of the course. You 
 
  \end{document}
 
+Other potential problems
+ \begin{enumerate}
+ \item Let $A$ and $B$ be sets. We define the \textbf{symmetric difference of} $A$ and $B$ to be
+\[
+A \Delta B := \{x | x \in A \cup B \text{ and } x \not \in A \cap B\}.
+\]
+
+\begin{enumerate}
+\item Prove or disprove: $f(A \Delta B) \subset f(A) \Delta f(B)$.
+\item Prove or disprove: $f(A) \Delta f(B) \subset f(A \Delta B)$.
+\end{enumerate}
+\end{enumerate}
