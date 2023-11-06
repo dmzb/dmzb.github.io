@@ -1,0 +1,1067 @@
+\documentclass[12pt]{article}
+\usepackage{amssymb, latexsym, amsmath, verbatim, multicol}
+\usepackage{marvosym}
+\usepackage{pgfornament}
+
+\usepackage[normalem]{ulem}
+\usepackage{eso-pic, rotating}
+
+\pagestyle{empty}
+\newcommand{\courseNumber}{220}
+\newcommand{\courseName}{Mathematical Reasoning and Proof}
+\newcommand{\season}{Spring}
+\newcommand{\thisYear}{2024}
+\newcommand{\courseTime}{MWF 1 - 1:50}
+\newcommand{\HWdueTime}{12:55pm } 
+\newcommand{\warning}{
+\smallskip
+\begin{center}
+  {\color{red} {\huge\Stopsign} \hspace{1pt}  IN PROGRESS!} {\color{blue}Check back later for the final assignment.} {\color{red} {\huge\Stopsign} }
+\end{center}
+\smallskip
+\AddToShipoutPictureBG*{\AtTextLowerLeft{\llap{\rotatebox[origin=lb]{90}{\large\sffamily\hspace{2.5in}
+  {\color{red} {\huge\Stopsign} \hspace{1pt}  IN PROGRESS!} {\color{blue}Check back later for the final assignment.} {\color{red} {\huge\Stopsign} }
+      }\quad\rule{0.8pt}{\textheight}\enspace}}}
+}
+
+
+ \expandafter\newcommand\csname dateWeek1\endcsname{Sep 15}
+ \expandafter\newcommand\csname dateWeek2\endcsname{Sep 22}
+ \expandafter\newcommand\csname dateWeek3\endcsname{Sep 29}
+ \expandafter\newcommand\csname dateWeek4\endcsname{Oct 06}
+ \expandafter\newcommand\csname dateWeek5\endcsname{Oct 13}
+ \expandafter\newcommand\csname dateWeek6\endcsname{Oct 20}
+ \expandafter\newcommand\csname dateWeek7\endcsname{Oct 27}
+ \expandafter\newcommand\csname dateWeek8\endcsname{Nov 03}
+ \expandafter\newcommand\csname dateWeek9\endcsname{Nov 10}
+ \expandafter\newcommand\csname dateWeek10\endcsname{Nov 17}
+ \expandafter\newcommand\csname dateWeek11\endcsname{Dec 01}
+ \expandafter\newcommand\csname dateWeek12\endcsname{Dec 08}
+ \expandafter\newcommand\csname dateWeek13\endcsname{Dec 13}
+ \expandafter\newcommand\csname dateWeek14\endcsname{Dec 22}
+
+
+% Easy way to fix the margins with a package
+\textwidth=7in
+\textheight=9.5in
+\topmargin=-1in
+\headheight=0in
+\headsep=.5in
+\hoffset -.85in
+
+\setcounter{secnumdepth}{0}
+
+\usepackage{hyperref}
+\hypersetup{
+ colorlinks=true,
+ linkcolor=blue,
+ filecolor=magenta,
+ urlcolor=cyan,
+}
+
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Q}{{\mathbb Q}}
+
+\begin{document}
+\noindent\rule{18cm}{0.4pt}
+\begin{center}
+ {\bf MATH \courseNumber, \courseName}\\
+ {\bf \courseTime} \\ 
+% {\bf IN PROGRESS}
+\end{center}
+\noindent\rule{18cm}{0.4pt}
+
+% \renewcommand{\arraystretch}{2}
+
+\vskip.25in
+\begin{center}
+ \noindent\textbf{All assignments}\\
+ Last updated: \today\\
+ \smallskip
+ Gradescope code: 7DVWGG
+\end{center}
+\noindent\rule{18cm}{0.4pt}
+\tableofcontents
+
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[1 (due \csname dateWeek1\endcsname): Introduction to course. Mathematical reasoning. Logic.]{Assignment 1}
+
+\noindent\textbf{Topics}: Introduction to the course. Mathematical reasoning. Logic.
+\\
+
+\noindent \textbf{Reading}: 1.1, 1.2, 1.5, 2.1, 2.2
+\\
+
+\noindent \textbf{Suggested problems} (do not hand in; these are just for extra practice): \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H01-logic.pdf}{Handout 1}
+\\
+
+% \begin{itemize}
+% \item With answers:
+%  \begin{itemize}
+%  \item 1.1: 
+%  \item 1.2: 
+%  \item 1.5: 
+%  \item 2.1: 
+%  \item 2.2:
+%  \end{itemize}
+
+
+
+% {\bf IN PROGRESS}
+
+\noindent \textbf{Assignment 1, due Friday, \csname dateWeek1\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+% \item Add boolean algebra problem, truth table problem (for contrapositive); ``which make mathematical sense'', see V for more
+
+\item Write the negation of each of the following statements.
+
+ \begin{enumerate}
+\item All triangles are isosceles.
+\item Every door in the building was locked.
+\item Some even numbers are multiples of three.
+\item Every real number is less than 100.
+\item Every integer is positive or negative.
+\item If $f$ is a polynomial function, then $f$ is continuous at $0$.
+\item If $x^2 > 0$, then $x > 0$.
+\item There exists a $y \in \mathbf{R}$ such that $xy = 1$.
+\item $(2 > 1)$ and $(\forall x, x^2 > 0)$
+\item $\forall \epsilon > 0$, $\exists \delta > 0$ such that if $|x| < \delta$, then $|f(x)| < \epsilon$.
+\end{enumerate}
+
+\item Write the converse, contrapositive, and negation of each of the following implications.
+
+ \begin{enumerate}
+\item If a quadrilateral is a rectangle, then it has two pairs of parallel sides.
+\item $(P \wedge \neg Q) \Rightarrow R$
+\item $P  \Rightarrow (R \Rightarrow \forall x, Q(x))$
+\end{enumerate}
+
+\item Let $P$ and $Q$ be statements. Write the truth table for
+  \begin{enumerate}
+  \item $(\neg P) \vee Q$
+  \item $(P \wedge (\neg Q)) \Rightarrow Q$
+  \end{enumerate}
+
+  
+\item Are the statements $(P \vee Q) \wedge R$ and $P \vee (Q \wedge R)$ equivalent? If so, give a proof. If not, explain why by giving a counterexample.
+
+  (Two statement forms are equivalent if they have the same truth tables, and here, a counterexample simply means some choice of truth values for $P,Q,$ and $R$ such that the two statement forms give different outputs.)
+\item Let $P$ and $Q$ be statements.
+  \begin{enumerate}
+  \item Prove that $\neg(P \Rightarrow Q)$ is equivalent to $P \wedge \neg Q$.
+  \item Prove that $\neg(P \Rightarrow Q)$ is \emph{not} equivalent to $\neg P \wedge Q$.
+  \item Give an example of statements $P$ and $Q$ such that $\neg P \Rightarrow \neg Q$ is true and $\neg(P \Rightarrow Q)$ is false.
+  \end{enumerate}
+
+% \item \textbf{TODO} Write a problem where they prove that two statement forms are equivalent using properties rather than truth tables. 
+
+% \item Let $n$ and $m$ be integers. Suppose that $nm$ is even. Is it true that both $n$ and $m$ are even? If so, give a proof. If not, give a counterexample (i.e., give an example that demonstrates that this is false.)
+
+\item Suppose that $n$ is an even integer, and let $m$ be any integer. Prove that $nm$ is even.   
+  
+\item Suppose that $n$ is an odd integer. Prove that $n^2$ is an odd integer. (Hint: an integer $n$ is odd if and only if there exists an integer $k$ such that $n = 2k+1$.)
+
+\item Prove that if $n^2$ is even, then $n$ is even. (Hint: \sout{page 67} contrapositive.)  
+  \end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[2 (due \csname dateWeek2\endcsname): ``Direct'' proofs and divisibility problems.]{Assignment 2}
+
+\noindent\textbf{Topics}: ``Direct'' proofs, proof by cases, and divisibility problems. 
+\\
+
+
+
+\noindent \textbf{Reading}:
+\begin{itemize}
+\item 3.3, from Definition 3.3.6
+\item 6.4, just Definition 6.4.1  
+\item see Index to find definitions like prime, etc
+\end{itemize}
+
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+
+\begin{enumerate}
+% \item With answers: Section 5.3, \#1(a), 4(a), 6(ac)
+
+% \item Without answers: Section 5.3, \#2, 4 (without induction), 5 (without induction)
+
+\item \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H02-divisibility.pdf}{Handout 2}
+\end{enumerate}
+
+
+\noindent \textbf{Assignment, due Friday, \csname dateWeek2\endcsname, \HWdueTime via Gradescope}:
+
+\begin{enumerate}
+\item Suppose that $a \mid b$. Prove that for all $n \in \mathbb{Z}_{> 0}$, $a^n \mid b^n$.
+\item Suppose that there exists an integer $n \in \mathbb{Z}_{> 0}$ such that $a \mid b^n$. Is it true that $a \mid b$? Prove or disprove your answer. (For a disproof, please give a counterexample that demonstrates that the statement is false.)
+  
+\item Prove that for all $a \in \mathbb{Z}$ and for $n \in \mathbb{Z}_{\geq 0}$, $a-1$ divides $a^n -1$.
+
+\item Prove that for all integers $n$, $n$ and $n+1$ have no common divisors other than $\pm 1$.
+
+\item Prove that if $x$ is an integer, then $x^2 + 2$ is not divisible by 4. (Hint: there are two cases: $x$ is even, $x$ is odd. Also, feel free to use basic facts about even or odd, e.g., ``odd + odd = even'', without additional proof.)
+\item Prove that the product of three consecutive integers is divisible by 6. (It suffices to prove that it is divisible by 2 and 3 separately.)
+\item Show that for all integers $a$ and $b$, 
+\[
+a^2b^2(a^2 - b^2)
+\]
+is divisible by 12. (It suffices to prove that it is divisible by 4 and 3 separately.)
+\item Find all positive integers $n$ such that $n^2 - 1$ is prime. Prove that your answer is correct.
+
+\end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[3 (due \csname dateWeek3\endcsname): Proof by contradiction]{Assignment 3}
+
+\noindent\textbf{Topics}: Proof by contradiction. Unsolvability of equations. Irrationality.
+\\
+
+% \noindent \textbf{Reading TODO}:
+% \begin{itemize}
+% \item Section 1.4, p.~41-42 (stop at Historical Comments)
+% \item Section 5.4
+% \end{itemize}
+
+
+\noindent \textbf{Reading}: 3.2
+% \begin{itemize}
+% \item Section 1.4, p.~41-42 (stop at Historical Comments)
+% \item Section 5.4
+% \item  3.2
+% \end{itemize}
+
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+
+\begin{enumerate}
+% \item Without answers: Section 1.4 \#21
+% \item Without answers: Section 5.4 \#6, 7, 10(a), 15, 18,
+\item \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H03-contradiction.pdf}{Handout 3}
+\end{enumerate}
+
+\noindent \textbf{Assignment, due Friday, \csname dateWeek3\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+\item Prove that there do not exist integers $a$, and $b$ such that $21a + 30b = 1$.
+\item Prove that $2^{1/3}$ is irrational.
+\item Suppose that $x$ is a real number such that $0 \leq x \leq \pi/2$. Prove that $\sin x + \cos x \geq 1$. (Hint: at some point in your proof, use that $(\sin x)^2 + (\cos x)^2 = 1$.)
+\item Prove that there are no positive integer solutions to the equation $x^2 - y^2 = 10$.
+% \item Prove that if $a$ is rational and $b$ is irrational, then $ab$ is irrational.
+\item Let $a, b, c$ be integers satisfying $a^2 + b^2 = c^2$. Show that $abc$ must be even. % (Harder problem, just for fun: show that $a$ or $b$ must be even.)
+\item Suppose that $a$ and $n$ are integers that are both at least 2. Prove that if $a^n -1$ is prime, then $a = 2$ and $n$ is a prime. (Primes of the form $2^n - 1$ are called Mersenne primes.)
+\item Suppose that $a,b \in \mathbb{Z}$. Prove that $a^2 - 4b \neq 2$.
+
+\item Prove that $\log_{10} 7$ is irrational
+\end{enumerate}
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[4 (due \csname dateWeek4\endcsname): Induction.]{Assignment 4}
+
+\noindent\textbf{Topics}: Induction.
+\\
+
+\noindent \textbf{Reading}: Chapter 6
+\\
+
+\noindent \textbf{Fun Video} (optional): Vi Hart; ``Doodling in Math: Spirals, Fibonacci, and Being a Plant''
+
+\noindent \url{https://www.youtube.com/watch?v=ahXIMUkSXX0}
+\\ 
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+
+\begin{enumerate}
+\item \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H04-induction-warmup.pdf}{Handout 4}
+\item \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H05-induction-problems.pdf}{Handout 5}
+\end{enumerate}
+
+\noindent \textbf{Assignment, due Friday, \csname dateWeek4\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+% \item Prove that for every positive integer $n$,
+% $$1^2 + 2^2 + \ldots n^2 = \frac{n(n+1)(2n+1)}{6}.$$
+\item Prove that for every positive integer $n$,
+ $$1^3 + 2^3 + \cdots +n^3 = \frac{n^2(n+1)^2}{4}.$$ 
+\item Let $a_n$ be defined recursively by $a_1 = 1$ and $a_n = \sqrt{1 + a_{n-1}}$. Prove that for all positive integers $n$, $a_n < 2$.
+\item Prove by induction that if $b_1, b_2, \ldots , b_n$ are even integers, then $b_1 + b_2 + \cdots + b_n$ is even.
+ \item Let $F_1, F_2, F_3, \ldots = 1,1,2,3,5,8,\ldots$ be the Fibonacci sequence. Prove that $F_1^2 + \cdots + F_n^2 = F_nF_{n+1}$.
+ % \item Prove that $2^n > n^2$ for all $n \geq 5$.
+ \item Prove that $n! > 2^n$ for all $n \geq 4$.
+ \item \emph{Bernoulli's inequality}: let $\beta \in \mathbb{R}$ be a real number such that $\beta > -1$ and $\beta \neq 0$. Prove that for all integers $n \geq 2$, $(1 + \beta)^n > 1 + n\beta$.
+ \item Prove that for all integers $n \geq 1$,
+   \[
+1 + \frac{1}{\sqrt{2}} + \cdots + \frac{1}{\sqrt{n}} \geq \sqrt{n}.
+     \]
+   \item Prove (using induction) that for all integers $n \geq 1$, $2^{2n}-1$ is divisible by 3.
+ \end{enumerate}
+
+
+ 
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[5 (due \csname dateWeek5\endcsname): Set theory. Basic operations. Proofs with sets.]{Assignment 5}
+
+\noindent\textbf{Topics}: Basics of set theory. Basic operations. Proofs with sets.
+\\
+
+\noindent \textbf{Reading}: 1.3, 1.4, 2.3
+% \begin{enumerate}
+% \item 
+% \end{enumerate}
+
+
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}: \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H06-sets-I.pdf}{Handout 6}
+\\
+% Section 2.1, \#7,9,12,14,21,D1 \#13, \#18a, 19a-c, 20e-f, §2.2, \#14, \#26 (2.1) 6,7,9,10,12,13
+
+% \begin{enumerate}
+% \item With answers (many of these are calculations; do as many as you need to do to understand the definitions):
+%  \begin{enumerate}
+%  \item Section 2.1, \#1(adg), 2(adg), 4(adg), 5(a), 7(a), 8(ae), 9(adf), 10(a), 18(acf), 19(ad), 20(ae), 21
+%  \item Section 2.2, \#1(adgj), 2(ad), 4(ad), 5(ad), 7(a), 9(ad), 14(a),
+% \end{enumerate}
+
+% \item Without answers:
+%  \begin{enumerate}
+%  \item Section 2.1, 13, 14, 15, 16, 
+%  \item Section 2.2, \#1-12
+%  \end{enumerate}
+
+
+% \end{enumerate}
+\smallskip
+\noindent \textbf{Assignment 5, due Friday, \csname dateWeek5\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+\item Let $A = \{ n \in \Z | n \text{ is a multiple of } 4\}$ and $B = \{ n \in \Z | n^2 \text{ is a multiple of } 4\}$ 
+ \begin{enumerate}
+ \item Prove or disprove: $A \subseteq B$. 
+ \item Prove or disprove: $B \subseteq A$. 
+ \end{enumerate}
+
+\item Prove that $A \cup (A \cap B) = A.$
+\item Let $A,B$ and $C$ be sets. 
+ \begin{enumerate}
+ \item Prove that $(A \subseteq C) \wedge (B \subseteq C) \Rightarrow A \cup B \subseteq C$.
+ \item State the contrapositive of part (a).
+ \item State the converse of part (a). Prove or disprove it.
+ \end{enumerate}
+% \item Let $A = \{ n \in \Z | n = 8t+7 \text{ for some } t \in \Z \}$ and $B = \{ n \in \Z | n = 4t + 3 \text{ for some } t \in \Z\}$ 
+% \begin{enumerate}
+% \item Prove of disprove: $A \subseteq B$. 
+% \item Prove of disprove: $B \subseteq A$. 
+% \end{enumerate}
+\item Let $n$ and $m$ be integers. Prove that if $n\Z \subseteq m\Z$ then $m$ divides $n$.
+\end{enumerate}
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[ (October 13) Midterm]{Midterm study guide}
+
+\noindent\textbf{Topics}: Friday, October 13 will be an in class Exam.
+\\
+
+\noindent \textbf{Content}: The questions will all be either
+\begin{enumerate}
+\item homework problems,
+\item suggested problems,
+\item problems we worked in class, or
+\item minor variations of one of these.
+\end{enumerate}
+
+Problems with very long proofs or that involved some unusual trick will not be on the exam.
+\smallskip
+
+You are allowed to use any previous problem from class or from the homework (e.g., ``additivity of divisibility'' or ``the 2 out of 3 rule'') on the exam without reproving it, unless otherwise noted on the exam. (E.g., if I ask you to prove ``additivity of divisibility'' on the exam, you will need to prove this using only the definition of divisibility, and I will remind you of this in the statement of the problem.)
+\smallskip
+
+A typical exam will have one or two questions from each week of the course. You can expect problems about following:
+\begin{itemize}
+\item Negations
+\item Give definitions (e.g., divides, rational, subset)
+\item Direct proofs
+\item Proof by contrapositive
+\item Divisibility problems
+\item Contradiction
+\item Induction
+\item Proofs with sets. 
+\end{itemize}
+There will be a negation problem, at least one definition, and around 4-5 problems involving proofs (possibly including ``prove or disprove'' problems).
+\smallskip
+
+For sets: I will ask one problem, verbatim, from the homework or from class.
+\smallskip
+
+For definitions, I want a definition, in prose (complete sentences), and I want ``just'' the definition, and not any additional facts about the definition. (E.g., if you give the definition of rational, do not include that a rational number can be written in reduced form; that is a fact about rational numbers not part of the definition of rational.)
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[6 (due \csname dateWeek6\endcsname): More sets. DeMorgan's laws. Cartesian Products. Power sets.]{Assignment 6}
+
+\noindent \noindent\textbf{Topics}: More proofs with sets. DeMorgan's laws. Cartesian Products. Power sets
+\\
+
+% \noindent \textbf{Reading TODO}:
+% \begin{enumerate}
+% \item Section 2.2, p.~65-66; 
+% \item Section 2.3, p.~72, just the part about
+%  power sets.
+% \end{enumerate}
+
+
+% 2 minutes about DeMorgan's laws. https://www.youtube.com/watch?v=-LW2lGHv0GE 
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}
+ 
+\begin{enumerate}
+% \item With answers:
+%  \begin{enumerate}
+%  \item Section 2.2, 13(a), 16(a) 
+%  \item Section 2.3, \#1(a), 3, 5(adg),
+%  \end{enumerate}
+
+% \item Without answers:
+%  \begin{enumerate}
+%  \item Section 2.2, 14, 16-19, 21, 23-27
+%  \item Section 2.3, \#1(b), 2,4
+%  \end{enumerate}
+
+ \item \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H07-sets-II.pdf}{Handout 7}
+\end{enumerate}
+\smallskip
+
+\noindent \textbf{Assignment 6, due Friday, \csname dateWeek6\endcsname, \HWdueTime via Gradescope}:
+
+\begin{enumerate}
+\item Recall that $(a,b) = \{x : x \in \mathbb{R} \,|\, a < x < b\}$. Prove or disprove each of the following:
+ \begin{enumerate}
+ \item $(-1,1) \subseteq (-2,2)$. 
+ \item $(-1,2) \subseteq (-2,1)$.
+ \end{enumerate}
+
+
+
+ \item Let $A,B$ be sets. Prove each of the following:
+ \begin{enumerate}
+ \item $A \cap B \subseteq A$;
+ \item $A \cap \emptyset = \emptyset$;
+ \end{enumerate}
+
+\item Prove that if $A \not \subseteq C$ then  $A \not \subseteq B$ or $B \not \subseteq C$.
+ 
+ \item Let $A,B$, and $C$ be sets. Prove or disprove the following. (For a disproof, please give an explicit counterexample; i.e., give an example of sets $A$, $B$ and $C$ demonstrating that the statement is false.)
+ \begin{enumerate}
+ % \item If $A \subseteq B$, $B \subseteq C$, and $C \subseteq D$, then $A \subseteq D$.
+ \item If $A \not \subseteq B$ and $B \not \subseteq C$, then $A \not \subseteq C$.
+ \item If $A \subseteq B$ and $B \not \subseteq C$, then $A \not \subseteq C$.
+ \end{enumerate}
+ 
+ \item Let $A,B,C$ be sets. Prove each of the following:
+ \begin{enumerate}
+ \item Suppose that $B \subseteq C$. Prove that $A-C \subseteq A-B$.
+ \item $A \subseteq B$ if and only if $A \cap B = A$.
+ \end{enumerate}
+ 
+  \item Let $A,B$ and $C$ be sets. Prove or disprove each of the following. (For a disproof, please give an explicit counterexample; i.e., give an example of sets $A$, $B$ and $C$ demonstrating that the statement is false.)
+ \begin{enumerate}
+\item $(A \cap B ) \cup C = A \cap (B  \cup C)$.
+\item $(A \cap B ) \cup C = (A \cup C) \cap (B  \cup C)$  .
+ \end{enumerate}
+
+\item Let $A$ and $B$ be sets. Prove that $(A \cup B) - (A \cap B) = (A - B) \cup (B - A)$.
+\newpage
+\item Let $A = \{0,1,2\}$. Which of the following statements are true? (No justification is needed.)
+
+ \begin{enumerate}
+ \item $\{0\} \subseteq P(A)$;\vspace{0.3cm}
+ \item $\{1,2\} \in P(A)$;\vspace{0.3cm}
+ \item $\{1,\{1\}\} \subseteq P(A)$.\\ 
+ \item $\{\{0,1\},\{1\}\} \subseteq P(A)$;\vspace{0.3cm}
+ \item $\emptyset \in P(A)$;\vspace{0.3cm}
+ \item $\emptyset \subseteq P(A)$;\vspace{0.3cm}
+ \item $\{\emptyset\} \in P(A)$. \vspace{0.3cm}
+ \item $\{\emptyset\} \subseteq P(A)$;\vspace{0.3cm}
+
+ \end{enumerate}
+
+\end{enumerate}
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[7 (due \csname dateWeek7\endcsname): Introduction to functions; images and surjectivity.]{Assignment 7}
+
+\noindent\textbf{Topics}: Introduction to functions; images and surjectivity
+\\
+
+\noindent \textbf{Reading}: Chapter 5, especially 5.1 and 5.5
+\\
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H09-images.pdf}{Handout 9}
+\medskip
+
+
+\noindent \textbf{Assignment 7, due Friday, \csname dateWeek7\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+
+\item Let $A$ and $B$ be sets. Prove that $(A \cup B) \cap \overline{A} = B - A$.
+
+\item Let $A$ and $B$ be sets. Prove that if $A \subseteq B$, then $P(A) \subseteq P(B)$. State the converse of this and prove or disprove it.  
+  
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function defined by $f(x) = 6x+5$.
+ \begin{enumerate}
+ \item Prove that $f(\mathbf{R}) = \mathbf{R}$.
+ \item Compute $f([1,4])$. Prove your answer.
+ \end{enumerate}
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function defined by $x^4 + x^2$. 
+ \begin{enumerate}
+ \item Compute the image of $f$. Prove that your answer is correct.
+ \item Compute $f([-1,2])$. Prove that your answer is correct.
+\end{enumerate}
+
+\item Let $g \colon \mathbb{R} \to \mathbb{Z}$ be the \textbf{ceiling function} $g(x) = \lceil x \rceil$, defined to be the smallest integer greater than or equal to $x$ (i.e., ``round $x$ up to the nearest integer''; so $g(1.3)  = 2$, and $g(3) = 3$.
+
+  Compute the image of $g$. Prove that your answer is correct.
+
+
+  
+\item Consider the function $\sin \colon \mathbf{R} \to \mathbf{R}$.
+  \begin{enumerate}
+  \item Compute the image of $\sin$. Prove that your answer is correct.
+  \item Compute $\sin([0,\pi/4])$. Prove that your answer is correct.
+  \end{enumerate}
+
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f\colon A \to B$ be a function. Prove or disprove each of the following. When giving a disproof, please give a counterexample.
+ \begin{enumerate}
+
+  \item $f(X \cup Y) \subseteq f(X) \cup f(Y)$.
+  \item $f(X \cup Y) \supseteq f(X) \cup f(Y)$.
+
+
+ \end{enumerate}
+
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f\colon A \to B$ be a function. Prove or disprove each of the following. When giving a disproof, please give an counterexample.
+ \begin{enumerate}
+  \item $f(X) - f(Y) \subseteq f(X - Y)$.
+  \item $f(X) - f(Y) \supseteq f(X - Y)$.
+
+ \end{enumerate}
+ 
+ 
+
+\end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[8 (due \csname dateWeek8\endcsname): Inverse Image (or ``Preimage'').]{Assignment 8}
+
+\noindent\textbf{Topics}: Inverse Image (or ``Preimage'').
+\\
+
+\noindent \textbf{Reading}: Chapter 5, especially 5.1 and 5.5
+\\
+
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H10-preimages.pdf}{Handout 10}
+\\
+
+\noindent \textbf{Assignment 8, due Friday, \csname dateWeek8\endcsname, \HWdueTime via Gradescope}:
+\\
+
+\noindent (REMINDER: you are allowed to use the results of previous problem as part of the proof of later problems.)
+
+\begin{enumerate}
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function defined by $f(x) = 3x+1$. 
+ \begin{enumerate}
+ \item Compute $f^{-1}(\{1,5,8\})$ (do not give a proof).
+ \item Compute $f^{-1}(W)$, where $W = (4,\infty)$, and give a proof that your answer is correct.
+ \item Compute $f^{-1}(\mathbf{E})$, where $\mathbf{E}$ is the set of even integers, and give a proof that your answer is correct.
+ \end{enumerate}
+
+\item Let $f \colon \mathbf{Z} \to \mathbf{Z}$ be the function defined by $f(n) =
+ \begin{cases}
+ \frac{n}{2}, & \text{if $n$ is even} \\
+ 2n+4, & \text{if $n$ is odd}.
+ \end{cases}
+ $
+ 
+ Compute $f^{-1}(\mathbf{E})$. Prove that your answer is correct. (Reminder: $\mathbf{E}$ is the set of even integers.)
+
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.) 
+  \begin{enumerate}
+  \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \item $f^{-1}(X \cap Y) \supseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \end{enumerate}
+
+
+\item Let $A$ and $B$ be sets and let $X$ be a subset of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $X \subseteq f(f^{-1}(X))$.
+ \item $X \supseteq f(f^{-1}(X))$.
+ \end{enumerate}
+
+% \item Let $A$ and $B$ be sets and let $X$ be a subset of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+%  \begin{enumerate}
+%  \item $f^{-1}(X - Y) \subseteq f^{-1}(X) - f^{-1}(Y)$.
+%  \item $f^{-1}(X - Y) \supseteq f^{-1}(X) - f^{-1}(Y)$.
+%  \end{enumerate}
+ 
+\item Let $A$ and $B$ be sets. Let $S \subseteq A$ and let $T \subseteq B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $f(S) \subseteq T \Rightarrow S \subseteq f^{-1}(T)$.
+ \item $S \subseteq f^{-1}(T) \Rightarrow f(S) \subseteq T$.
+ \end{enumerate}
+
+\newpage
+\noindent In each of the following problems, let $f\colon A \to A$ be a function (note that the domain and codomain are the same) and suppose that $C \subseteq A$.
+ 
+\item  Prove or disprove the following. (For a disproof, please give an explicit counterexample).
+ \begin{enumerate}
+ \item $f^{-1}(C)\subseteq  C$;
+ \item $C\subseteq  f^{-1}(C)$;
+ \item $f(C)\subseteq  C$;
+ \item $C\subseteq  f(C)$;
+ \end{enumerate}
+ 
+
+
+\item Prove or disprove the following (for a disproof, please give an explicit counterexample): $C \subseteq  f^{-1}(C) \iff f(C)\subseteq  C$ . 
+
+\item Prove or disprove the following (for a disproof, please give an explicit counterexample): $f^{-1}(C)\subseteq  C \iff C\subseteq  f(C)$ .
+  
+\end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[9 (due \csname dateWeek9\endcsname): Injectivity.]{Assignment 9}
+
+% \warning 
+
+\noindent\textbf{Topics}: Injectivity.
+\\
+
+\noindent \textbf{Reading}: Section 5.2
+\\
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
+\href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H11-injectivity.pdf}{Handout 11}
+\\
+
+
+\noindent \textbf{Assignment 9, due Friday, \csname dateWeek9\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $f^{-1}(X - Y) \subseteq f^{-1}(X) - f^{-1}(Y)$.
+ \item $f^{-1}(X - Y) \supseteq f^{-1}(X) - f^{-1}(Y)$.
+ \end{enumerate} 
+
+\item Let $f \colon A \to B$ be a function. Which of the followings statements are equivalent to the statement `$f$ is injective'? (No proof necessary.)
+ \begin{enumerate}
+ \item $f(a) = f(b)$ if $a = b$;
+ \item $f(a) = f(b)$ and $a = b$ for all $a,b \in A$;
+ \item If $a$ and $b$ are in $A$ and $f(a) = f(b)$, then $a = b$;
+ \item If $a$ and $b$ are in $A$ and $a = b$, then $f(a) = f(b)$;
+ \item If $a$ and $b$ are in $A$ and $f(a) \neq f(b)$, then $a \neq b$;
+ \item If $a$ and $b$ are in $A$ and $a \neq b$, then $f(a) \neq f(b)$. 
+ \end{enumerate}
+ 
+\item Prove that the following functions are not injective. 
+
+\begin{enumerate}
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^4 + x^2$;
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^3 + x^2$;
+ \item $f \colon P(\mathbf{Z}) \to P(\mathbf{Z});\, f(S) = S \cap \{1,2\}$.
+
+ \end{enumerate}
+
+\item Prove that the following functions are injective.
+  \begin{enumerate}
+  \item $f\colon \mathbf{R}^2 \to \mathbf{R}^3;\, f(x,y) =  (x+y,x-y,x^2 + y^2)$.
+  \item $f \colon \mathbf{R} \to \mathbf{R};\, f(x) = e^{x+1}$.
+\item $f\colon \mathbf{R}\to \mathbf{R}, f(x) =
+ \begin{cases}
+ -x-1, & \text{if $x > 0$} \\
+ x^2, & \text{if $x \leq 0$}.
+ \end{cases}
+ $
+\end{enumerate}
+
+\item Let $f\colon \{1,2,3,4,5\} \to \{1,2,3,4\}$ be a functon. Can $f$ be injective? Explain your answer.  
+
+\item We say that a function $f\colon [a,b] \to \mathbf{R}$ is \textbf{decreasing} if for all $x_1,x_2 \in [a,b]$, if $x_1 < x_2$, then $f(x_1) > f(x_2)$.
+ \begin{enumerate}
+ \item Negate the definition of decreasing.
+ \item Prove that a decreasing function is injective.
+ \end{enumerate}
+ 
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f \colon A \to B$ be an injective function. Prove that $f(X \cap Y) = f(X) \cap f(Y)$.
+
+\item Let $A$ and $B$ be sets and let $W$ be a subset of $B$. Let $f \colon A \to B$ be a surjective function. Prove that $W \subseteq f(f^{-1}(W))$.
+
+\end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[10 (due \csname dateWeek10\endcsname): Composition of functions.]{Assignment 10}
+
+% \warning 
+
+\noindent\textbf{Topics}: Composition of functions.
+\\
+
+\noindent \textbf{Reading}: Section 5.1
+\\
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}: \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H12-compositions.pdf}{Handout 12}
+\\
+
+\noindent \textbf{Assignment 10, due Friday, \csname dateWeek10\endcsname, \HWdueTime via Gradescope}:
+\\
+
+\noindent For problems 1, 2, and 3, let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. 
+ \begin{enumerate}
+ \item Prove or disprove: If $g\circ f$ is an injection, then $g$ is an injection.
+ \item Prove or disprove: If $g\circ f$ is a surjection, then $f$ is a surjection.
+ \item Prove or disprove: If $g\circ f$ is a surjection, then $g$ is a surjection.
+
+
+\item Let $A$ and $B$ be sets and let $f \colon A \to B$ and $g \colon B \to A$ be functions. Prove that if $g \circ f$ and $f \circ g$ are bijective, then so are $f$ and $g$.
+
+ \item Let $f \colon \R \to \R$ and $g \colon \R \to \R$ be functions. Suppose that $f$ and $g$ are both decreasing. Prove that $g \circ f$ is increasing.
+ \end{enumerate}
+
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[ (November 17) Midterm]{Midterm (November 17)}
+
+% \warning 
+
+\noindent \textbf{Content}: The questions will all be either
+\begin{enumerate}
+\item homework problems,
+\item suggested problems,
+\item problems we worked in class, or
+\item minor variations of one of these.
+\end{enumerate}
+
+Problems with very long proofs or that involved some unusual trick will not be on the exam.
+\smallskip
+
+You are allowed to use any previous problem from class or from the homework (e.g., ``$A \subseteq A \cup B$'') on the exam without reproving it, unless otherwise noted on the exam. (E.g., if I ask you to prove ``$A \subseteq A \cup B$'' on the exam, you will need to prove this using only the definition of subset and union, and I will remind you of this in the statement of the problem.)
+\smallskip
+
+A typical exam will have one or two questions from each week of the course. You can expect problems about following:
+\begin{itemize}
+\item Give definitions (e.g., subset, union, intersection, preimage, image)
+\item Proofs about sets (including power sets)
+\item Proofs about functions, images, preimages
+\end{itemize}
+There will be at least one definition, and around 4-5 problems involving proofs (possibly including ``prove or disprove'' problems).
+\smallskip
+
+% For sets: I will ask one problem, verbatim, from the homework or from class.
+% \smallskip
+
+For definitions, I want a definition, in prose (complete sentences), and I want ``just'' the definition, and not any additional facts about the definition. (E.g., if you give the definition of rational, do not include that a rational number can be written in reduced form; that is a fact about rational numbers not part of the definition of rational.)
+\smallskip
+
+There will be one problem verbatim from Assignment 10 (on compositions).
+
+
+
+
+
+
+ 
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[11 (due \csname dateWeek11\endcsname): Inverse functions.]{Assignment 11}
+
+% \warning 
+
+\noindent \textbf{Thanksgiving break is Monday, November 20 through Friday, November 24};
+
+\noindent There will no class those days.
+\\
+
+\noindent \noindent\textbf{Topics}: Inverse functions.
+\\
+
+\noindent \textbf{Reading}: Section 5.3
+\\
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)} \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H13-inverses.pdf}{Handout 13}
+\\
+
+\noindent \textbf{Assignment 11, due Friday, \csname dateWeek11\endcsname, \HWdueTime via Gradescope}:
+\begin{enumerate}
+\item Define $f \colon \mathbf{R}-\{1\} \to \mathbf{R} - \{1\}$ by $f(x) = \frac{x+1}{x-1}$. Prove that $f$ is a bijection. Find a formula for the inverse $f^{-1}(x)$, and prove that it is correct.
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function $f(x) = x^3 + x$. Prove that $f$ is invertible without finding a formula for $f^{-1}$.
+\item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove that if $f$ and $g$ are invertible, then so is $g \circ f$, and prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+\item Let $A$ and $B$ be sets and let $f \colon A \to B$ be a function. Suppose that $f$ has a \emph{left inverse} $g$; that is, suppose that there exists a function $g \colon B \to A$ such that $g \circ f = id_A$. Prove that $f$ is injective.
+\item Let $f \colon A \to B$ be a bijection. Let $g \colon B \to A$ be the inverse of $f$. Prove that $g$ is also a bijection.
+\item Let $A$ be a set and let $f \colon A \to A$ be a function. Prove that $f$ is invertible and $f = f^{-1}$ if and only if $f \circ f = id_A$.
+
+\item Let $f,g \colon A \to B$ be two functions, and let $h \colon B \to C$ be a function. 
+  \begin{enumerate}
+  \item Prove that if $h$ is injective and
+    $h \circ f = h \circ g$ then $f = g$.
+  \item Give an example where $h$ is not surjective and     $h \circ f = h \circ g$ but $f \neq g$.
+\end{enumerate}
+  
+\item Let $f \colon A \to B$ be a function, and let $g,h \colon B \to C$ be two functions. 
+  \begin{enumerate}
+  \item Prove that if $f$ is surjective and
+    $g \circ f = h \circ f$ then $g = h$.
+  \item Give an example where $f$ is not surjective and $g \circ f = h \circ f$ but $g \neq h$.
+\end{enumerate}
+
+\end{enumerate}
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[12 (due \csname dateWeek12\endcsname): Relations]{Assignment 12}
+
+% \warning
+
+\noindent\textbf{Topics}: Relations.
+\\
+
+\noindent \textbf{Reading}: Chapter 4.
+\\
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
+\href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H14-equivalence-relations.pdf}{Handout 14}
+\\
+
+
+\noindent \textbf{Assignment 12, due Friday, \csname dateWeek12\endcsname, via Gradescope}:
+\begin{enumerate}
+\item Define a relation $R$ on the set $\mathbb{R}$ as follows: we say that $x \sim y$ if $|x| = |y|$. (Recall that $|x|$ is the absolute value of $x$) Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Let $A = \{1,2,3\}$ and define a relation on $A$ by $a \sim b$ if $a + b \neq 3$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a-b$ is divisible by $3$.
+ \begin{enumerate}
+ \item Prove that this is an equivalence relation.
+ \item What integers are in the equivalence class of 18? (No proof necessary.)
+ \item What integers are in the equivalence class of 31? (No proof necessary.) 
+ \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
+ \end{enumerate}
+\item Define a relation on $\mathbf{Z}$ given by $a \sim b$ if $a^2-b^2$ is divisible by $4$.
+ \begin{enumerate}
+ \item Prove that this is an equivalence relation.
+ \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
+ \end{enumerate} 
+\item Let $A$ be a set, and let $P(A)$ be the power set of $A$. Assume that $A$ is not the empty set. Define a relation on $P(A)$ by $X \sim Y$ if $X \subseteq Y$. Is this relation reflexive, symmetric, and/or transitive? In each case give a proof, or disprove with a counterexample. (For a counterexample, give an example of $A$, $X$, and $Y$ that disproves the statement.)
+
+\item Define a relation $R$ on the set $\mathbb{R}$ as follows: we say that $x \sim y$ if $x - y \in \mathbb{Q}$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+  
+\item Define a relation $R$ on the set $\mathbb{Z}$ as follows: we say that $x \sim y$ if there exists a non-negative integer $n$ such that $x = 2^ny$. Determine whether this relation is reflexive, symmetric, transitive (and in each case give a proof or disproof).
+
+\item Define a relation $R$ on the set $\mathbb{Z}\times \mathbb{Z} - \{(0,0)\}$ as follows: we say that $(a,b) \sim (c,d)$ if $ad = bc$. Prove that this is an equivalence relation. What are the equivalence classes?
+ \begin{enumerate}
+ \item Prove that this is an equivalence relation.
+ \item What pairs $(c,d)$ are in the equivalence class of $(1,1)$? (No proof necessary.)
+ \item What pairs $(c,d)$ are in the equivalence class of $(1,2)$? (No proof necessary.)   
+ \item How many distinct equivalence classes are there? What are they? (No proof necessary.)
+ \end{enumerate} 
+  
+\end{enumerate}
+
+
+% \noindent \textbf{Please note the unusual due date of the homework assignment}.
+
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[13 (due \csname dateWeek13\endcsname): Binary Operations and Bijections/Countability]{Assignment 13}
+
+\warning
+
+\noindent\textbf{Topics}: Binary Operations and Bijections/Countability
+\\
+
+\noindent \textbf{Reading}: Chapter 4; Chapter 8
+% Section 4.2, p.~139-144 (stop at the proof of Theorem 4.2.6)
+\\
+
+
+
+\noindent \textbf{Suggested problems (do not hand in; these are just for extra practice)}:
+TODO  \href{https://www.math.emory.edu/~dzb/teaching/250Spring2021/handouts/250-H14-equivalence-relations.pdf}{Handout 14}
+
+
+
+\noindent \textbf{Assignment 13, due Friday, \csname dateWeek13\endcsname, via Gradescope}:
+
+
+
+
+\begin{enumerate}
+\item Let $S$ be one of the following sets. Give an example of a bijection from $S$ to $\mathbb{Z}$. (No proof is necessary.)
+  \begin{enumerate}
+  \item $S = n\mathbb{Z}$ (for some fixed positive integer $n$).
+  \item $S = \mathbb{Z} \times \{0\}$.    
+  \item $S = \mathbb{Z} \times \{-1,1\}$.
+  \item $S = \sin^{-1}(\{0\})$.
+  \end{enumerate}
+
+\item Give an example of a bijection from $\mathbb{N}$ to ..
+  
+\item  Let $g\colon \text{Fun}(S, \{0,1\})  \to P(S)$ be the function $f
+\mapsto f^{-1}(\{0\})$. Prove that $f$ is a bijection.\\
+
+\item  As in class, let $P_{\text{BD}}(S)$ be the set of all finite
+subsets of $S$, i.e., 
+\[
+P_{\text{BD}}(S) = \{ A \subset S \,|\, |A| < \infty \}
+\]
+and for $i \in \Z_{ >  0}$ let 
+\[
+P_{i}(S) = \{ A \subset S \,|\, |A| \leq i \}.
+\]
+\begin{itemize}
+\item [(a)] Prove that
+\[
+P_{\text{BD}}(S) = \bigcup_{i \in \Z_{> 0}} P_i(S).
+\]
+\item [(b)] Prove that the map
+\[
+ S^i \to P_i(S) 
+\]
+given by 
+\[
+(a_1, \ldots, a_i) \mapsto \{a_1,\ldots,a_i\}
+\]
+is a surjection.
+\item [(c)] Prove that $P_{\text{BD}}(\Z)$ is countable.\\
+\end{itemize}
+
+\item  Prove that $|S| \neq |\text{Fun}(S, \{0,1\})|$ by the same
+technique as the proof from class that $|S| \neq |P(S)|$. (In other
+words, proceed by contradiction, assuming that there is a bijection
+$f\colon S \to \text{Fun}(S, \{0,1\})$ and then construct some $g \in
+\text{Fun}(S, \{0,1\})$ which is not in the image of $f$.)
+\end{enumerate}
+
+
+ \noindent \textbf{Please note the unusual due date of the homework assignment}.
+
+
+
+%***************************************************************************************************************
+%***************************************************************************************************************
+\newpage
+\section[Final Exam]{Final Exam}
+
+\warning
+
+\textbf{Final exam} is \textbf{December 18}, 2-5pm, in SMUD 204.
+\\
+
+\noindent The \textbf{last day of class} is Wednesday, December 13. 
+\\
+
+\noindent There will be \textbf{office hours} on before the exam. I will send out a survey to find a time that works for everyone who is planning to attend.% 10:30-11:30 and 6-7, via Zoom. 
+\\
+
+The final exam will be comprehensive.%  and will only cover content introduced after the midterm. Still, while I won't give you problems that are ``just'' about induction, contradiction, negations, etc.~(so for example, I will not ask any irrationality questions) you will still need to use those techniques in some of your proofs.
+% \\
+
+% The final exam will not be comprehensive, and will only cover content introduced after the midterm. Still, while I won't give you problems that are ``just'' about induction, contradiction, negations, etc.~(so for example, I will not ask any irrationality questions) you will still need to use those techniques in some of your proofs.
+% \\
+
+The exam will be, roughly 8-10 questions, with multiple parts. Some questions will be ``prove or disprove''. For disproofs, please write out a counterexample as your disproof.
+\\
+
+A typical exam will have one or two questions from each week of the course. You can expect a subset of the following:
+\begin{itemize}
+\item Negations
+\item Give definitions (e.g., divides, rational, subset)
+\item Direct proofs
+\item Proof by contrapositive
+\item Divisibility problems
+\item Contradiction
+\item Induction
+\item Proofs with sets. 
+\item Images
+\item preimages
+\item Injectivity 
+\item Surjectivity
+\item Compositions
+\item Invertibility
+\item Relations
+\item Countability
+\item Problems from handouts 9-14
+\end{itemize}
+
+
+% Typical exams:
+%\ques{30} No definitions.
+% Negate
+% Give definitions
+% Proof by Induction
+% Contradiction
+% Contrapositive
+% Set Identities
+% Abstract functions
+% Injectivity 
+% Surjectivity
+% Invertibility
+% Relations
+% Binary Operations
+% Variants of problems from HO 12-14
+% Problems from HO 15-16
+
+
+ \end{document}
+
+Other potential problems
+ \begin{enumerate}
+ \item Let $A$ and $B$ be sets. We define the \textbf{symmetric difference of} $A$ and $B$ to be
+\[
+A \Delta B := \{x | x \in A \cup B \text{ and } x \not \in A \cap B\}.
+\]
+
+\begin{enumerate}
+\item Prove or disprove: $f(A \Delta B) \subset f(A) \Delta f(B)$.
+\item Prove or disprove: $f(A) \Delta f(B) \subset f(A \Delta B)$.
+\end{enumerate}
+\end{enumerate}
