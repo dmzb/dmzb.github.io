@@ -1,8 +1,8 @@
 \documentclass[11pt]{article}
 
 \newcommand{\gradescopeCode}{7DP8JD} 
-\newcommand{\dueDay}{Thursday}
 \newcommand{\HWdueTime}{9:55am}
+\newcommand{\dueDay}{Thursday}
 \newcommand{\courseNumber}{220}
 \newcommand{\courseName}{Mathematical Reasoning and Proof}
 % \newcommand{\courseName}{Linear algebra}
@@ -172,23 +172,6 @@
 \end{center}
 \tableofcontents
 
-
-
-% Topic 1  (due \csname dateWeek1\endcsname):  \csname topic1\endcsname \smallskip\\
-% Topic 2  (due \csname dateWeek2\endcsname):  \csname topic2\endcsname \smallskip\\
-% Topic 3  (due \csname dateWeek3\endcsname):  \csname topic3\endcsname \smallskip\\
-% Topic 4  (due \csname dateWeek4\endcsname):  \csname topic4\endcsname \smallskip\\
-% Topic 5  (due \csname dateWeek5\endcsname):  \csname topic5\endcsname \smallskip\\
-% Topic 6  (due \csname dateWeek6\endcsname):  \csname topic6\endcsname \smallskip\\
-% Topic 7  (due \csname dateWeek7\endcsname):  \csname topic7\endcsname \smallskip\\
-% Topic 8  (due \csname dateWeek8\endcsname):  \csname topic8\endcsname \smallskip\\
-% Topic 9  (due \csname dateWeek9\endcsname):  \csname topic9\endcsname \smallskip\\
-% Topic 10 (due \csname dateWeek10\endcsname): \csname topic10\endcsname \smallskip\\
-% Topic 11 (due \csname dateWeek11\endcsname): \csname topic11\endcsname \smallskip\\
-% Topic 12 (due \csname dateWeek12\endcsname): \csname topic12\endcsname \smallskip\\
-% Topic 13 (due \csname dateWeek13\endcsname): \csname topic13\endcsname
-
-
 \newpage      
 \fakesection{(due \csname dateWeek1\endcsname):  \csname topic1\endcsname} \input{assignments-source/S24-220HW1.tex} \newpage 
 \fakesection{(due \csname dateWeek2\endcsname):  \csname topic2\endcsname} \input{assignments-source/S24-220HW2.tex} \newpage
@@ -209,3 +192,16 @@
 % \fakesection{(due \csname dateWeek13\endcsname): \csname topic13\endcsname}  %\fbox{\parbox{\textwidth-138\fboxsep}{\bf IN PROGRESS}} \smallskip \input{assignments-source/S24-220HW11.tex} \newpage
 
 \end{document}
+
+Other potential problems
+ \begin{enumerate}
+ \item Let $A$ and $B$ be sets. We define the \textbf{symmetric difference of} $A$ and $B$ to be
+\[
+A \Delta B := \{x | x \in A \cup B \text{ and } x \not \in A \cap B\}.
+\]
+
+\begin{enumerate}
+\item Prove or disprove: $f(A \Delta B) \subset f(A) \Delta f(B)$.
+\item Prove or disprove: $f(A) \Delta f(B) \subset f(A \Delta B)$.
+\end{enumerate}
+\end{enumerate}
