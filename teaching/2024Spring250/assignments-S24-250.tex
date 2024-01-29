@@ -12,40 +12,45 @@
 \newcommand{\bookAuthors}{Silverman}
 \newcommand{\bookName}{A Friendly Introduction to Number Theory}
 
+\newcommand{\dzbIn}[2]{\expandafter\newcommand\csname #1\endcsname{#2}} 
+\newcommand{\dzbOut}[1]{\csname #1\endcsname} 
+
+ \dzbIn{dateWeek01}{Feb 08}     
+ \dzbIn{dateWeek02}{Feb 15}     
+ \dzbIn{dateWeek03}{Feb 22}     
+ \dzbIn{dateWeek04}{Feb 29} 
+ \dzbIn{dateWeek05}{Mar 07}     
+ \dzbIn{dateWeek06}{Mar 14} 
+ \dzbIn{dateWeek07}{Mar 28}     
+ \dzbIn{dateWeek08}{Apr 04}     
+ \dzbIn{dateWeek09}{Apr 11}     
+ \dzbIn{dateWeek10}{Apr 18}     
+ \dzbIn{dateWeek11}{Apr 25}     
+ \dzbIn{dateWeek12}{May 02}     
+ \dzbIn{dateWeek13}{May 07}
+ \dzbIn{midterm1Date}{Mar 14} 
+ \dzbIn{midterm2Date}{Apr 23}  
+ \dzbIn{finalDate}{May ??} 
 
 
- \csNew dateWeek1\endcsname{Feb 08}     
- \csNew dateWeek2\endcsname{Feb 15}     
- \csNew dateWeek3\endcsname{Feb 22}     
- \csNew dateWeek4\endcsname{Feb 29} 
- \csNew dateWeek5\endcsname{Mar 07}     
- \csNew dateWeek6\endcsname{Mar 14} 
- \csNew dateWeek7\endcsname{Mar 28}     
- \csNew dateWeek8\endcsname{Apr 04}     
- \csNew dateWeek9\endcsname{Apr 11}     
- \csNew dateWeek10\endcsname{Apr 18}     
- \csNew dateWeek11\endcsname{Apr 25}     
- \csNew dateWeek12\endcsname{May 02}     
- \csNew dateWeek13\endcsname{May 07}
- \csNew midterm1Date\endcsname{Mar 14} 
- \csNew midterm2Date\endcsname{Apr 23}  
- \csNew finalDate\endcsname{May ??} 
+ \dzbIn{topic01}{Introduction to course.}
+ \dzbIn{topic02}{TBA}
+ \dzbIn{topic03}{TBA}
+ \dzbIn{topic04}{TBA}
+ \dzbIn{topic05}{TBA} 
+ \dzbIn{topic06}{TBA}
+ \dzbIn{topic07}{TBA}
+ \dzbIn{topic08}{TBA}
+ \dzbIn{topic09}{TBA}
+ \dzbIn{topic10}{TBA}
+ \dzbIn{topic11}{TBA}
+ \dzbIn{topic12}{TBA}
+ \dzbIn{topic13}{TBA}
 
 
- \csNew topic1\endcsname{Introduction to course.}
- \csNew topic2\endcsname{TBA}
- \csNew topic3\endcsname{TBA}
- \csNew topic4\endcsname{TBA}
- \csNew topic5\endcsname{TBA} 
- \csNew topic6\endcsname{TBA}
- \csNew topic7\endcsname{TBA}
- \csNew topic8\endcsname{TBA}
- \csNew topic9\endcsname{TBA}
- \csNew topic10\endcsname{TBA}
- \csNew topic11\endcsname{TBA}
- \csNew topic12\endcsname{TBA}
- \csNew topic13\endcsname{TBA}
-
+%----------------------------------------------------------------------------------------
+%	Header
+%----------------------------------------------------------------------------------------
  
 %HEADER FOOTER
 \usepackage{fancyhdr}
@@ -83,38 +88,32 @@
 \end{center}
 \tableofcontents
 
-% Topic 1  (due \csname dateWeek1\endcsname):  \csname topic1\endcsname \smallskip\\
-% Topic 2  (due \csname dateWeek2\endcsname):  \csname topic2\endcsname \smallskip\\
-% Topic 3  (due \csname dateWeek3\endcsname):  \csname topic3\endcsname \smallskip\\
-% Topic 4  (due \csname dateWeek4\endcsname):  \csname topic4\endcsname \smallskip\\
-% Topic 5  (due \csname dateWeek5\endcsname):  \csname topic5\endcsname \smallskip\\
-% Topic 6  (due \csname dateWeek6\endcsname):  \csname topic6\endcsname \smallskip\\
-% Topic 7  (due \csname dateWeek7\endcsname):  \csname topic7\endcsname \smallskip\\
-% Topic 8  (due \csname dateWeek8\endcsname):  \csname topic8\endcsname \smallskip\\
-% Topic 9  (due \csname dateWeek9\endcsname):  \csname topic9\endcsname \smallskip\\
-% Topic 10 (due \csname dateWeek10\endcsname): \csname topic10\endcsname \smallskip\\
-% Topic 11 (due \csname dateWeek11\endcsname): \csname topic11\endcsname \smallskip\\
-% Topic 12 (due \csname dateWeek12\endcsname): \csname topic12\endcsname \smallskip\\
-% Topic 13 (due \csname dateWeek13\endcsname): \csname topic13\endcsname
+%----------------------------------------------------------------------------------------
+%	Content
+%----------------------------------------------------------------------------------------
 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek01}):  \dzbOut{topic01}} \input{assignments-source/S24-250HW1.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek02}):  \dzbOut{topic02}} \input{assignments-source/S24-250HW2.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek03}):  \dzbOut{topic03}} \input{assignments-source/S24-250HW3.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek04}):  \dzbOut{topic04}} \input{assignments-source/S24-250HW4.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek05}):  \dzbOut{topic05}} \input{assignments-source/S24-250HW5.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/S24-250HW6.tex} 
 
-\newpage      
-\warning \fakesection{(due \csname dateWeek1\endcsname):  \csname topic1\endcsname} \input{assignments-source/S24-250HW1.tex} \newpage 
-\warning \fakesection{(due \csname dateWeek2\endcsname):  \csname topic2\endcsname} \input{assignments-source/S24-250HW2.tex} \newpage
-\warning \fakesection{(due \csname dateWeek3\endcsname):  \csname topic3\endcsname} \input{assignments-source/S24-250HW3.tex} \newpage
-\warning \fakesection{(due \csname dateWeek4\endcsname):  \csname topic4\endcsname} \input{assignments-source/S24-250HW4.tex} \newpage
-\warning \fakesection{(due \csname dateWeek5\endcsname):  \csname topic5\endcsname} \input{assignments-source/S24-250HW5.tex} \newpage
-\warning \fakesection{(due \csname dateWeek6\endcsname):  \csname topic6\endcsname} \input{assignments-source/S24-250HW6.tex} \newpage
-\warning \fakesectionnocounter{(On \csname midterm1Date\endcsname):  Midterm 1}  \input{assignments-source/S24-250M1.tex} \newpage
-\warning \fakesection{(due \csname dateWeek7\endcsname):  \csname topic7\endcsname}  \input{assignments-source/S24-250HW7.tex} \newpage
-\warning \fakesection{(due \csname dateWeek8\endcsname):  \csname topic8\endcsname}  \input{assignments-source/S24-250HW8.tex} \newpage
-\warning \fakesection{(due \csname dateWeek9\endcsname):  \csname topic9\endcsname}  \input{assignments-source/S24-250HW9.tex} \newpage
-\warning \fakesection{(due \csname dateWeek10\endcsname): \csname topic10\endcsname} \input{assignments-source/S24-250HW10.tex} \newpage
-\warning \fakesectionnocounter{(On \csname midterm2Date\endcsname):  Midterm 2}  \input{assignments-source/S24-250M2.tex} \newpage
-\warning \fakesection{(due \csname dateWeek11\endcsname): \csname topic11\endcsname} \input{assignments-source/S24-250HW11.tex} \newpage
-\warning \fakesection{(due \csname dateWeek12\endcsname): \csname topic12\endcsname} \input{assignments-source/S24-250HW12.tex} \newpage
-\warning \fakesection{(Not due): \csname topic13\endcsname} \smallskip \input{assignments-source/S24-250HW13.tex} \newpage
-\warning \fakesectionnocounter{(On \csname finalDate\endcsname):    Final Exam}  \input{assignments-source/S24-250F.tex} \newpage
+\newpage \warning \fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/S24-250M1.tex} 
+
+\newpage \warning \fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}}  \input{assignments-source/S24-250HW7.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}}  \input{assignments-source/S24-250HW8.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek09}):  \dzbOut{topic09}}  \input{assignments-source/S24-250HW9.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek10}):  \dzbOut{topic10}} \input{assignments-source/S24-250HW10.tex} 
+
+\newpage \warning \fakesectionnocounter{(On \dzbOut{midterm2Date}):  Midterm 2}  \input{assignments-source/S24-250M2.tex} 
+
+\newpage \warning \fakesection{(due \dzbOut{dateWeek11}):  \dzbOut{topic11}} \input{assignments-source/S24-250HW11.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek12}):  \dzbOut{topic12}} \input{assignments-source/S24-250HW12.tex} 
+\newpage \warning \fakesection{(Not due): \dzbOut{topic13}} \smallskip \input{assignments-source/S24-250HW13.tex} 
+
+\newpage \warning \fakesectionnocounter{(On \csname finalDate\endcsname):    Final Exam}  \input{assignments-source/S24-250F.tex} 
+
 % \fakesection{(due \csname dateWeek13\endcsname): \csname topic13\endcsname}  %\fbox{\parbox{\textwidth-138\fboxsep}{\bf IN PROGRESS}} \smallskip \input{assignments-source/S24-250HW11.tex} \newpage
 
 \end{document}
