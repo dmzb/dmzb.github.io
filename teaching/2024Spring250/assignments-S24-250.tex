@@ -15,19 +15,18 @@
 \newcommand{\dzbIn}[2]{\expandafter\newcommand\csname #1\endcsname{#2}} 
 \newcommand{\dzbOut}[1]{\csname #1\endcsname} 
 
- \dzbIn{dateWeek01}{Feb 08}     
+ \dzbIn{dateWeek01}{Feb 08}
  \dzbIn{dateWeek02}{Feb 15}     
  \dzbIn{dateWeek03}{Feb 22}     
  \dzbIn{dateWeek04}{Feb 29} 
  \dzbIn{dateWeek05}{Mar 07}     
- \dzbIn{dateWeek06}{Mar 14} 
- \dzbIn{dateWeek07}{Mar 28}     
- \dzbIn{dateWeek08}{Apr 04}     
- \dzbIn{dateWeek09}{Apr 11}     
- \dzbIn{dateWeek10}{Apr 18}     
- \dzbIn{dateWeek11}{Apr 25}     
- \dzbIn{dateWeek12}{May 02}     
- \dzbIn{dateWeek13}{May 07}
+ \dzbIn{dateWeek06}{Mar 28} 
+ \dzbIn{dateWeek07}{Apr 04}     
+ \dzbIn{dateWeek08}{Apr 11}     
+ \dzbIn{dateWeek09}{Apr 18}     
+ \dzbIn{dateWeek10}{Apr 25}     
+ \dzbIn{dateWeek11}{May 02}     
+ \dzbIn{dateWeek12}{May 07}     
  \dzbIn{midterm1Date}{Mar 14} 
  \dzbIn{midterm2Date}{Apr 23}  
  \dzbIn{finalDate}{May ??} 
@@ -97,9 +96,9 @@
 \newpage          \fakesection{(due \dzbOut{dateWeek03}):  \dzbOut{topic03}} \input{assignments-source/S24-250HW3.tex} 
 \newpage          \fakesection{(due \dzbOut{dateWeek04}):  \dzbOut{topic04}} \input{assignments-source/S24-250HW4.tex} 
 \newpage          \fakesection{(due \dzbOut{dateWeek05}):  \dzbOut{topic05}} \input{assignments-source/S24-250HW5.tex} 
-\newpage \warning \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/S24-250HW6.tex} 
-
 \newpage \warning \fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/S24-250M1.tex} 
+
+\newpage \warning \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/S24-250HW6.tex} 
 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}}  \input{assignments-source/S24-250HW7.tex} 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}}  \input{assignments-source/S24-250HW8.tex} 
@@ -110,7 +109,6 @@
 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek11}):  \dzbOut{topic11}} \input{assignments-source/S24-250HW11.tex} 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek12}):  \dzbOut{topic12}} \input{assignments-source/S24-250HW12.tex} 
-\newpage \warning \fakesection{(Not due):                  \dzbOut{topic13}} \smallskip \input{assignments-source/S24-250HW13.tex} 
 
 \newpage \warning \fakesectionnocounter{(On \csname finalDate\endcsname):    Final Exam}  \input{assignments-source/S24-250F.tex} 
 
