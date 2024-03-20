@@ -15,22 +15,21 @@
 \newcommand{\dzbIn}[2]{\expandafter\newcommand\csname #1\endcsname{#2}} 
 \newcommand{\dzbOut}[1]{\csname #1\endcsname} 
 
- \dzbIn{dateWeek01}{Feb 08}
- \dzbIn{dateWeek02}{Feb 15}     
- \dzbIn{dateWeek03}{Feb 22}     
- \dzbIn{dateWeek04}{Feb 29} 
- \dzbIn{dateWeek05}{Mar 07}     
- \dzbIn{dateWeek06}{Mar 28} 
- \dzbIn{dateWeek07}{Apr 04}     
- \dzbIn{dateWeek08}{Apr 11}     
- \dzbIn{dateWeek09}{Apr 18}     
- \dzbIn{dateWeek10}{Apr 25}     
- \dzbIn{dateWeek11}{May 02}     
- \dzbIn{dateWeek12}{May 07}     
+ \dzbIn{dateWeek01}  {Feb 08}
+ \dzbIn{dateWeek02}  {Feb 15}     
+ \dzbIn{dateWeek03}  {Feb 22}     
+ \dzbIn{dateWeek04}  {Feb 29} 
+ \dzbIn{dateWeek05}  {Mar 07}     
+ \dzbIn{dateWeek06}  {Mar 28} 
+ \dzbIn{dateWeek07}  {Apr 04}     
+ \dzbIn{dateWeek08}  {Apr 11}     
+ \dzbIn{dateWeek09}  {Apr 18}     
+ \dzbIn{dateWeek10}  {Apr 25}     
+ \dzbIn{dateWeek11}  {May 02}     
+ \dzbIn{dateWeek12}  {May 07}     
  \dzbIn{midterm1Date}{Mar 14} 
  \dzbIn{midterm2Date}{Apr 23}  
- \dzbIn{finalDate}{May 13} 
-
+ \dzbIn{finalDate}   {May 13} 
 
  \dzbIn{topic01}{Introduction to course; squares, triangles, and Pythagorean triples.}
  \dzbIn{topic02}{Divisibility and primality}
@@ -39,13 +38,14 @@
  \dzbIn{topic05}{Modular Arithmetic} 
  \dzbIn{topic06}{Modular linear equations}
  \dzbIn{topic07}{Fermat's little theorem}
- \dzbIn{topic08}{TBA}
- \dzbIn{topic09}{TBA}
- \dzbIn{topic10}{TBA}
- \dzbIn{topic11}{TBA}
- \dzbIn{topic12}{TBA}
- \dzbIn{topic13}{TBA}
+ \dzbIn{topic08}{Multiplicativity of $\phi(n)$; fast squaring}
+ \dzbIn{topic09}{Computing $k^{th}$ roots mod $m$; cryptography}
+ \dzbIn{topic10}{Primality testing; squares mod $p$}
+ \dzbIn{topic11}{Quadratic reciprocity}
+ \dzbIn{topic12}{Primitive roots}
+ \dzbIn{topic13}{More modular equations}
 
+ 
 
 %----------------------------------------------------------------------------------------
 %	Header
@@ -98,11 +98,10 @@
 \newpage          \fakesection{(due \dzbOut{dateWeek05}):  \dzbOut{topic05}} \input{assignments-source/S24-250HW5.tex} 
 \newpage          \fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/S24-250M1.tex} 
 
-\newpage \warning \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/S24-250HW6.tex} 
-
-\newpage \warning \fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}}  \input{assignments-source/S24-250HW7.tex} 
-\newpage \warning \fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}}  \input{assignments-source/S24-250HW8.tex} 
-\newpage \warning \fakesection{(due \dzbOut{dateWeek09}):  \dzbOut{topic09}}  \input{assignments-source/S24-250HW9.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/S24-250HW6.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}} \input{assignments-source/S24-250HW7.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}} \input{assignments-source/S24-250HW8.tex} 
+\newpage \warning \fakesection{(due \dzbOut{dateWeek09}):  \dzbOut{topic09}} \input{assignments-source/S24-250HW9.tex} 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek10}):  \dzbOut{topic10}} \input{assignments-source/S24-250HW10.tex} 
 
 \newpage \warning \fakesectionnocounter{(On \dzbOut{midterm2Date}):  Midterm 2}  \input{assignments-source/S24-250M2.tex} 
