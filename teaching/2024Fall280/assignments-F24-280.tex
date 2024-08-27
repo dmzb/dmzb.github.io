@@ -34,7 +34,7 @@
  \dzbIn{topic02}{Basic properties, e.g., connectedness}
  \dzbIn{topic03}{Walks}
  \dzbIn{topic04}{Trees}
- \dzbIn{topic05}{Spannign trees; Pr\"{u}fer sequences}
+ \dzbIn{topic05}{Spanning trees; Pr\"{u}fer sequences}
  \dzbIn{topic06}{Matrix Tree Theorem; Eulerian and Hamiltonian graphs}
  \dzbIn{topic07}{Independence; Planar graphs}
  \dzbIn{topic08}{Regular and bipartite graphs; chromatic number}
@@ -56,16 +56,17 @@
 \pagestyle{fancy}
 \thispagestyle{plain}
 \begin{center}
-  {\Large Math \courseNumber: \courseName \\ \medskip Instructor: David Zureick-Brown (``DZB'')\smallskip}
+  {\Large Math \courseNumber: \courseName
+    \\ \medskip Instructor: David Zureick-Brown (``DZB'')\smallskip}
+    \\ \medskip \Large\textbf{All assignments}
 \end{center}
 \vskip-.05in
 
 \vskip.25in
 \begin{center}
- \noindent\textbf{All assignments}\\
- Last updated: \today\\
+ Last updated: \colorbox{lime}{\today}\\
  \smallskip
- Gradescope code: \gradescopeCode
+ Gradescope code: \colorbox{Yellow}{\gradescopeCode}
 \end{center}
 
 \begin{center}
@@ -81,32 +82,34 @@
 
 }}
 \end{center}
+\renewcommand\contentsname{}
 \tableofcontents
 
 %----------------------------------------------------------------------------------------
 %	Content
 %----------------------------------------------------------------------------------------
+\newpage          \fakesectionnocounter{Gradescope instructions}  \input{assignments-source/gradescope-instructions.tex}
 
-\newpage \warning\fakesection{(due \dzbOut{dateWeek01}):  \dzbOut{topic01}} \input{assignments-source/F24-280HW1.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek02}):  \dzbOut{topic02}} \input{assignments-source/F24-280HW2.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek03}):  \dzbOut{topic03}} \input{assignments-source/F24-280HW3.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek04}):  \dzbOut{topic04}} \input{assignments-source/F24-280HW4.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek05}):  \dzbOut{topic05}} \input{assignments-source/F24-280HW5.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek01}):  \dzbOut{topic01}} \input{assignments-source/F24-280HW1.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek02}):  \dzbOut{topic02}} \input{assignments-source/F24-280HW2.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek03}):  \dzbOut{topic03}} \input{assignments-source/F24-280HW3.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek04}):  \dzbOut{topic04}} \input{assignments-source/F24-280HW4.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek05}):  \dzbOut{topic05}} \input{assignments-source/F24-280HW5.tex}
 
-\newpage \warning\fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/F24-280M1.tex}
+\newpage \warning \fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/F24-280M1.tex}
 
-\newpage \warning\fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/F24-280HW6.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}} \input{assignments-source/F24-280HW7.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}} \input{assignments-source/F24-280HW8.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek09}):  \dzbOut{topic09}} \input{assignments-source/F24-280HW9.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek06}):  \dzbOut{topic06}} \input{assignments-source/F24-280HW6.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek07}):  \dzbOut{topic07}} \input{assignments-source/F24-280HW7.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek08}):  \dzbOut{topic08}} \input{assignments-source/F24-280HW8.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek09}):  \dzbOut{topic09}} \input{assignments-source/F24-280HW9.tex}
 
-\newpage \warning\fakesectionnocounter{(On \dzbOut{midterm2Date}):  Midterm 2}  \input{assignments-source/F24-280M2.tex}
+\newpage \warning \fakesectionnocounter{(On \dzbOut{midterm2Date}):  Midterm 2}  \input{assignments-source/F24-280M2.tex}
 
-\newpage \warning\fakesection{(due \dzbOut{dateWeek10}):  \dzbOut{topic10}} \input{assignments-source/F24-280HW10.tex}
-\newpage \warning\fakesection{(due \dzbOut{dateWeek11}):  \dzbOut{topic11}} \input{assignments-source/F24-280HW11.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek10}):  \dzbOut{topic10}} \input{assignments-source/F24-280HW10.tex}
+\newpage \warning \fakesection{(due \dzbOut{dateWeek11}):  \dzbOut{topic11}} \input{assignments-source/F24-280HW11.tex}
 
 
-\newpage \warning\fakesectionnocounter{(On \csname finalDate\endcsname):    Final Exam}  \input{assignments-source/F24-280F.tex}
+\newpage \warning \fakesectionnocounter{(On \csname finalDate\endcsname):    Final Exam}  \input{assignments-source/F24-280F.tex}
 
 
 \end{document}
