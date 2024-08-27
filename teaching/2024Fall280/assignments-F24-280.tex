@@ -42,15 +42,19 @@
  \dzbIn{topic10}{Matchings; Hall's theorem}
  \dzbIn{topic11}{Ramsey Theory}
 
-
 %----------------------------------------------------------------------------------------
-%	Header
-%----------------------------------------------------------------------------------------
+%	Fancy Headers
+%----------------------------------------------------------------------------------------  
 
-%HEADER FOOTER
-\usepackage{fancyhdr}
+ \usepackage{fancyhdr}
  \fancyhead[L]{Math 280 Homework (Zureick-Brown)}
  \fancyhead[R]{Assignment \thesection}
+
+
+%----------------------------------------------------------------------------------------
+%	Main
+%----------------------------------------------------------------------------------------  
+
 
 \begin{document}
 \pagestyle{fancy}
@@ -87,7 +91,8 @@
 
 %----------------------------------------------------------------------------------------
 %	Content
-%----------------------------------------------------------------------------------------
+% ----------------------------------------------------------------------------------------
+\renewcommand{\warning}{}
 \newpage          \fakesectionnocounter{Gradescope instructions}  \input{assignments-source/gradescope-instructions.tex}
 
 \newpage \warning \fakesection{(due \dzbOut{dateWeek01}):  \dzbOut{topic01}} \input{assignments-source/F24-280HW1.tex}
