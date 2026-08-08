@@ -1,0 +1,121 @@
+\input{assignments-source/assignments-header.tex}
+
+\newcommand{\gradescopeCode}{7DP8JD} 
+\newcommand{\HWdueTime}{9:55am}
+\newcommand{\dueDay}{Thursday}
+\newcommand{\courseNumber}{220}
+\newcommand{\courseName}{Mathematical Reasoning and Proof}
+\newcommand{\season}{Spring}
+\newcommand{\thisYear}{2024}
+\newcommand{\bookAuthors}{Bond and Keane}
+\newcommand{\bookName}{An Introduction to Abstract Mathematics}
+
+
+\newcommand{\dzbIn}[2]{\expandafter\newcommand\csname #1\endcsname{#2}} 
+\newcommand{\dzbOut}[1]{\csname #1\endcsname} 
+
+ \dzbIn{dateWeek01}{Feb 08}
+ \dzbIn{dateWeek02}{Feb 15}     
+ \dzbIn{dateWeek03}{Feb 22}     
+ \dzbIn{dateWeek04}{Feb 29} 
+ \dzbIn{dateWeek05}{Mar 07}     
+ \dzbIn{dateWeek06}{Mar 28} 
+ \dzbIn{dateWeek07}{Apr 04}     
+ \dzbIn{dateWeek08}{Apr 11}     
+ % \dzbIn{dateWeek09}{Apr 18}
+ \dzbIn{dateWeek09}{Apr 19} 
+ \dzbIn{dateWeek10}{May 02}     
+ \dzbIn{dateWeek11}{May 07}     
+ % \dzbIn{dateWeek12}{May 07}     
+ % \dzbIn{dateWeek13}{May 14}
+ \dzbIn{midterm1Date}{Mar 14} 
+ \dzbIn{midterm2Date}{Apr 23} 
+ \dzbIn{finalDate}{May 15} 
+
+
+ \dzbIn{topic01}{Introduction to course. Mathematical reasoning. Logic}
+ \dzbIn{topic02}{``Direct" proofs, proof by cases and divisibility problems}
+ \dzbIn{topic03}{Proof by contradiction}
+ \dzbIn{topic04}{Induction}
+ \dzbIn{topic05}{Set theory. Basic operations. Proofs with sets} 
+ \dzbIn{topic06}{More sets. DeMorgan’s laws. Cartesian Products. Power sets}
+ \dzbIn{topic07}{Introduction to functions; images and surjectivity}
+ \dzbIn{topic08}{Inverse Image (or “Preimage”)}
+ \dzbIn{topic09}{Injectivity}
+ \dzbIn{topic10}{Composition of functions}
+ \dzbIn{topic11}{Inverse functions}
+ \dzbIn{topic12}{Relations}
+ \dzbIn{topic13}{(Un)countability}
+
+
+ 
+%----------------------------------------------------------------------------------------
+%	Header
+%----------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
+ \fancyhead[L]{Math 220 (Zureick-Brown)}
+ \fancyhead[R]{Homework}
+
+\begin{document}
+  \pagestyle{fancy}
+  \thispagestyle{plain}
+
+\begin{center}
+  {\Large Math 220-01: Mathematical Reasoning and Proof \\ Instructor: David Zureick-Brown (``DZB'')\smallskip}
+\end{center}
+\vskip-.05in
+
+\vskip.25in
+\begin{center}
+ \noindent\textbf{All assignments}\\
+ Last updated: \today\\
+ \smallskip
+ Gradescope code: \gradescopeCode
+\end{center}
+
+\begin{center}
+\fbox{
+\parbox{\textwidth-65\fboxsep}{
+\centering
+{\bf Show all work for full credit!}
+
+% \textit{Please write all solutions on a separate sheet of paper.}
+
+\textit{Proofs should be written in full sentences whenever possible.}
+%\textit{Be sure to include any sources that you used!}
+
+}}
+\end{center}
+\tableofcontents
+
+
+%----------------------------------------------------------------------------------------
+%	Content
+%----------------------------------------------------------------------------------------
+     
+\newpage          \fakesection{(due \dzbOut{dateWeek01}): \dzbOut{topic01}} \input{assignments-source/S24-220HW1.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek02}): \dzbOut{topic02}} \input{assignments-source/S24-220HW2.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek03}): \dzbOut{topic03}} \input{assignments-source/S24-220HW3.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek04}): \dzbOut{topic04}} \input{assignments-source/S24-220HW4.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek05}): \dzbOut{topic05}} \input{assignments-source/S24-220HW5.tex} 
+
+\newpage          \fakesectionnocounter{(On \dzbOut{midterm1Date}):  Midterm 1}  \input{assignments-source/S24-220M1.tex} 
+
+\newpage          \fakesection{(due \dzbOut{dateWeek06}): \dzbOut{topic06}} \input{assignments-source/S24-220HW6.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek07}): \dzbOut{topic07}} \input{assignments-source/S24-220HW7.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek08}): \dzbOut{topic08}} \input{assignments-source/S24-220HW8.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek09}): \dzbOut{topic09}} \input{assignments-source/S24-220HW9.tex} 
+
+\newpage          \fakesectionnocounter{(On \dzbOut{midterm2Date}):  Midterm 2}  \input{assignments-source/S24-220M2.tex} 
+
+\newpage          \fakesection{(due \dzbOut{dateWeek10}): \dzbOut{topic10}} \input{assignments-source/S24-220HW10.tex} 
+\newpage          \fakesection{(due \dzbOut{dateWeek11}): \dzbOut{topic11}} \input{assignments-source/S24-220HW11.tex} 
+% \newpage \warning \fakesection{(due \dzbOut{dateWeek12}): \dzbOut{topic12}} \input{assignments-source/S24-220HW12.tex} 
+
+% \newpage \warning \fakesection{(Not due): \dzbOut{topic13}} \smallskip \input{assignments-source/S24-220HW13.tex} 
+
+\newpage          \fakesectionnocounter{(On \dzbOut{finalDate}): Final Exam}  \input{assignments-source/S24-220F.tex} 
+
+% \fakesection{(due \dzbOut{dateWeek13}): \dzbOut{topic13}}  %\fbox{\parbox{\textwidth-138\fboxsep}{\bf IN PROGRESS}} \smallskip \input{assignments-source/S24-220HW11.tex} \newpage
+
+\end{document}

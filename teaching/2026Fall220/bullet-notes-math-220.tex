@@ -1,0 +1,597 @@
+\documentclass[12pt]{article}
+
+
+
+\newcommand{\dzbIn}[2]{\expandafter\newcommand\csname #1\endcsname{#2}} 
+\newcommand{\dzbOut}[1]{\csname #1\endcsname} 
+
+ \dzbIn{dateWeek1}{Feb 08}     
+ \dzbIn{dateWeek2}{Feb 15}     
+ \dzbIn{dateWeek3}{Feb 22}     
+ \dzbIn{dateWeek4}{Feb 29} 
+ \dzbIn{dateWeek5}{Mar 07}     
+ \dzbIn{dateWeek6}{Mar 14} 
+ \dzbIn{dateWeek7}{Mar 28}     
+ \dzbIn{dateWeek8}{Apr 04}     
+ \dzbIn{dateWeek9}{Apr 11}     
+ \dzbIn{dateWeek10}{Apr 18}     
+ \dzbIn{dateWeek11}{Apr 25}     
+ \dzbIn{dateWeek12}{May 02}     
+ \dzbIn{dateWeek13}{May 07}
+ \dzbIn{midterm1Date}{Mar 14} 
+ \dzbIn{midterm2Date}{Apr 23}  
+ \dzbIn{finalDate}{May ??}
+
+% Easy way to fix the margins with a package
+\textwidth=7in
+\textheight=9.5in
+\topmargin=-1in
+\headheight=0in
+\headsep=.5in
+\hoffset -.85in
+
+
+\usepackage{amssymb, latexsym, amsmath, verbatim, multicol}
+\newcommand{\N}{{\mathbb N}}
+\DeclareMathOperator{\id}{id}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Q}{{\mathbb Q}}
+
+\setcounter{secnumdepth}{0}
+
+\usepackage{hyperref}
+\hypersetup{
+ colorlinks=true,
+ linkcolor=blue,
+ filecolor=magenta,
+ urlcolor=cyan,
+}
+\pagestyle{empty}
+
+\begin{document}
+\noindent\rule{18cm}{0.4pt}
+\begin{center}
+ {\bf MATH 220, Mathematical Reasoning and Proof
+}
+
+{\bf
+   % Section 001 Wed 11:20 - 12:35 
+ Section 02 TuTh 1 - 1:50
+}
+ \end{center}
+\noindent\rule{18cm}{0.4pt}
+
+% \renewcommand{\arraystretch}{2}
+
+\vskip.25in
+\begin{center}
+  \noindent\textbf{Really rough outline of course}\\
+  Last updated: \today
+\end{center}
+\noindent\rule{18cm}{0.4pt}
+\tableofcontents
+
+\newpage
+\section[1 (\csname dateWeek1\endcsname): Introduction to course. Mathematical reasoning]{Topic  1: Introduction to course. Mathematical reasoning}
+
+\begin{itemize}
+\item Syllabus; call me DZB. Office hours, $\$\$$.
+\item Introduction. How do we know what we know? Rigor and proof. Prose, ``writing requirement". 
+\item Goal of the course: learn to write proofs; communicate; solve problems; be precise (``say exactly what you mean"); prepare for 300+ level courses. Create/discover new math; learn to ``generalize". Structured thinking.
+\item Why rigor/proof? You know how to use procedures to do calculations; how do you know these procedures give a correct answer? 
+\item Procedures $\to$ calculations $\to$ how to interpret results $\to$ why are results correct $\to$ very ``type" of input; does procedure still work? Edge cases?
+
+\item Foundations. Inductive vs deductive reasoning. (Emphrical/data/observation vs proof/logic/symbolic manipulation.)
+\item Example: even plus even is even. Examples. Authority. Define even. Examples; 6 is even; 7 is not; -8? 0? (Show magic card; do some examples of latex.) Do proof. 
+\item Talk about structure of proofs. This is a "direct proof". Four steps: find hypotheses and assume them. Write out what they mean. Manipulate hypotheses. Conclude. Assume expand manipulate conclude.
+\item Do proof of $2 \mid a$ and $2 \mid b$ implies that $2 \mid a + b$?
+\item Common sets (Z,R,C,N,E); elements, inclusion.
+
+\item Statements; combining statements; negations; implications; statement forms; truth tables; identities; `boolean algebra'.
+
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}
+\item Thursday
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}  
+\item \textbf{Negations}. Define negation. Do Handout 1, problem 3
+\item \textbf{Do a few truth tables, slowly}. Do $\neg (P \vee Q)$, $(P \vee Q) \wedge R$, and $\neg \neg P$. Include $P \vee Q$ in the table.
+\item  Boolean identities worksheet. Discuss and write out 1,2,3,6,7,8.
+\item Do a few more identities.
+\item Talk about implications again (if-then vs ``Whenever'', and how to disprove), converse, contrapositive, then do \#7 (if behind, just 1 and 5). Then do \#9 (not 3,4).
+
+\item If extra time, do so many negations. Then do some more proofs with divisibility.
+\end{itemize}
+
+
+\newpage
+\section[2 (\csname dateWeek2\endcsname): Divisibility problems.]{Topic  2: ``Direct'' proofs, proof by cases, and divisibility problems. }
+
+
+\begin{itemize}
+\item Discuss  ``depth search'' when doing proofs. Start each sentence with a word, end with punctuation. 
+% \item Discuss \href{https://www.maa.org/math-competitions/putnam-competition}{Putnam}, \href{https://sites.math.northwestern.edu/~mlerma/problem_solving/putnam/easy_putnam_problems.pdf}{easy problems}, Poonen, big mouth theorem.
+  % \href{http://www.math.emory.edu/~ckeyes3/drp.html}{DRP}
+\item Comment on suggested problems. (Don't do them all.) Same for handouts.
+\item Do a few hard nested negations (like continuity).
+\item Definition of divisibility. Examples. What does it mean to prove that $a \mid b$? ``Exhibit'' ($3 \mid 6$); ``Brute force'' ($3 \mid 7$). Division algorithm.
+\item Basic properties of $|$. Transitive, additive, signs; talk about corollaries; 2 out of 3 rule. Do 29999999997.
+\item Now note that ``even + even = even'' is a special case of additivitiy
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}
+\item Thursday
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}
+\item $3 | 4^n-1$; $x^n-1 = ..$, $x^n - y^n = ..$
+\item $4^n + 1 = $.. if $n$ odd; so, $5 | 4^n + 1$ if $n$ is odd.
+\item $5 \nmid 4^n+1$ if $n$ is even. 
+\item Talk about counterexamples, and disproofs.  
+  
+\item proof by ``cases''; $2 \mid n(n+1)$, $2 \mid ab(a-b)$. Does $3 \mid  ab(a-b)$ for all integers $a,b$?
+\item Disproofs without counterexamples: prove that for all integers $n$, $n^2 + 1$ is never divisible by 4. (``Proof by cases''.) 
+\item $5 | n+2 \Rightarrow 5 | n^2 - 4$; or $n^2 + 8n + 7$ (2 proofs; factor, or write $n + 2 = 5m$ and substitute.)
+% \item $n$ and $n+1$ have no common divisors other than 1
+\item Define prime. Is $n^3 - 1$ ever prime? What about $n^3 + 1$?
+\end{itemize}
+
+\newpage
+\section[3 (\csname dateWeek3\endcsname): Proof by contradiction. Unsolvability. Irrationality.]{Topic  3: Proof by contradiction. Unsolvability of equations. Irrationality.}
+
+
+
+
+\begin{itemize}
+\item Recall $n^3 - 1$ and $n^3 + 1$. When is $2^n + 1$ prime? Implies that $n$ is $2^k$. Aside on Fermat numbers.  
+\item $x^2 - y^2 = 1$ has no integer solutions.
+\item Explain contradiction. Template (see printout?). Revisit and highlight each step (e.g., not $P$). 
+\item $\neg P \Rightarrow Q$ and $\neg Q$ implies $P$. ($A \Rightarrow B$ and $\neg B$ implies $\neg A$.)
+\item Definition of rational; examples; reduced form.
+\item $\sqrt{2} \not \in \Q$
+\item Infinitude of primes.
+\item $x + y > 20 \Rightarrow x > 10$ or $y > 10$.
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}
+\item Recall contradiction. As Booleans, and Template (assume, argue, observe, conclude).
+\item War: if I send troops to $X$ then they get ambushed, so I shouldn't send troops there.
+\item Chess: if I move here, then in 4 moves they have checkmate. So I shouldn't move there.
+\item Show that if $a$ is rational and $b$ is irrational, then $a + b$ is irrational.
+\item No uninteresting number proof.
+\item If $a, b, c$ are odd integers, prove that $ax^2 + bx + c = 0$ does not have a solution $x$ such that $x$ is a rational number.  
+\item $\log_2{3} \not \in \Q$
+\item Prove that $x^2 - y^2 = 6$ has no integer solutions.
+
+\item \textsf{}Prove that the equation $x^2 = 4y + 3$ has no integer solutions. Emplasize cases.
+
+\item There is no smallest positive real number.
+\item OMIT. FTA (factorization); failure.
+\item Prove that $\sqrt[5]{5}$ is irrational.
+\item \textbf{OMIT the rest this year}
+\item Worksheet. If $2^n+1$ is prime then $n$ is even. Hint for $2^n-1$ prime implies  $n$ prime.
+\item More from Handout 3?
+\item ``double chess'' problem. 
+
+\end{itemize}
+
+
+
+
+
+\newpage
+\section[4 (\csname dateWeek4\endcsname): Induction.]{Topic  4: Induction.}
+
+
+\begin{itemize}
+\item $\sum i$,  Gauss, ``by hand''. 
+\item Explain induction, and template for induction proofs. 
+\item Emphasize that $P(n)$ is an open statement; it isn't $n(n+1)/2$, for instance
+\item $P(1) \wedge (P(n) \Rightarrow P(n+1)) \Rightarrow \forall n, P(n)$
+\item Emphasize: $P(a)$ instead of $P(n)$; $P(n-1) \Rightarrow P(n)$ is ok. Variants: start at 2, or 4, or evens.
+\item $a_i = 2a_{i-1}$ 
+\item Review induction. Emphasize ``build your own variants'' (start at 2, only evens, etc).
+\item $2^0 + 2^1 + \cdots + 2^{n-1}$; geometric series
+\item $a_1 = 0, a_n = \sqrt{3 + 2a_{n-1}} < 3$
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}
+  
+\item Try to get here. 
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}    
+\item Let $n \in \mathbf{Z}_{\geq 0}$. Prove that $\displaystyle{\sum}_{i = 1}^n i^2 = \frac{n(n+1)(2n+1) }{6}$. 
+\item They asked so many questions
+
+\item Prove that, for all $n > 1$, $\frac{1}{1\cdot 2} + \frac{1}{2 \cdot 3} + \cdots + \frac{1}{(n-1)n} = \frac{n-1}{n}$
+\item Fibonacci's; example, defn, lucas
+\item warning: $F_{a+2} = F_{a+1} + F_{a}$, or $F_{a+1} = F_{a} + F_{a-1}$, or $F_{a} = F_{a-1} + F_{a-2}$,
+\item or even $F_{2a} = F_{2a-1} + F_{2a-2}$,
+\item $F_1 + F_3 + \cdots + F_{2n-1} = F_{2n}$
+\item for all $n$, $F_n < 2^n$
+\item $F_{n-1}F_{n+1} = F_n^2 + (-1)^{n}$
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}  
+\item Skip these this year
+\item $3^a$ odd for all $a$
+\item some awkward problems: $3 | 4^n-1$ via induction  
+\item ``Anytime a thing works for 2 things, it works for many'' ($a,b,$ odd implies $ab$ odd, sums, etc)
+\item $n! > 2^n$ for $n \geq 4$ (this is HW, skip this year
+
+\end{itemize}
+
+
+\newpage
+\section[5 (\csname dateWeek5\endcsname): Basics of set theory. Basic operations. Proofs with sets.]{Topic  5: Basics of set theory. Basic operations. Proofs with sets.}
+
+
+\begin{itemize}
+\item Shpeal about sets (containers, some examples, anything can be a set). Definition, element of.
+\item $\{1,2,3,4,5\}$, $\{1,\sqrt{2}\}$, use $\dots$ to denote a pattern. Common sets $\N, \Z$ etc2
+\item Anything can be a set. $2\Z$, $d\Z$, $a\Z + b$, Fun, $\Q[x]$,  $[a,b]$ etc
+\item Definition: empty set ($x \in $ empty set is always false)
+\item Sets can be elements of sets $\{\{1\}, \{2\}, \{1,2\}\}$
+\item Formulas to create new sets. 
+\item Subset. Equality. Examples. 
+\item How to do proofs with sets.  Definition is an implication. What is your hypothesis? Conclusion? 
+  \begin{enumerate}
+  \item Assume $x \in A$.
+  \item Write out what $x \in A$ means.
+  \item Argue. Or, calculate. ???
+  \item Conclude that $x \in B$. (B has some definition. In step 3, verify this definition.)
+  \end{enumerate}
+\item To do disproofs... negate definition.
+\item Do worksheet. Do at least one proof. Remember not to do the homework in class.
+\item Do $6\Z \subseteq 2\Z$. Converse.
+\item Do $\{4^n - 1 : n \in \Z_{\geq 0}\}$ vs $3\Z$.
+\item Prove transitivity of $\subset$. 
+\item Prove $\emptyset \subseteq S$ for all $S$
+
+
+
+\item Define: union, intersection, complement, other complement, draw pictures, example with 1,2,3, and 2,3,4, 1..10
+\item $6\Z$ vs $2\Z \cap 3\Z$ and $2\Z \cup 3\Z$ 
+\item Propositions.
+  \begin{enumerate}
+  \item $A \subseteq A \cup B$
+  \item $A \cup \emptyset = A$
+  \item $A - B = A \cap \overline{B}$
+  \item (Didn't get to the proof of this one). $A \subseteq B$ iff $A \cup B = B$.
+  \end{enumerate}
+\end{itemize}
+% \begin{enumerate}  
+% \item Handout 8 (similar problems, and propositions with intersections)
+% \item $A \cap B \cap C$
+% \item $(A \cap B ) \cup C = A \cap (B  \cup C)$
+% \item $(A \cap B ) \cup C = (A \cup C) \cap (B  \cup C)$  
+% \item $B \subseteq C \Rightarrow A-C \subseteq A-B$
+% \item $B \subseteq C \Rightarrow A-C \subseteq B-C$
+% \item $A \cap B \subseteq C \Rightarrow (A-C)\cap B = \emptyset$
+%  \item Prove that $(A \subseteq C) \wedge (B \subseteq C) \Rightarrow A \cap B \subseteq C$.
+%  \item State the converse of the previous problem. Prove or disprove it. 
+% \item For all sets $A,B,C$, if $A,B$ are subsets of $C$, then $(C-A) - B = C-(A-B)$.
+% \end{enumerate}
+
+
+\newpage
+\section[6 (\csname dateWeek6\endcsname): More sets. DeMorgan's laws. Cartesian Products. Power sets.]{Topic  6: More proofs with sets. DeMorgan's laws. Cartesian Products. Power sets}
+
+
+\begin{itemize}
+\item $\overline{A \cup B} = \overline{A} \cap \overline{B}$.
+\item $A \cup B \subset C \Rightarrow (A - C) \cap B = \emptyset$.
+% \item $A \cup B - A \cap B \subseteq (A - B) \cup (B - A)$. (Converse is HW.)
+
+\item Sets can be elements of sets. Examples. $\{A \subseteq \mathbb{Z} \,|\, 1 \in A\}$. See notes-11.
+\item Power sets. Examples. $\Z, \R$, $\{1\}$, $\{0,1\}$, $\{0,1,2\}$; $\emptyset$. 
+\item $\emptyset, A \in P(A)$.
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}    
+% \item $A \subseteq B \Rightarrow P(A) \subseteq P(B)$. Converse.
+\item True and false worksheet. (Do some of the HW, leave others \textbf{DZB})
+ \item $P(A) \cup P(B) \subseteq P(A \cup B)$.
+ \item $P(A \cup B) \subseteq P(A) \cup P(B)$.
+ \item $P(A) \times P(B) \subseteq P(A \times B)$.
+ \item $A = B$ if and only if $P(A) = P(B)$.
+\item  Which of the following statements are true?
+\item $\overline{A \cap B} = \overline{A} \cup \overline{B}$.
+\item $A \cup B - A \cap B \subseteq (A - B) \cup (B - A)$. (Converse is HW.)
+\item \textbf{Find more identities!}
+
+  
+  \begin{enumerate}
+ \item $\{0\} \subseteq P(\mathbb{Z})$;\vspace{0.3cm}    
+ \item $\{0\} \in P(\mathbb{Z})$;\vspace{0.3cm}
+ \item $\mathbb{Z} \in P(\mathbb{Z})$;\vspace{0.3cm}
+ \item $d\mathbb{Z} \in P(\mathbb{Z})$;\vspace{0.3cm}   
+ \item $\{1,\{1\}\} \subseteq P(\mathbb{Z})$.\\ 
+ \item $\{\{0,1\},\{1\}\} \subseteq P(\mathbb{Z})$;\vspace{0.3cm}
+ \item $\emptyset \in P(\mathbb{Z})$;\vspace{0.3cm}
+ \item $\{\emptyset\} \in P(\mathbb{Z})$. \vspace{0.3cm}
+ \item $\{\emptyset\} \subseteq P(\mathbb{Z})$;\vspace{0.3cm}
+
+ \end{enumerate}
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}     
+\item Products (emphasize ``vectors''). Examples (usual, finite, and mixed, like $\{1,-1\} \times \Z$, or $\R \times Fun$.
+\item  $A \subseteq B$ and $C \subseteq D$ implies $A \times C \subseteq B \times D$.
+\item $\emptyset \times A = \emptyset.$
+ 
+\item Then start on functions.
+\end{itemize}
+
+
+
+% \newpage
+% \section[  (???)]{Midterm}
+
+% \section[  (March \csname dateWeek1\endcsname) Spring Break ]{Spring break}
+
+% \noindent\textbf{NO CLASS March 8, 10; spring break}
+
+
+
+\newpage
+\section[7 (\csname dateWeek7\endcsname): Introduction to functions; images and surjectivity.]{Topic  7: Introduction to functions; images and surjectivity}
+
+\textbf{Next year, add in some intervals around a point for more prep for real analysis}
+\begin{itemize}
+\item What is a function, pictures, ``rule''
+\item $(x,y) \mapsto (x+y,xy)$. Can't graph, $f(0,0), f(1,1)$, ``unambigious''. Picture (plane to plane)
+\item A and B can be anything. Let go of formulas.
+\item Finite sets. ``Football play''
+\item ``x is wearing glasses''; Collatz function; indicator function of $\Q$. 
+\item Power set (S mapsto $S \cup {1}$, or intersect $2\Z$).
+\item $\R \to P(\R)$, $x \mapsto (x,\infty)$ or $\{x\}$
+\item Recursion: $n \mapsto n\cdot f(n-1)$; $(n,m) \mapsto f((n,m-1),m-1)$, $(n,0) \mapsto n$. 
+\item Define Fun(A,B), $x \mapsto x^2$ is an element
+\item First side of worksheet.
+\end{itemize}
+\begin{itemize}
+\item Definition of image, surjective; $f(W) \subseteq B$; $f(W)$ is a set. To prove surj, only need $f(A) = B$.
+\item Put this in a box: $a \in A \Rightarrow f(a) \in f(A)$. 
+\item $b \in f(A)$ iff.. negate.
+\item 1,2,3 to 4,5
+\item $x^2$ is not surjecive
+\item $2x+1\colon \R \to \R$ is, $\Z \to \Z$ isn't
+\item cos isn't; modify codomain.
+\item Second side of worksheet.
+\item $X \subseteq Y \Rightarrow f(X) \subseteq f(Y)$; converse
+\item $f(X\cap Y) = f(X) \cap f(Y)$
+\item Monday: Common functions and images.
+\item   Let $f\colon A \to B$ be a function and let $X,Y \subseteq A$. Prove
+  or disprove each of the following:
+  \begin{enumerate}
+  \item $X \subseteq Y \Rightarrow f(X) \subseteq f(Y)$.
+  \item $X \subseteq Y \Leftarrow f(X) \subseteq f(Y)$.
+  \item $f(X \cup Y) \subseteq f(X) \cup f(Y)$.
+  \item $f(X \cup Y) \supseteq f(X) \cup f(Y)$.
+  \item $f(X \cap Y) \subseteq f(X) \cap f(Y)$.
+  \item $f(X \cap Y) \supseteq f(X) \cap f(Y)$.
+\end{enumerate}  
+\item IVT state, and one example $e^x$
+\end{itemize}
+
+
+
+
+\newpage
+\section[8 (\csname dateWeek8\endcsname): Inverse Image (or ``Preimage'').]{Topic 8: Inverse Image (or ``Preimage'').}
+
+\textbf{Next year, add in some intervals around a point for more prep for real analysis}
+\begin{itemize}
+\item Definition. Picture. Not related to inverses.
+\item $x \mapsto 6x+5$, $f^{-1}(\R_{\geq 0})$.
+% \item $x \mapsto x^2$, $[1,4]$, $\R$, $\R_{> 0}$
+\item Box this: $a \in f^{-1}(W)$ iff $f(a) \in W$. Negate this.
+\item Note: $f^{-1}(W) \subseteq $ domain
+\item Big example with 6 elements on each side. 
+\item $\R^2 \to R$, $(x,y) \mapsto xy$, fibers of points
+\item preimage of codomain; preimage of empty
+\item cos; preimage of $[0,1]$, $\R_{\geq 0}$, $[-1,1]$, $[2,3]$, random interval, write as infinite union
+\item $W \subseteq V \Rightarrow f^{-1}(W) \subseteq f^{-1}(V)$; converse fails
+\item \textbf{lecture 2 starts here}
+\item $\Z \to \Z$, $n \mapsto 3n+1$, preimage of evens.
+\item $f(n) = n$ if even, $n-1$ if odd; preimage of 1, 0, evens, odds
+
+\item preimage of union vs union of preimage (intersection is homework)
+\item $f^{-1}(f(W))$ vs $W$. ($f(f^{-1}(W))$ is hw)
+\item preimage of union 
+\item $e^x$, [-1,0], [0,10]; in proof, derivative is positive, so it is increasing.
+\item $\Z \to \Z$, $n \mapsto n/2$ is even $2n+4$ if odd; $W = \{4\}$, $\Z_{\geq 0}$, $\Z_{\leq 0}$, odds
+\item piecewise function with overlaps
+\item $S \cap f^{-1}(T) \subseteq f^{-1}(f(S) \cap T)$, converse
+\item find mathoverflow post with ALL such identities
+\end{itemize}
+
+
+
+
+\newpage
+\section[9 (\csname dateWeek9\endcsname): Injectivity.]{Topic  9: Injectivity.}
+
+
+\begin{itemize}
+\item Definition, slogan (``distinct inputs'' give ``distinct outputs''); horizontal line test.
+\item Warning about confusing with converse. Negate. Contrapositive.
+\item Examples: test functions. $x^2$. ``Not inj'' is easy (give a counterexample)
+\item Emphasize: to prove that a function is injective... verify the definition. Sometimes contrapositive is better.
+\item Example: $(x+1)/2$; $(x-1)/(x+1)$; $(x+y,x-y,x^2 + y^2)$.
+\item $x^3$ is injective; first via algebra (and quadratic formula)
+\item Define increasing/decreasing; prove that this implies injective; positive derivative thus implies injective
+\item $x^3 + x$; arctan.
+\item $x^2$ is not injective; restrict domain to $\R_{\geq 0}$. Prove algebraically.
+\item $\cos$ is not injective; restrict domain, now injective (either ``by definition'', or via derivative).
+\item $\C \to \C, z \mapsto z^3$ is not injective.
+\item $S \mapsto S \cap \Z$
+\item Worksheet. Max out on worksheet, and proofs. 
+\item $\R \times \R^* \to \R$, $x/y$ not inj
+\item $(a,b) \mapsto 2^a3^b$ is injective
+\item Recall $f(X) \subseteq f(Y) \Rightarrow X \subseteq Y$ is false; counterexample is not injective; add as hypothesis
+\item Is a map $\R^2 \to \R$ injective? (no if continuous, yes otherwise)
+\item Next time: can probably spend 1.5 days on this topic instead and start compositions
+\item Let $f\colon A \to B$ be a function. Let $X,Y \subset
+  A$ and let $W,V \subseteq B$. Each of the following statements are false as stated. Which
+  become true if we assume that $f$ is injective or surjective? In
+  each case ($f$ is injective, or $f$ is surjective), prove your
+  assertion or give a counterexample.
+  \begin{enumerate}
+  \item $X \subseteq Y \Leftarrow f(X) \subseteq f(Y)$.
+  \item (HW)$f(X \cap Y) \subseteq f(X) \cap f(Y)$.
+  \item $f(X) - f(Y) \subseteq f(X - Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \item $X \subseteq f^{-1}(f(X))$.
+  \item (HW) $W \subseteq f(f^{-1}(W))$.
+  \item $V \subseteq W \Leftarrow f^{-1}(V) \subseteq f^{-1}(W)$.
+  \end{enumerate}
+\end{itemize}
+
+
+
+
+
+\newpage
+\section[10 (\csname dateWeek10\endcsname): Composition of functions.]{Topic  10: Composition of functions.}
+
+
+\begin{itemize}
+\item Definition. 
+\item Examples: $x^2$ composed with $x+1$; plug in values 1,2; does not commute; commuting usually doens't make sense; formula. 
+\item Examples where $A$ and 5$C$ have 2 elements, and $B$ has 3. 
+\item ``Test functions'' (minimal injective, minimal surjective)
+\item $1/(1+x^2)$ and $e^x$
+\item $\mathbb{R} \to \mathbb{Z} \to \mathbb{Z}$, floor, then \# of distinct prime factors; plug in $\pi$, decimals, etc. 
+\item $\mathbb{Z}$ to powerset to powerset, $n \mapsto \{n\}$, $S \mapsto S \cap \{1\}$.
+\item Composition is a map from Fun x Fun to Fun
+\item Composition is associative
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}       
+\item $id_A$ and composition
+
+\item   Let $f\colon A \to B$ and $g \colon B \to C$ be functions. Prove or
+  disprove each of the following:
+  \begin{enumerate}
+  \item If $f$ and $g$ are injections, then $g \circ f$ is an injection.
+  \item If $f$ and $g$ are surjections, then $g \circ f$ is a surjection.
+  \item If $f$ and $g$ are bijections, then $g \circ f$ is a bijection.
+  \item If $g \circ f$ is an injection, then $f$ and $g$ are injections.
+  \item If $g \circ f$ is a surjection, then $f$ and $g$ are surjections.
+  \item If $g \circ f$ is a bijection, then $f$ and $g$ are bijections.
+  \item If $g \circ f$ is an injection, then $f$ is an injection.
+  \item (HW) If $g \circ f$ is an injection, then $g$ is an injection.
+  \item (HW) If $g \circ f$ is a surjection, then $f$ is a surjection.
+  \item (HW) If $g \circ f$ is a surjection, then $g$ is a surjection.
+  \item If $g \circ f$ is a bijection, then $f$ is a bijection.
+  \item If $g \circ f$ is a bijection, then $g$ is a bijection.
+  \item If $g \circ f$ is an injection and $g$ is a bijection, then $f$ is an
+    injection.
+  \end{enumerate}
+
+
+
+\item Let $f\colon A \to B$ be a function. Let $X,Y \subset
+  A$ and let $W,V \subseteq B$. Each of the following statements are false as stated. Which
+  become true if we assume that $f$ is injective or surjective? In
+  each case ($f$ is injective, or $f$ is surjective), prove your
+  assertion or give a counterexample.
+  \begin{enumerate}
+  \item $X \subseteq Y \Leftarrow f(X) \subseteq f(Y)$.
+  \item (HW)$f(X \cap Y) \subseteq f(X) \cap f(Y)$.
+  \item $f(X) - f(Y) \subseteq f(X - Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  % \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \item $X \subseteq f^{-1}(f(X))$.
+  \item (HW) $W \subseteq f(f^{-1}(W))$.
+  \item (EX, do this one) $V \subseteq W \Leftarrow f^{-1}(V) \subseteq f^{-1}(W)$.
+  \end{enumerate}
+  
+\end{itemize}
+
+
+
+
+\newpage
+\section[11 (\csname dateWeek11\endcsname): Inverse functions.]{Topic  11: Inverse functions.}
+
+\begin{itemize}
+\item From now on call this \textbf{Opposite Day.}
+\item Running slightly behind, so make sure to give them tools to do HW right away.
+  \begin{itemize}
+  \item To check if inverse, compose and compute that you get the identity.
+  \item invertible iff bijective
+\end{itemize}
+\item Definition. Hammer in the point that $f^{-1}$ has nothing to do with $1/f$, or with preimages.
+\item Examples: $x^3$ and $x^{1/3}$; $f^{-1}(8) = 2$ because $f(2) = 8$. 
+\item Explain that $f(a) = b$ iff $a = f^{-1}(b)$ (apply $f^{-1}$ to both sides and use definition). Box this. Reflect axis. 
+\item Example with a set of size 3. Compute a few. Draw inverse. 
+\item $\mathbb{R}\to \R$, $x^5 + 4x$. No formula for inverse. Still can compute: 0, 5, 40, 100?
+\item Theorem $f$ has an inverse iff $f$ is bijective. 
+  \begin{enumerate}   
+  \item Use theorem to help with proofs or counterexamples (e.g., $x^2$)
+  \item To find $f^{-1}$ fix $f$ and solve for $g$.
+  \item If you have a guess for $f^{-1}$, plug it in and verify.
+  \end{enumerate}
+\item $x^5 + x^3 + x$ has an inverse.
+
+\item $(x-1)/(x+1)$. Via IVT; then solve for inverse; then verify.
+\item Example: $(x,y) \mapsto (x-y, x+y)$.
+\item cos has no inverse. Tan has no inverse. 
+\item Explain how to modify to be invertible. (Doesn't always work (e.g., $\sin(1/x)$))
+\item Things I added last time (probably skip these): $\id \circ f = f$ (already did this), inverses are unique, $f(x) = y$ iff $x = f^{-1}(y)$.
+
+\item Handout 13, 2-5:
+  
+   Let $f\colon A \to B$ and $g \colon B \to C$ be functions. Prove or
+  disprove each of the following:
+  \begin{enumerate}
+  % \item If $f$ and $g$ are invertible, then $g \circ f$ is invertible.
+  \item If $g \circ f$ is invertible, then $f$ and $g$ are invertible.
+  \item If $g \circ f$ is invertible, then $f$ is invertible.
+  \item If $g \circ f$ is invertible, then $g$ is invertible.
+  \item If $g \circ f$ is an injection and $g$ is invertible, then $f$ is an
+    injection.
+  \end{enumerate}
+\end{itemize}
+
+
+
+\newpage
+\section[12 (\csname dateWeek12\endcsname): Relations]{Topic  12: Relations.}
+
+\begin{itemize}
+\item Notion of related, or sameness. Similar triangles. Bijective sets (same size).
+\item Definition of relation. Emphasize set vs  Examples: $\leq$. 
+\item Definition of equivalence relation, and equivalence class. Emphasize that equivalence classes are sets. 
+\item $\leq$, $2 \mid a - b$ (parity), triangles; 
+\item Mod 2: show it is an equivalence relation. Compute equivalence classes
+\item Other relations: year born. Equivalence classes. Sorting. 
+\item $x \sim y$ iff $x -y \in Z$.   
+\item $x \sim y$ iff $x = 1$ or $y = 1$.   
+\item proof that equivalence classes partition
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}         
+\item Trivial. Total.  
+\item bijections
+\item worksheet (make more examples)
+\item Define Graph. Graph of a function gives a relation. Not generally an equivalence relation.
+\item Converse (relation comes from a function if the first projection is a bijection); actually this is the definition of a function.
+
+
+\end{itemize}
+
+\newpage
+\section[13 (\csname dateWeek13\endcsname): Binary operations and countability ]{Topic  13: Binary operations and countability.}
+
+\begin{itemize}
+\item Recall that ``bijection'' is an equivalence relation. 
+\item What does it mean for two sets to have the same size? Bijection between them. Dancing partners analogy. (Lead's and follows)
+\item What is $|S|$ of a set? Define: $|S| = n$ if there is a bijection with $\{1,\ldots,n\}$. 
+\item $\infty$ (no such bijection). 
+\item Definition: we say that a set is \textbf{countable} if\ldots. Explain (bijection is a way to count, or enumerate). 
+\item Hilbert Hotel analogy. ($+1, \times 2; (n,a) \mapsto p_n^a$).
+\item Explain with bijections: $\mathbb{Z}_{\geq 0} \to \mathbb{N}; \mathbb{N} \to evens, \mathbb{N} \to \mathbb{Z}$. 
+\item Crazier: rationals. 
+\item Cantor's diagonalization argument.
+\item []       \vspace{0.1cm}\hrule\vspace{-0.4cm}   
+\item Recall same cardinality (bijective), $\le, \ge$, Theorem that we won't prove (if inj one way and surj other way
+\item Recall uncountable, countable, give examples of countable (Z, E, Q, ExE). 
+\item Power sets. There does not exist a surjection $S \to P(S)$. Corollary (lots of infinities). Does there exist a universe? (Strongly inaccessible cardinal?)
+\item $\text{Fun}(S, \{0,1\}) = P(S)$. But, $\text{Fun}(\mathbb{N}, \{0,1\}) = [0,1]$ (in binary, roughly). 
+
+\item Algebraic and transcendental numbers (most numbers are not rational).
+  
+\end{itemize}
+
+\end{document}
+

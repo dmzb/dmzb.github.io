@@ -1,0 +1,64 @@
+\documentclass[12pt]{article}
+\title{Math 250 Week 2}
+\author{DZB}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Negation problem. Negate the following: 
+\\
+
+\noindent $\forall \epsilon > 0, \exists \delta > 0 $ such that if $|x - x_0| < \delta$, then  $|f(x) - f(x_0)| < \epsilon$
+\\
+
+\noindent $\neg(\forall \epsilon > 0, \exists \delta > 0 $ such that if $|x - x_0| < \delta$, then  $|f(x) - f(x_0)| < \epsilon$)
+\\
+
+\noindent $\forall \epsilon > 0, \exists \delta > 0 $ such that if $P$, then  $Q$
+\\
+
+\noindent $\neg(\forall x, P(x)) = \exists x$ such that $\neg P(x)$
+\\
+
+\noindent $\exists \epsilon > 0$ such that  $\neg($\exists \delta > 0 $ such that if $|x - x_0| < \delta$, then  $|f(x) - f(x_0)| < \epsilon$)
+\\
+
+\noindent $\exists \epsilon > 0$ such that  $\forall \delta > 0 $, $\neg$ (if $|x - x_0| < \delta$, then  $|f(x) - f(x_0)| < \epsilon$)
+\\
+
+\noindent $\neg(P \Rightarrow Q) = P \wedge \neg Q$
+\\
+
+\noindent $\exists \epsilon > 0$ such that  $\forall \delta > 0 $, $|x - x_0| < \delta$ and  $|f(x) - f(x_0)| \geq \epsilon$
+\\
+
+\newpage
+
+Problem. Let $n$ be an integer. Prove that $n(n+1)$ is even. 
+\\
+
+(This is the same problem as If $n$ is an integer, then $n(n+1)$ is even.)
+\\
+
+Proof (by cases). Suppose that $n$ is an integer. We will break the proof into 2 cases. In the first case, we assume that $n$ is even. In this case, there exists an integer $m$ such that $n = 2m$. Thus, $n(n+1) = 2m(n+1)$ This is twice an integer, therefore $n(n+1)$ is even.
+
+In the second case, $n$ is odd. Thus there exists an integer $m$ such that $n = 2m+1.$ Then, then quantity $n(n+1)$ is equal to $(2m+1)(2m+1 +1) = (2m+1)(2m+2) = 2(2m+1)(m+1).$ We thus have an equation $n(n+1) = 2c$, where $c = (2m+1)(m+1).$ Since $c$ is an integer, we conclude that $n(n+1)$ is even. (QED)
+
+\newpage
+
+Problem. Prove that for all integers $a$ and $b$, $ab(a-b)$ is even.
+\\
+
+Proof (by cases). Assume that $a,b \in \mathbf{Z}$. We consider the following 3 cases: $a$ is even, $b$ is even, or both are odd. Case 1: assume that $a$ is even. Then there exists $m \in \mathbf{Z}$ such that $a = 2m$. Then $ab(a-b) = 2mb(a-b) = 2(mb(a-b))$. Since $mb(a-b)$ is an integer, we conclude that $ab(a-b)$ is even. Case 2 is identical to case 1. 
+
+Case 3: assume that $a$ and $b$  are both odd. Then there exists integers $m,n \in \mathbf{Z}$ such that $a = 2m +1$ and $b = 2n+1$. Then $ab(a-b) = ab(2m+1 - (2n+1) = ab(2)(m-n)$ which is twice an integer. We conclude that $ab(a-b)$ is even. QED
+
+\newpage
+
+
+Problem. Suppose that $n \in \mathbf{Z}_{\geq 0}$. Then $3 \mid 4^n-1$. 
+
+\end{document}
+
+

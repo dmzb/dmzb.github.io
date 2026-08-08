@@ -1,0 +1,218 @@
+\documentclass[11pt]{article}
+\usepackage{amssymb, latexsym, amsmath, verbatim, multicol}
+
+\setlength{\oddsidemargin}{-.25in} \setlength{\evensidemargin}{-.25in} \setlength{\textwidth}{6.8in}
+\setlength{\textheight}{9.3in} \setlength{\topmargin}{-.8in} \setlength\parindent{0pt}      
+
+\newcommand{\midtermOrFinal}{Midterm 2}
+\newcommand{\courseNumber}{220}
+\newcommand{\courseName}{Mathematical Reasoning and Proof}
+% \newcommand{\courseName}{Linear algebra}
+\newcommand{\season}{Spring}
+\newcommand{\thisYear}{2024}
+\newcommand{\examLength}{75 minute }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% question counter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\newcommand{\class}[1]{\left< #1 \right>}
+
+\newtoks\scores
+\newcounter{sumscore} \newcounter{quesno} \newcounter{inquesno} \newcounter{partno} \setcounter{inquesno}{1} \newcounter{altquesno}
+
+\newcommand{\ques}[1]{
+    \addtocounter{sumscore}{#1}
+    \stepcounter{quesno}
+    \expandafter\scores\expandafter{\the\scores
+    \theinquesno\stepcounter{inquesno}&#1&\\ \hline}
+    \par\noindent\thequesno. (#1 points)
+}
+\newcommand{\quest}[1]{
+        \addtocounter{sumscore}{#1}
+        \stepcounter{quesno}
+        \expandafterscores\expandafter{\the\scores
+        \theinquesno\stepcounter{inquesno}&#1&\\ \hline}
+        \par\noindent\thequesno.(#1points)
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\newcommand{\N}{{\mathbb N}}
+\newcommand{\Z}{{\mathbb Z}}
+\newcommand{\C}{{\mathbb C}}
+\newcommand{\R}{{\mathbb R}}
+\newcommand{\Q}{{\mathbb Q}}
+\DeclareMathOperator{\curl}{curl}
+\newcommand{\Span}{{\rm Span}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\begin{multicols}{2}
+  \scriptsize{\noindent
+       {\sc Instructor: David Zureick-Brown}\\ 
+        {\season } {\thisYear} 
+        \columnbreak
+        \begin{flushright}
+        Amherst College\\
+        Dept.~of Mathematics and Statistics\\
+        [20pt]
+        \end{flushright}}
+\end{multicols}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\vskip-.18in
+\noindent\rule{6.8in}{1pt}
+\begin{center}
+\emph{{\bf         Math {\courseNumber } $\sim$ {\courseName }:  {\midtermOrFinal }}}\\[25pt]
+\end{center}
+\vskip-.28in
+
+\noindent\rule{6.8in}{1pt}
+\vskip.55in
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\textbf{Name} (print clearly as it appears on Gradescope)\textbf{:} .....................................................................................
+	
+\vskip.25in
+\begin{itemize}
+\item This is a closed-book, \examLength examination. 
+
+\item No books, notes, calculators, cell phones, communication devices of any sort, or other aids are permitted.
+
+\item I will be in the hallway, and will check in every 25 minutes for questions.  
+  
+\item You may leave when you are finished, in which case please hand me the exam in the hallway.
+
+\item You may leave to use the bathroom.
+  
+\item You may use the backs of pages for additional work space. If you use any additional scratch paper as part of your solution, please let me know after the exam.
+
+\item Be sure to justify your answer to each of the problems!
+
+\item For proofs, please make sure that your answers are in complete sentences!
+
+\item {\Large \it Good luck!}  \vspace{1cm}
+\end{itemize}
+
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{10} Let $f\colon A \to B$ be a function and let $X \subseteq A$. We define the \emph{image} $f(X)$ of $X$ to be
+\[
+f(X) = \{\hspace{20in}
+  \]
+
+\vspace{10cm}
+  
+Let $f\colon A \to B$ be a function and let $W \subseteq B$. We define the \emph{preimage} $f^{-1}(W)$ of $W$ to be 
+\[
+f^{-1}(W) = \{\hspace{20in}
+  \]
+
+% Let $f \colon A \to B$ be a function.
+%  Define what it means for $f$ to be \emph{injective}.
+% % Define what it means for $f$ to be \emph{surjective}.
+
+% \vspace{2.5in}
+ 
+% Negate the definition of injective.\\
+
+% For all $x \in \mathbb{R}$, if there exists $y \in \mathbb{R}$ such that $xy = 1$, then $x \neq 0$.
+
+% There exists  $x \in \mathbb{R}$ such that if $x \neq 0$, then  for all  $y \in \mathbb{R}$,  $xy = 1$.
+
+
+% \vspace{3cm}
+% \ques{5} Give an example of a function that is surjective but not injective.
+
+% \vspace{3.5in}
+
+
+% Let $f\colon A \to B$ be a function and let $X \subseteq A$. Define the \emph{image} $f(X)$ of $X$.
+ % Let $f\colon A \to B$ be a function and let $W \subseteq B$. Define the \emph{preimage} $f^{-1}(W)$ of $W$.
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{10} Let $A,B$ and $C$ be sets. Prove that $(A \cap B ) \cup C \subseteq (A \cup C) \cap (B  \cup C)$.
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{15} Let $A,B,C$ be sets. Prove that if $B \subseteq C$, then $A-C \subseteq A-B$.
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{15} Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function defined by $f(x) = 2x+4$. Prove that $f$ is surjective.
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{20} Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f\colon A \to B$ be a function. Prove or disprove each of the following (one of these is true and one of these is false).
+\\
+
+When giving a disproof, \textbf{please give a counterexample} (otherwise no credit will be given for the problem). 
+ \begin{enumerate}
+
+  \item $f(X \cap Y) \subseteq f(X) \cap f(Y)$.
+  \item $f(X \cap Y) \supseteq f(X) \cap f(Y)$.
+
+
+ \end{enumerate}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{15} Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove the following:
+  \begin{enumerate}
+  \item $f^{-1}(X \cup Y) \subseteq f^{-1}(X) \cup f^{-1}(Y)$.
+  \end{enumerate}
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{5} Prove that the following function is not injective. 
+
+\begin{enumerate}
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^4 + x^2$.
+ \end{enumerate}
+\vspace{4in}
+\ques{5}  Prove that the following function is injective.
+  \begin{enumerate}
+  \item $f \colon \mathbf{R} \to \mathbf{R};\, f(x) = e^{x+1}$.
+\end{enumerate}
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\ques{5} Let $A = \{0,1,2\}$. Which of the following statements are true? (No justification is needed.)
+\vspace{1cm}
+
+ \begin{enumerate}
+ \item[] True \hspace{1cm} False \hspace{1cm} $0 \in P(A)$;\vspace{0.3cm}
+ \item[] True \hspace{1cm} False \hspace{1cm}  $\{0\} \in P(A)$;\vspace{0.3cm}      
+ \item[] True \hspace{1cm} False \hspace{1cm}  $\{0\} \subseteq P(A)$;\vspace{0.3cm}   
+ \item[] True \hspace{1cm} False \hspace{1cm}  $\{1,2\} \in P(A)$;\vspace{0.3cm}
+ \item[] True \hspace{1cm} False \hspace{1cm}  $\{1,\{1\}\} \subseteq P(A)$.\\ 
+ \end{enumerate}
+ 
+
+
+
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% \begin{center}
+% % The next line puts horizontal space in the array
+% \renewcommand{\arraystretch}{2}
+% \begin{tabular}{|c|c|c|} \hline
+% \hspace{1cm}Problem\hspace*{1cm}&\hspace{1cm}Points\hspace*{1cm}&\hspace{1cm}Score\hspace*{1cm}\\
+% \hline \the\scores Total & \thesumscore & \\ \hline
+% \end{tabular}
+% \end{center}
+
+\end{document}

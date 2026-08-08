@@ -1,0 +1,96 @@
+\pagestyle{fancy}\thispagestyle{plain}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\large Assignment 9: \csname topic09\endcsname}\smallskip
+
+\rule{6.8in}{1pt}\vskip.1in
+
+% \textit{Due by \HWdueTime,   eastern, on \dueDay, \csname dateWeek09\endcsname}
+\textit{Due by \textbf{Friday},  9:55am eastern, on Friday, April 19}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Suggested readings  for this problem set:}}
+\begin{itemize}[itemsep=1pt]
+\item Section 3.2, p.~100-105
+\end{itemize}
+
+All readings are from \bookAuthors, \emph{\bookName}.
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Extra Practice Problems}} from \emph{\bookName} (not to turn in):
+
+\begin{itemize}[itemsep=1pt]
+\item With answers or hints (in the back of the book): 3.2, \#12(adg), \#13(bd)
+\item Without answers: 3.2 \#9-14, 19(abc)
+\item \href{https://dmzb.github.io/teaching/2024Spring220/handouts/220-H11-injectivity.pdf}{Handout 11}
+\end{itemize}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+ % {\bf\textit{Assignment:}} due \dueDay, \dzbOut{dateWeek09}, \HWdueTime, via Gradescope (\gradescopeCode):
+ {\bf\textit{Assignment:}} Due by \textbf{Friday},  9:55am eastern, on Friday, April 19, via Gradescope (\gradescopeCode):
+
+\rule{6.8in}{1pt}\vskip.1in
+
+
+\begin{enumerate}
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $f^{-1}(X - Y) \subseteq f^{-1}(X) - f^{-1}(Y)$.
+ \item $f^{-1}(X - Y) \supseteq f^{-1}(X) - f^{-1}(Y)$.
+ \end{enumerate} 
+
+\item Let $f \colon A \to B$ be a function. Which of the followings statements are equivalent to the statement `$f$ is injective'? (No proof necessary.)
+ \begin{enumerate}
+ \item $f(a) = f(b)$ if $a = b$;
+ \item $f(a) = f(b)$ and $a = b$ for all $a,b \in A$;
+ \item If $a$ and $b$ are in $A$ and $f(a) = f(b)$, then $a = b$;
+ \item If $a$ and $b$ are in $A$ and $a = b$, then $f(a) = f(b)$;
+ \item If $a$ and $b$ are in $A$ and $f(a) \neq f(b)$, then $a \neq b$;
+ \item If $a$ and $b$ are in $A$ and $a \neq b$, then $f(a) \neq f(b)$. 
+ \end{enumerate}
+ 
+\item Prove that the following functions are not injective. 
+
+\begin{enumerate}
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^4 + x^2$;
+ \item $f \colon \mathbf{R}\to \mathbf{R}$, $f(x) = x^3 + x^2$;
+ \item $f \colon P(\mathbf{Z}) \to P(\mathbf{Z});\, f(S) = S \cap \{1,2\}$.
+
+ \end{enumerate}
+
+\item Prove that the following functions are injective.
+  \begin{enumerate}
+  \item $f\colon \mathbf{R}^2 \to \mathbf{R}^3;\, f(x,y) =  (x+y,x-y,x^2 + y^2)$.
+  \item $f \colon \mathbf{R} \to \mathbf{R};\, f(x) = e^{x+1}$.
+\item $f\colon \mathbf{R}\to \mathbf{R}, f(x) =
+ \begin{cases}
+ -x-1, & \text{if $x > 0$} \\
+ x^2, & \text{if $x \leq 0$}.
+ \end{cases}
+ $
+\end{enumerate}
+
+% \item Let $f\colon \{1,2,3,4,5\} \to \{1,2,3,4\}$ be a functon. Can $f$ be injective? Explain your answer. 
+  
+
+% \item We say that a function $f\colon [a,b] \to \mathbf{R}$ is \textbf{decreasing} if for all $x_1,x_2 \in [a,b]$, if $x_1 < x_2$, then $f(x_1) > f(x_2)$.
+%  \begin{enumerate}
+%  \item Negate the definition of decreasing.
+%  \item Prove that a decreasing function is injective.
+%  \end{enumerate}
+ 
+% \item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $A$. Let $f \colon A \to B$ be an injective function. Prove that $f(X \cap Y) = f(X) \cap f(Y)$.
+
+% \item Let $A$ and $B$ be sets and let $W$ be a subset of $B$. Let $f \colon A \to B$ be a surjective function. Prove that $W \subseteq f(f^{-1}(W))$.
+
+\end{enumerate}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../assignments-S24-220"
+%%% End: 

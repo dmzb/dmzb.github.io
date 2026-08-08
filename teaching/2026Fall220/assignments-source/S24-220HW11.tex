@@ -1,0 +1,66 @@
+\pagestyle{fancy}\thispagestyle{plain}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\large Assignment 11: \csname topic11\endcsname}\smallskip
+
+\rule{6.8in}{1pt}\vskip.1in
+
+\textit{Due by \HWdueTime,   eastern, on Tuesday, \csname dateWeek11\endcsname}
+% \textit{Due by \HWdueTime,   eastern, on \dueDay, \csname dateWeek11\endcsname}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Suggested readings  for this problem set:}}
+\begin{itemize}[itemsep=1pt]
+\item Section 3.3, p.~114-116
+\end{itemize}
+
+All readings are from \bookAuthors, \emph{\bookName}.
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Extra Practice Problems}} from \emph{\bookName} (not to turn in):
+
+\begin{itemize}[itemsep=1pt]
+\item With answers or hints (in the back of the book): 3.3 \#10(adgj), 11(a)
+\item Without answers: 3.3 \#10, 12, 14, 15, 17, 18, 19, 22  
+\item \href{https://dmzb.github.io/teaching/2024Spring220/handouts/220-H13-inverses.pdf}{Handout 13}
+\end{itemize}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Assignment:}} due Tuesday, \csname dateWeek11\endcsname, \HWdueTime, via Gradescope (\gradescopeCode):
+ % {\bf\textit{Assignment:}} due \dueDay, \csname dateWeek11\endcsname, \HWdueTime, via Gradescope (\gradescopeCode):
+
+\rule{6.8in}{1pt}\vskip.1in
+
+
+\begin{enumerate}
+\item Define $f \colon \mathbf{R}-\{1\} \to \mathbf{R} - \{1\}$ by $f(x) = \frac{x+1}{x-1}$. Prove that $f$ is a bijection. Find a formula for the inverse $f^{-1}(x)$, and prove that it is correct.
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function $f(x) = x^3 + x$. Prove that $f$ is invertible without finding a formula for $f^{-1}$.
+\item Let $A, B$ and $C$ be sets and let $f \colon A \to B$ and $g \colon B \to C$ be functions. Prove that if $f$ and $g$ are invertible, then so is $g \circ f$, and prove that $(g \circ f)^{-1} = f^{-1} \circ g^{-1}$.
+\item Let $A$ and $B$ be sets and let $f \colon A \to B$ be a function. Suppose that $f$ has a \emph{left inverse} $g$; that is, suppose that there exists a function $g \colon B \to A$ such that $g \circ f = id_A$. Prove that $f$ is injective.
+% \item Let $f \colon A \to B$ be a bijection. Let $g \colon B \to A$ be the inverse of $f$. Prove that $g$ is also a bijection.
+% \item Let $A$ be a set and let $f \colon A \to A$ be a function. Prove that $f$ is invertible and $f = f^{-1}$ if and only if $f \circ f = id_A$.
+
+% \item Let $f,g \colon A \to B$ be two functions, and let $h \colon B \to C$ be a function. 
+%   \begin{enumerate}
+%   \item Prove that if $h$ is injective and
+%     $h \circ f = h \circ g$ then $f = g$.
+%   \item Give an example where $h$ is not surjective and     $h \circ f = h \circ g$ but $f \neq g$.
+% \end{enumerate}
+  
+\item Let $f \colon A \to B$ be a function, and let $g,h \colon B \to C$ be two functions. 
+  \begin{enumerate}
+  \item Prove that if $f$ is surjective and
+    $g \circ f = h \circ f$ then $g = h$.
+  \item Give an example where $f$ is not surjective and $g \circ f = h \circ f$ but $g \neq h$.
+\end{enumerate}
+
+\end{enumerate}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../assignments-S24-220"
+%%% End: 

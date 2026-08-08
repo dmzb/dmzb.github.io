@@ -1,0 +1,107 @@
+\pagestyle{fancy}\thispagestyle{plain}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\large Assignment 8: \csname topic08\endcsname}\smallskip
+
+\rule{6.8in}{1pt}\vskip.1in
+
+\textit{Due by  \HWdueTime,   eastern, on \dueDay, \csname dateWeek08\endcsname}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Suggested readings  for this problem set:}}
+\begin{itemize}[itemsep=1pt]
+\item Section 3.1, p.~90-92 (stop at the Historical Comments.)
+\end{itemize}
+
+All readings are from \bookAuthors, \emph{\bookName}.
+
+\rule{6.8in}{1pt}\vskip.1in
+
+{\bf\textit{Extra Practice Problems}} from \emph{\bookName} (not to turn in):
+
+\begin{itemize}[itemsep=1pt]
+\item With answers or hints (in the back of the book): Section 3.1, \#17(ad), \#18(adg), \#19(a), \#21(a)
+\item Without answers: 17-21  
+\item \href{https://dmzb.github.io/teaching/2024Spring220/handouts/220-H10-preimages.pdf}{Handout 10}
+\end{itemize}
+
+\rule{6.8in}{1pt}\vskip.1in
+
+ {\bf\textit{Assignment:}} due \dueDay, \csname dateWeek08\endcsname, \HWdueTime, via Gradescope (\gradescopeCode):
+
+\rule{6.8in}{1pt}\vskip.1in
+
+
+
+ (REMINDER: you are allowed to use the results of previous problem as part of the proof of later problems.)
+
+\begin{enumerate}
+\item Let $f \colon \mathbf{R} \to \mathbf{R}$ be the function defined by $f(x) = 3x+1$. 
+ \begin{enumerate}
+ \item Compute $f^{-1}(\{1,5,8\})$ (do not give a proof).
+ \item Compute $f^{-1}(W)$, where $W = (4,\infty)$, and give a proof that your answer is correct.
+ \item Compute $f^{-1}(\mathbf{E})$, where $\mathbf{E}$ is the set of even integers, and give a proof that your answer is correct.
+ \end{enumerate}
+
+\item Let $f \colon \mathbf{Z} \to \mathbf{Z}$ be the function defined by $f(n) =
+ \begin{cases}
+ \frac{n}{2}, & \text{if $n$ is even} \\
+ 2n+4, & \text{if $n$ is odd}.
+ \end{cases}
+ $
+ 
+ Compute $f^{-1}(\mathbf{E})$. Prove that your answer is correct. (Reminder: $\mathbf{E}$ is the set of even integers.)
+
+\item Let $A$ and $B$ be sets and let $X$ and $Y$ be subsets of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.) 
+  \begin{enumerate}
+  \item $f^{-1}(X \cap Y) \subseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \item $f^{-1}(X \cap Y) \supseteq f^{-1}(X) \cap f^{-1}(Y)$.
+  \end{enumerate}
+
+
+\item Let $A$ and $B$ be sets and let $X$ be a subset of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $X \subseteq f(f^{-1}(X))$.
+ \item $X \supseteq f(f^{-1}(X))$.
+ \end{enumerate}
+
+% \item Let $A$ and $B$ be sets and let $X$ be a subset of $B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+%  \begin{enumerate}
+%  \item $f^{-1}(X - Y) \subseteq f^{-1}(X) - f^{-1}(Y)$.
+%  \item $f^{-1}(X - Y) \supseteq f^{-1}(X) - f^{-1}(Y)$.
+%  \end{enumerate}
+ 
+\item Let $A$ and $B$ be sets. Let $S \subseteq A$ and let $T \subseteq B$. Let $f\colon A \to B$ be a function. Prove or disprove the following. (For a disproof, please give an explicit counterexample.)
+ \begin{enumerate}
+ \item $f(S) \subseteq T \Rightarrow S \subseteq f^{-1}(T)$.
+ \item $S \subseteq f^{-1}(T) \Rightarrow f(S) \subseteq T$.
+ \end{enumerate}
+
+\newpage
+ In each of the following problems, let $f\colon A \to A$ be a function (note that the domain and codomain are the same) and suppose that $C \subseteq A$.
+ 
+\item  Prove or disprove the following. (For a disproof, please give an explicit counterexample).
+ \begin{enumerate}
+ \item $f^{-1}(C)\subseteq  C$;
+ \item $C\subseteq  f^{-1}(C)$;
+ \item $f(C)\subseteq  C$;
+ \item $C\subseteq  f(C)$;
+ \end{enumerate}
+ 
+
+
+\item Prove or disprove the following (for a disproof, please give an explicit counterexample): $C \subseteq  f^{-1}(C) \iff f(C)\subseteq  C$ . 
+
+\item Prove or disprove the following (for a disproof, please give an explicit counterexample): $f^{-1}(C)\subseteq  C \iff C\subseteq  f(C)$ .
+
+
+  
+\end{enumerate}
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../assignments-S24-220"
+%%% End: 

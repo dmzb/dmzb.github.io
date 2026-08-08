@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+\title{Untitled Document}
+\author{Your Name}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+Definition. We say that an integer $n$ is even if there exists an integer $m$ such that $n = 2m$.
+\\
+
+Example. $6$ is even. In the definition, $n = 6$. We need to answer the question: ``is there an integer $m$ such that $6 = 2m$? Sure: if $m = 3$, then $n = 2m$.
+\\
+
+Is 7 even? Can we solve the equation $7 = 2m$? Yes.. m = 7/2. Problem: this is not an integer, so 7 is not even.
+\\
+
+Is $-8$ even? Sure: -8 = 2(-4) ($m = -4$). 
+\\
+
+Is 0 even? Yes. In the definition, $n = 0$, and we need to solve the equation $n = 2m$, i.e., the equation $0 = 2m$. The choice $m = 0$ solves this equation. Thus, $0$ is even. 
+\\
+
+
+Example of LaTeX. $n^2 + m_1 + \alpha \beta\gamma \Gamma$.
+\[
+\sum_{n = 1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+\]
+
+\newpage
+
+Lemma. Suppose that $n$ and $m$ are even integers. Then $n + m$ is even.
+\\
+
+\begin{proof}
+  Assume that $n$ and $m$ are even integers. % Assume the assumption
+  Since $n$ is even, there exists an integer $a$ such that $n = 2a$.
+  Since $m$ is even, there exists an integer $b$ such that $m = 2b$.
+  % Unwinding the definitions.  
+  Thus, $n + m = 2a + 2b$. By the distributive law, $n + m = 2(a + b)$. If we let $c = a + b$, then $n + m = 2c$, and $c$ is an integer (because the sum of 2 integers is an integer). We conclude that $n + m$ is even.
+  
+%  (Scratch work: we want to show that $n + m$ is even. I.e., we want to show that there is some integer $c$ such that $n + m = 2c$  ,)
+
+  
+\end{proof}
+
+
+
+Other symbols. For sets, we use bold. The set of real numbers is $\mathbf{R}$. The complex number are $\mathbf{C}$. The rationals are $\mathbf{Q}$. The integers are $\mathbf{Z}$; $3 \in \mathbf{Z}$, $\pi \in \mathbf{R}$; $\pi \not \in \mathbf{Z}$; $\mathbf{Z} \not = \mathbf{R}$. There exists is $\exists$; $\not \exists$; for all $\forall$; $\mathbf{Z} \subset \mathbf{R}$
+
+
+
+
+
+
+\end{document}
